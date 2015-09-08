@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cust_add));
             this.cust_add_lbl_aanheft = new System.Windows.Forms.Label();
             this.cust_add_lbl_voornaam = new System.Windows.Forms.Label();
             this.cust_add_lbl_achternaam = new System.Windows.Forms.Label();
@@ -36,7 +37,6 @@
             this.cust_add_lbl_telefoon = new System.Windows.Forms.Label();
             this.cust_add_lbl_bedrijf = new System.Windows.Forms.Label();
             this.cust_add_lbl_afdeling = new System.Windows.Forms.Label();
-            this.cust_add_txtbx_voornaam = new System.Windows.Forms.TextBox();
             this.cust_add_txtbx_achternaam = new System.Windows.Forms.TextBox();
             this.cust_add_txtbx_adres = new System.Windows.Forms.TextBox();
             this.cust_add_txtbx_email = new System.Windows.Forms.TextBox();
@@ -47,6 +47,7 @@
             this.cust_add_txtbx_opmerkingen = new System.Windows.Forms.TextBox();
             this.cust_add_btn_save = new System.Windows.Forms.Button();
             this.cust_add_btn_cancel = new System.Windows.Forms.Button();
+            this.cust_add_txtbx_voornaam = new System.Windows.Forms.TextBox();
             this.cust_add_rdiobtn_dhr = new System.Windows.Forms.RadioButton();
             this.cust_add_rdiobtn_mevr = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
@@ -122,13 +123,6 @@
             this.cust_add_lbl_afdeling.Size = new System.Drawing.Size(51, 13);
             this.cust_add_lbl_afdeling.TabIndex = 7;
             this.cust_add_lbl_afdeling.Text = "Afdeling :";
-            // 
-            // cust_add_txtbx_voornaam
-            // 
-            this.cust_add_txtbx_voornaam.Location = new System.Drawing.Point(84, 36);
-            this.cust_add_txtbx_voornaam.Name = "cust_add_txtbx_voornaam";
-            this.cust_add_txtbx_voornaam.Size = new System.Drawing.Size(100, 20);
-            this.cust_add_txtbx_voornaam.TabIndex = 9;
             // 
             // cust_add_txtbx_achternaam
             // 
@@ -209,10 +203,17 @@
             this.cust_add_btn_cancel.UseVisualStyleBackColor = true;
             this.cust_add_btn_cancel.Click += new System.EventHandler(this.cust_add_btn_cancel_Click);
             // 
+            // cust_add_txtbx_voornaam
+            // 
+            this.cust_add_txtbx_voornaam.Location = new System.Drawing.Point(84, 36);
+            this.cust_add_txtbx_voornaam.Name = "cust_add_txtbx_voornaam";
+            this.cust_add_txtbx_voornaam.Size = new System.Drawing.Size(100, 20);
+            this.cust_add_txtbx_voornaam.TabIndex = 9;
+            // 
             // cust_add_rdiobtn_dhr
             // 
             this.cust_add_rdiobtn_dhr.AutoSize = true;
-            this.cust_add_rdiobtn_dhr.Location = new System.Drawing.Point(66, 8);
+            this.cust_add_rdiobtn_dhr.Location = new System.Drawing.Point(84, 9);
             this.cust_add_rdiobtn_dhr.Name = "cust_add_rdiobtn_dhr";
             this.cust_add_rdiobtn_dhr.Size = new System.Drawing.Size(45, 17);
             this.cust_add_rdiobtn_dhr.TabIndex = 20;
@@ -223,7 +224,7 @@
             // cust_add_rdiobtn_mevr
             // 
             this.cust_add_rdiobtn_mevr.AutoSize = true;
-            this.cust_add_rdiobtn_mevr.Location = new System.Drawing.Point(117, 8);
+            this.cust_add_rdiobtn_mevr.Location = new System.Drawing.Point(131, 10);
             this.cust_add_rdiobtn_mevr.Name = "cust_add_rdiobtn_mevr";
             this.cust_add_rdiobtn_mevr.Size = new System.Drawing.Size(52, 17);
             this.cust_add_rdiobtn_mevr.TabIndex = 21;
@@ -257,7 +258,11 @@
             this.Controls.Add(this.cust_add_lbl_achternaam);
             this.Controls.Add(this.cust_add_lbl_voornaam);
             this.Controls.Add(this.cust_add_lbl_aanheft);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "cust_add";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Klant toevoegen";
             this.Load += new System.EventHandler(this.cust_add_Load);
             this.ResumeLayout(false);
@@ -275,7 +280,6 @@
         private System.Windows.Forms.Label cust_add_lbl_telefoon;
         private System.Windows.Forms.Label cust_add_lbl_bedrijf;
         private System.Windows.Forms.Label cust_add_lbl_afdeling;
-        private System.Windows.Forms.TextBox cust_add_txtbx_voornaam;
         private System.Windows.Forms.TextBox cust_add_txtbx_achternaam;
         private System.Windows.Forms.TextBox cust_add_txtbx_adres;
         private System.Windows.Forms.TextBox cust_add_txtbx_email;
@@ -286,6 +290,7 @@
         private System.Windows.Forms.TextBox cust_add_txtbx_opmerkingen;
         private System.Windows.Forms.Button cust_add_btn_save;
         private System.Windows.Forms.Button cust_add_btn_cancel;
+        private System.Windows.Forms.TextBox cust_add_txtbx_voornaam;
         private System.Windows.Forms.RadioButton cust_add_rdiobtn_dhr;
         private System.Windows.Forms.RadioButton cust_add_rdiobtn_mevr;
     }

@@ -58,28 +58,40 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
         {
             try
             {
-                // Als er op de knop Teruggebracht word de drukt
-                // Wordt de database geupdatët met datum en tijd
-
-
-                // To Do list
-                // - Controle inbouwen of tijddatumingeleverd leeg is of niet
-                //   als deze niet leeg is msgbox laten zien dat product al
-                //   ingeleverd is.
-                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
                 int rowindex = dataGridView1.CurrentCell.RowIndex;
                 int columnindex = dataGridView1.CurrentCell.ColumnIndex;
                 string value = dataGridView1.Rows[rowindex].Cells[columnindex].Value.ToString();
                 var currenttime = DateTime.Now;
-                string sql = "UPDATE uitlenen SET tijddatumingeleverd ='" + currenttime + "' WHERE ID =" + value;
+                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+
+                // Als er op de knop Teruggebracht word de drukt
+                // Wordt de database geupdatët met datum en tijd
+                // Controle om te kijken of tijddatumingeleverd leeg is in database.
+                // SQL query string
+                string sqlcheck = "SELECT tijddatumingeleverd FROM uitlenen WHERE ID =" + value;
                 conn.Open();
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.Add("@tijddatumingeleverd", SqlDbType.DateTime);
-                cmd.Parameters["@tijddatumingeleverd"].Value = DateTime.Now;
-                ShowData();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Het product is ingeleverd bij de Helpdesk.");
-                conn.Close();
+                SqlCommand checkcmd = new SqlCommand(sqlcheck, conn);
+                SqlDataReader reader = checkcmd.ExecuteReader();
+                reader.Read();
+
+                if (reader["tijddatumingeleverd"] != DBNull.Value)
+                {
+                    MessageBox.Show("Het product is al ingeleverd!");
+                    reader.Close();
+                }
+                else {
+                    conn.Close();
+                    string sql = "UPDATE uitlenen SET tijddatumingeleverd ='" + currenttime + "' WHERE ID =" + value;
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.Add("@tijddatumingeleverd", SqlDbType.DateTime);
+                    cmd.Parameters["@tijddatumingeleverd"].Value = DateTime.Now;
+                    ShowData();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Het product is ingeleverd bij de Helpdesk.");
+                    conn.Close();
+                }
+
             }
             catch (Exception)
             {

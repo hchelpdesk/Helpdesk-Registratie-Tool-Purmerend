@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainform_menustrip1 = new System.Windows.Forms.MenuStrip();
             this.bestandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aF4fsluitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.klantenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,10 +40,10 @@
             this.toevoegenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.uitlenenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aF4fsluitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algemeenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medewerkersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importerenCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,11 +70,20 @@
             this.bestandToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.bestandToolStripMenuItem.Text = "Bestand";
             // 
+            // aF4fsluitenToolStripMenuItem
+            // 
+            this.aF4fsluitenToolStripMenuItem.Name = "aF4fsluitenToolStripMenuItem";
+            this.aF4fsluitenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.aF4fsluitenToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.aF4fsluitenToolStripMenuItem.Text = "Afsluiten";
+            this.aF4fsluitenToolStripMenuItem.Click += new System.EventHandler(this.aF4fsluitenToolStripMenuItem_Click);
+            // 
             // klantenToolStripMenuItem
             // 
             this.klantenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toevoegenToolStripMenuItem,
-            this.overzichtToolStripMenuItem1});
+            this.overzichtToolStripMenuItem1,
+            this.importerenCSVToolStripMenuItem});
             this.klantenToolStripMenuItem.Name = "klantenToolStripMenuItem";
             this.klantenToolStripMenuItem.ShortcutKeyDisplayString = "F2";
             this.klantenToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
@@ -85,14 +95,14 @@
             this.toevoegenToolStripMenuItem.Name = "toevoegenToolStripMenuItem";
             this.toevoegenToolStripMenuItem.ShortcutKeyDisplayString = "F2";
             this.toevoegenToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.toevoegenToolStripMenuItem.Text = "&Toevoegen";
             this.toevoegenToolStripMenuItem.Click += new System.EventHandler(this.toevoegenToolStripMenuItem_Click);
             // 
             // overzichtToolStripMenuItem1
             // 
             this.overzichtToolStripMenuItem1.Name = "overzichtToolStripMenuItem1";
-            this.overzichtToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.overzichtToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
             this.overzichtToolStripMenuItem1.Text = "O&verzicht";
             this.overzichtToolStripMenuItem1.Click += new System.EventHandler(this.overzichtToolStripMenuItem1_Click);
             // 
@@ -139,17 +149,9 @@
             this.overzichtToolStripMenuItem2.Name = "overzichtToolStripMenuItem2";
             this.overzichtToolStripMenuItem2.ShortcutKeyDisplayString = "F4";
             this.overzichtToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.overzichtToolStripMenuItem2.Text = "Overzicht";
             this.overzichtToolStripMenuItem2.Click += new System.EventHandler(this.overzichtToolStripMenuItem2_Click);
-            // 
-            // aF4fsluitenToolStripMenuItem
-            // 
-            this.aF4fsluitenToolStripMenuItem.Name = "aF4fsluitenToolStripMenuItem";
-            this.aF4fsluitenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.aF4fsluitenToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.aF4fsluitenToolStripMenuItem.Text = "Afsluiten";
-            this.aF4fsluitenToolStripMenuItem.Click += new System.EventHandler(this.aF4fsluitenToolStripMenuItem_Click);
             // 
             // notitiesToolStripMenuItem
             // 
@@ -175,6 +177,13 @@
             this.medewerkersToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.medewerkersToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.medewerkersToolStripMenuItem.Text = "Medewerkers";
+            // 
+            // importerenCSVToolStripMenuItem
+            // 
+            this.importerenCSVToolStripMenuItem.Name = "importerenCSVToolStripMenuItem";
+            this.importerenCSVToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.importerenCSVToolStripMenuItem.Text = "Importeren CSV";
+            this.importerenCSVToolStripMenuItem.Click += new System.EventHandler(this.importerenCSVToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -215,6 +224,7 @@
         private System.Windows.Forms.ToolStripMenuItem notitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algemeenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medewerkersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importerenCSVToolStripMenuItem;
     }
 }
 

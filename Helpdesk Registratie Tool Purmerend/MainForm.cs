@@ -1,11 +1,5 @@
 ﻿// To Do List voor gehele project 
 
-/*  Klant Toevoegen
-	    - non sizable maken
-	    - Aanhef uitlijnen t.o.v.textbox Voornaam
- 	    - Icoon aan form geven
-*/
-
 /* Uitlenen Overzicht - Teruggebracht knop
    - Controle inbouwen of tijddatumingeleverd leeg is of niet
      als deze niet leeg is msgbox laten zien dat product al
@@ -55,7 +49,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Console.Beep();
+            
         }
 
         private void aF4fsluitenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +60,13 @@ namespace Helpdesk_Registratie_Tool_Purmerend
         private void overzichtToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void importerenCSVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cust_import NewMDIChild = new cust_import();
+            NewMDIChild.MdiParent = this;
+            NewMDIChild.Show();
         }
     }
 }

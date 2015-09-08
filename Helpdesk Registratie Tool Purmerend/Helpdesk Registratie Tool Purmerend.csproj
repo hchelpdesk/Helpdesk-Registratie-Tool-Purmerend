@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Klanten\cust_import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klanten\cust_import.Designer.cs">
+      <DependentUpon>cust_import.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klanten\cust_overzicht.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="Uitlenen\uitlenen_toevoegen.Designer.cs">
       <DependentUpon>uitlenen_toevoegen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Klanten\cust_import.resx">
+      <DependentUpon>cust_import.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Klanten\cust_overzicht.resx">
       <DependentUpon>cust_overzicht.cs</DependentUpon>
     </EmbeddedResource>
