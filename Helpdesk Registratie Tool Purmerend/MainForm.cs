@@ -5,6 +5,7 @@
      als deze niet leeg is msgbox laten zien dat product al
      ingeleverd is.
 */
+using Helpdesk_Registratie_Tool_Purmerend.Incidenten;
 using Helpdesk_Registratie_Tool_Purmerend.Klanten;
 using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using System;
@@ -65,6 +66,13 @@ namespace Helpdesk_Registratie_Tool_Purmerend
         private void importerenCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             cust_import NewMDIChild = new cust_import();
+            NewMDIChild.MdiParent = this;
+            NewMDIChild.Show();
+        }
+
+        private void toevoegenToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            call_add NewMDIChild = new call_add();
             NewMDIChild.MdiParent = this;
             NewMDIChild.Show();
         }
