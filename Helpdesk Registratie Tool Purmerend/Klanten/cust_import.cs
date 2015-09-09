@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
@@ -17,13 +18,15 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
         {
             cust_import_filedialog1.Filter = "CSV files (*.csv) | *.csv| Text Files (*.txt) | *.txt";
             cust_import_filedialog1.ShowDialog();
-            cust_import_txtbox_csv.Text = cust_import_filedialog1.FileName.ToString();
-            cust_import_csv_path.Text = System.IO.Path.GetFileName(cust_import_filedialog1.FileName);
+            cust_import_txtbox_csv.Text = Path.GetFullPath(cust_import_filedialog1.FileName.ToString());
+            cust_import_csv_path.Text = Path.GetFileName(cust_import_filedialog1.FileName);
         }
 
         private void cust_import_csv_btn_import_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Deze actie laadt alle klanten uit bestand " + cust_import_csv_path.Text);
+            string text = File.ReadAllText(cust_import_txtbox_csv.Text, Encoding.Default);
+            File.WriteAllText(cust_import_txtbox_csv.Text, text, Encoding.Unicode);
             if (result == DialogResult.OK)
             {
                 SqlConnection con = new SqlConnection((@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True"));
@@ -60,5 +63,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
            
 
         }
+
+       
     }
 }

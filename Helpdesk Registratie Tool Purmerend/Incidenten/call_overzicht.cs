@@ -9,30 +9,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
+namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
 {
-    public partial class cust_overzicht : Form
+    public partial class call_overzicht : Form
     {
-        public cust_overzicht()
+        public call_overzicht()
         {
             InitializeComponent();
         }
 
-        private void cust_overzicht_Load(object sender, EventArgs e)
+       private void call_overzicht_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection();
             string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
-            string sql = "SELECT ID, aanhef, voornaam, achternaam, adres, email, telefoon, bedrijf, afdeling, opmerkingen  FROM klanten";
+            string sql = "SELECT ID, naam, klas, product, ingeleverd, tijddatum, tijddatumingeleverd  FROM uitlenen";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
             DataSet ds = new DataSet();
             connection.Open();
             dataadapter.Fill(ds, "Authors_table");
             connection.Close();
-            cust_overzicht_dgv1.DataSource = ds;
-            cust_overzicht_dgv1.DataMember = "Authors_table";
-            
-
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "Authors_table";
         }
     }
 }

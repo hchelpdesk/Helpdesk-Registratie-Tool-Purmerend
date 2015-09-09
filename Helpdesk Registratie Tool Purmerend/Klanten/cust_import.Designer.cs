@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 461);
+            this.ClientSize = new System.Drawing.Size(354, 106);
             this.Controls.Add(this.cust_import_csv_btn_import);
             this.Controls.Add(this.cust_import_csv_path);
             this.Controls.Add(this.cust_import_btn_csv_browse);
