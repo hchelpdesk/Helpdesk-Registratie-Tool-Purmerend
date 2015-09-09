@@ -41,9 +41,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             call_add_cust_existingdetails.Visible = false;
             call_add_grpbox_customerdetails.Visible = true;
             call_add_grpbox_customerdetails.Show();
+
             SqlConnection conn = new SqlConnection();
             string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
-            string sql = "SELECT naam, klas, product, ingeleverd, tijddatum, tijddatumingeleverd  FROM uitlenen";
+            string sql = "SELECT * FROM klanten";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
             DataSet ds = new DataSet();

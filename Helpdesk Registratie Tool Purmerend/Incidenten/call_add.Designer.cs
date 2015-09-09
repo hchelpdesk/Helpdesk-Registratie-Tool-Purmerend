@@ -61,7 +61,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.call_add_existingcust_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.call_add_grpbox_customerdetails.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -368,15 +368,15 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Naam klant";
             // 
-            // button1
+            // call_add_existingcust_btn
             // 
-            this.button1.Location = new System.Drawing.Point(14, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Bestaande Klant";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.call_add_existingcust_btn.Location = new System.Drawing.Point(14, 7);
+            this.call_add_existingcust_btn.Name = "call_add_existingcust_btn";
+            this.call_add_existingcust_btn.Size = new System.Drawing.Size(113, 23);
+            this.call_add_existingcust_btn.TabIndex = 13;
+            this.call_add_existingcust_btn.Text = "Bestaande Klant";
+            this.call_add_existingcust_btn.UseVisualStyleBackColor = true;
+            this.call_add_existingcust_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -394,7 +394,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 489);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.call_add_existingcust_btn);
             this.Controls.Add(this.call_add_cust_existingdetails);
             this.Controls.Add(this.call_add_newcust);
             this.Controls.Add(this.call_add_existingcust);
@@ -452,7 +452,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button call_add_existingcust_btn;
         private System.Windows.Forms.Button button2;
     }
 }
