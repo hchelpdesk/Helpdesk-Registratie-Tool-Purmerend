@@ -39,6 +39,10 @@
     <ApplicationIcon>Aroche-Delta-Help.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Spire.Barcode, Version=1.2.5.21040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.BarCode.1.2.5\lib\net40\Spire.Barcode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -69,6 +73,18 @@
     </Compile>
     <Compile Include="Magazijn\magazijn_beheer.Designer.cs">
       <DependentUpon>magazijn_beheer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_inoutlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_inoutlist.Designer.cs">
+      <DependentUpon>magazijn_inoutlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_multipleinsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_multipleinsert.Designer.cs">
+      <DependentUpon>magazijn_multipleinsert.cs</DependentUpon>
     </Compile>
     <Compile Include="Magazijn\magazijn_overzicht.cs">
       <SubType>Form</SubType>
@@ -117,6 +133,12 @@
     <EmbeddedResource Include="Magazijn\magazijn_beheer.resx">
       <DependentUpon>magazijn_beheer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Magazijn\magazijn_inoutlist.resx">
+      <DependentUpon>magazijn_inoutlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazijn\magazijn_multipleinsert.resx">
+      <DependentUpon>magazijn_multipleinsert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Magazijn\magazijn_overzicht.resx">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +167,7 @@
     <EmbeddedResource Include="Uitlenen\uitlenen_toevoegen.resx">
       <DependentUpon>uitlenen_toevoegen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
