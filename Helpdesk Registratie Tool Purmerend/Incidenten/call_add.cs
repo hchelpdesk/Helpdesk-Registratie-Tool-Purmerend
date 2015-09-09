@@ -38,6 +38,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
 
         private void button1_Click(object sender, EventArgs e)
         {
+            call_add_cust_existingdetails.Visible = false;
             call_add_grpbox_customerdetails.Visible = true;
             call_add_grpbox_customerdetails.Show();
             SqlConnection conn = new SqlConnection();
@@ -56,8 +57,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
 
         private void button2_Click(object sender, EventArgs e)
         {
+            call_add_grpbox_customerdetails.Visible = false;
             call_add_cust_existingdetails.Visible = true;
             call_add_cust_existingdetails.Show();
+
         }
     }
 }
