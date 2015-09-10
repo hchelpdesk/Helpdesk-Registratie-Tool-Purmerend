@@ -7,6 +7,7 @@
 */
 using Helpdesk_Registratie_Tool_Purmerend.Incidenten;
 using Helpdesk_Registratie_Tool_Purmerend.Klanten;
+using Helpdesk_Registratie_Tool_Purmerend.Magazijn;
 using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using System;
 using System.Windows.Forms;
@@ -73,6 +74,13 @@ namespace Helpdesk_Registratie_Tool_Purmerend
         private void toevoegenToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             call_add NewMDIChild = new call_add();
+            NewMDIChild.MdiParent = this;
+            NewMDIChild.Show();
+        }
+
+        private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            magazijn_invoeren NewMDIChild = new magazijn_invoeren();
             NewMDIChild.MdiParent = this;
             NewMDIChild.Show();
         }

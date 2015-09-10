@@ -144,6 +144,7 @@
             this.toevoegenToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F3)));
             this.toevoegenToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
             this.toevoegenToolStripMenuItem1.Text = "Toevoegen";
+            this.toevoegenToolStripMenuItem1.Click += new System.EventHandler(this.toevoegenToolStripMenuItem1_Click);
             // 
             // uitlenenToolStripMenuItem
             // 
@@ -201,13 +202,13 @@
             // overzichtToolStripMenuItem3
             // 
             this.overzichtToolStripMenuItem3.Name = "overzichtToolStripMenuItem3";
-            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
             this.overzichtToolStripMenuItem3.Text = "Overzicht";
             // 
             // toevoegenToolStripMenuItem2
             // 
             this.toevoegenToolStripMenuItem2.Name = "toevoegenToolStripMenuItem2";
-            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(133, 22);
             this.toevoegenToolStripMenuItem2.Text = "Toevoegen";
             this.toevoegenToolStripMenuItem2.Click += new System.EventHandler(this.toevoegenToolStripMenuItem2_Click);
             // 
