@@ -14,38 +14,58 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
 
         private void magazijn_invoeren_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'magazijnCategorie.magazijncategorieen' table. You can move, or remove it, as needed.
-            //this.magazijncategorieenTableAdapter.Fill(this.magazijnCategorie.magazijncategorieen);
-            // Dropdown list vullen met categorieën
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                conn.Open();
+                SqlCommand sc = new SqlCommand("SELECT ID, categorie from magazijncategorieen", conn);
+                SqlDataReader reader;
 
+                reader = sc.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("ID", typeof(string));
+                dt.Columns.Add("categorie", typeof(string));
+                dt.Load(reader);
+
+                magazijn_invoer_combobx_categorie.ValueMember = "ID";
+                magazijn_invoer_combobx_categorie.DisplayMember = "categorie";
+                magazijn_invoer_combobx_categorie.DataSource = dt;
+
+                conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Oeps zomer: \n" + ex);
+            }
         }
 
         private void magazijn_invoer_combobx_categorie_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection();
-            string connection = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
-            string query = @"SELECT * from Table1, Table2"; //use your query!
+            // ID van geselecteerde waarde weergeven in Label2
+            label2.Text = "Huidige ID :" + magazijn_invoer_combobx_categorie.SelectedValue.ToString();
+            magazijn_invoer_combobx_subcategorie.Items.Clear();
+            magazijn_invoer_combobx_subcategorie.Visible = true;
+            magazijn_invoer_combobx_subcategorie.Show();
 
-            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            conn.Open();
+            SqlCommand sc = new SqlCommand("SELECT subcategorie,subcategorie1,subcategorie2,subcategorie3,subcategorie4,subcategorie5,subcategorie6,subcategorie7,subcategorie8,subcategorie9 ,subcategorie10,subcategorie11 FROM magazijncategorieen WHERE ID = " + magazijn_invoer_combobx_categorie.SelectedValue.ToString(), conn);
 
-            adapter.SelectCommand = new SqlCommand(query, connection);
+            SqlDataReader reader;
 
-            adapter.Fill(ds);
-            //now you have 2 dataSets (or more).
-            //lets bind dataSet to dropDownList:
+            reader = sc.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("subcategorie", typeof(string));
+            dt.Columns.Add("subcategorie1", typeof(string));
+            dt.Load(reader);
 
-            magazijn_invoer_combobx_categorie.DataSource = ds.Tables[0];
+            magazijn_invoer_combobx_subcategorie.ValueMember = "subcategorie";
+            magazijn_invoer_combobx_subcategorie.DisplayMember = "subcategorie";
+            magazijn_invoer_combobx_subcategorie.DataSource = dt;
 
-            dropdownlistid.DisplayMember = "name"; //write table`s column name, that one you want to show in dropDownList!
-
-            dropdownlistid.ValueMember = "id"; //write table`s column name you want to have it a value (it can be the sameas DisplayMember!
+            conn.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            magazijn_invoer_combobx_subcat.Visible = true;
-            magazijn_invoer_combobx_subcat.Show();
-
-        }
     }
 }

@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magazijn_invoeren));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_combobx_subcategorie = new System.Windows.Forms.ComboBox();
             this.magazijn_invoer_combobx_categorie = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_combobx_subcat = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.magazijn_invoer_combobx_subcat);
+            this.groupBox1.Controls.Add(this.magazijn_invoer_combobx_subcategorie);
             this.groupBox1.Controls.Add(this.magazijn_invoer_combobx_categorie);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
@@ -48,12 +49,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Product Invoeren";
             // 
+            // magazijn_invoer_combobx_subcategorie
+            // 
+            this.magazijn_invoer_combobx_subcategorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.magazijn_invoer_combobx_subcategorie.FormattingEnabled = true;
+            this.magazijn_invoer_combobx_subcategorie.Location = new System.Drawing.Point(155, 36);
+            this.magazijn_invoer_combobx_subcategorie.Name = "magazijn_invoer_combobx_subcategorie";
+            this.magazijn_invoer_combobx_subcategorie.Size = new System.Drawing.Size(140, 21);
+            this.magazijn_invoer_combobx_subcategorie.TabIndex = 2;
+            this.magazijn_invoer_combobx_subcategorie.Visible = false;
+            // 
             // magazijn_invoer_combobx_categorie
             // 
+            this.magazijn_invoer_combobx_categorie.DisplayMember = "ID";
             this.magazijn_invoer_combobx_categorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_categorie.DropDownWidth = 140;
             this.magazijn_invoer_combobx_categorie.FormattingEnabled = true;
-            this.magazijn_invoer_combobx_categorie.Location = new System.Drawing.Point(10, 36);
+            this.magazijn_invoer_combobx_categorie.Location = new System.Drawing.Point(6, 36);
             this.magazijn_invoer_combobx_categorie.Name = "magazijn_invoer_combobx_categorie";
             this.magazijn_invoer_combobx_categorie.Size = new System.Drawing.Size(139, 21);
             this.magazijn_invoer_combobx_categorie.TabIndex = 1;
@@ -69,21 +81,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Categorie";
             // 
-            // magazijn_invoer_combobx_subcat
+            // label2
             // 
-            this.magazijn_invoer_combobx_subcat.FormattingEnabled = true;
-            this.magazijn_invoer_combobx_subcat.Location = new System.Drawing.Point(155, 36);
-            this.magazijn_invoer_combobx_subcat.Name = "magazijn_invoer_combobx_subcat";
-            this.magazijn_invoer_combobx_subcat.Size = new System.Drawing.Size(140, 21);
-            this.magazijn_invoer_combobx_subcat.TabIndex = 2;
-            this.magazijn_invoer_combobx_subcat.Visible = false;
-            this.magazijn_invoer_combobx_subcat.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(631, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
             // 
             // magazijn_invoeren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 481);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "magazijn_invoeren";
@@ -92,6 +104,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -100,6 +113,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox magazijn_invoer_combobx_categorie;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_subcat;
+        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_subcategorie;
+        private System.Windows.Forms.Label label2;
     }
 }
