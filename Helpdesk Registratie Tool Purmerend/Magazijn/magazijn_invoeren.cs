@@ -17,7 +17,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
             try
             {
 
-                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
                 conn.Open();
                 SqlCommand sc = new SqlCommand("SELECT ID, categorie from magazijncategorieen", conn);
                 SqlDataReader reader;
@@ -34,11 +34,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
 
                 conn.Close();
 
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Er ging iets fout : \n" + ex);
+                MessageBox.Show("Oeps zomer: \n" + ex);
             }
         }
 
@@ -50,9 +49,9 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
             magazijn_invoer_combobx_subcategorie.Visible = true;
             magazijn_invoer_combobx_subcategorie.Show();
 
-            SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             conn.Open();
-            SqlCommand sc = new SqlCommand("SELECT subcategorie,subcategorie1,subcategorie2,subcategorie3,subcategorie4,subcategorie5,subcategorie6,subcategorie7,subcategorie8,subcategorie9 ,subcategorie10,subcategorie11 FROM magazijncategorieen WHERE ID = " + magazijn_invoer_combobx_categorie.SelectedValue.ToString(), conn);
+            SqlCommand sc = new SqlCommand("SELECT subcategorie ,subcategorie1,subcategorie2,subcategorie3,subcategorie4,subcategorie5,subcategorie6,subcategorie7,subcategorie8,subcategorie9 FROM magazijncategorieen WHERE ID = " + magazijn_invoer_combobx_categorie.SelectedValue.ToString(), conn);
 
             SqlDataReader reader;
 
@@ -69,30 +68,72 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
             dt.Columns.Add("subcategorie7", typeof(string));
             dt.Columns.Add("subcategorie8", typeof(string));
             dt.Columns.Add("subcategorie9", typeof(string));
-            dt.Columns.Add("subcategorie10", typeof(string));
-            dt.Columns.Add("subcategorie11", typeof(string));
+            
+            
 
             dt.Load(reader);
 
             foreach (DataRow row in dt.Rows)
             {
 
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie1"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie2"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie3"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie4"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie5"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie6"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie7"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie8"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie9"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie10"].ToString());
-                magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie11"].ToString());
+                var subcategorie = row["subcategorie"];
+                var subcategorie1 = row["subcategorie1"];
+                var subcategorie2 = row["subcategorie2"];
+                var subcategorie3 = row["subcategorie3"];
+                var subcategorie4 = row["subcategorie4"];
+                var subcategorie5 = row["subcategorie5"];
+                var subcategorie6 = row["subcategorie6"];
+                var subcategorie7 = row["subcategorie7"];
+                var subcategorie8 = row["subcategorie8"];
+                var subcategorie9 = row["subcategorie9"];
+
+                if (subcategorie != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie"].ToString());
+                }
+                if (row["subcategorie1"] != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie1"].ToString());
+                }
+                if (subcategorie2 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie2"].ToString());
+                }
+                if (subcategorie3 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie3"].ToString());
+                }
+                if (subcategorie4 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie4"].ToString());
+                }
+                if (subcategorie5 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie5"].ToString());
+                }
+                if (subcategorie6 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie6"].ToString());
+                }
+                if (subcategorie7 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie7"].ToString());
+                }
+                if (subcategorie8 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie8"].ToString());
+                }
+                if (subcategorie9 != null)
+                {
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie9"].ToString());
+                }
+               
+
             }
             conn.Close();
 
         }
 
+      
     }
 }

@@ -61,14 +61,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView cust_overzicht_dgv1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aanhefDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn voornaamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn achternaamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adresDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefoonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bedrijfDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn afdelingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn opmerkingenDataGridViewTextBoxColumn;
+        
+        
     }
 }
