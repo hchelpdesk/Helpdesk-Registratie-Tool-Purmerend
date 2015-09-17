@@ -151,6 +151,7 @@
             this.cust_add_txtbx_telefoon.Name = "cust_add_txtbx_telefoon";
             this.cust_add_txtbx_telefoon.Size = new System.Drawing.Size(100, 20);
             this.cust_add_txtbx_telefoon.TabIndex = 13;
+            
             // 
             // cust_add_txtbx_bedrijf
             // 
@@ -264,7 +265,6 @@
             this.Name = "cust_add";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Klant toevoegen";
-            this.Load += new System.EventHandler(this.cust_add_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

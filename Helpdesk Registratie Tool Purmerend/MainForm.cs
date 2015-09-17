@@ -21,68 +21,74 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             InitializeComponent();
 
         }
-
+        private Form cust_add;
         private void toevoegenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            cust_add newMDIChild = new cust_add();
-            // Set the Parent Form of the Child window.
-            newMDIChild.MdiParent = this;
-            // Display the new form.
-            newMDIChild.Show();
+            if ((cust_add == null) || (cust_add.IsDisposed))
+            {
+                cust_add = new cust_add();
+                cust_add.MdiParent = this;
+            }
+            cust_add.Show();
         }
-
+        private Form cust_overzicht;
         private void overzichtToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            cust_overzicht NewMDIChild = new cust_overzicht();
-            // set the parent form of the child window
-            NewMDIChild.MdiParent = this;
-            // Display new form
-            NewMDIChild.Show();
+            if ((cust_overzicht == null) || (cust_overzicht.IsDisposed))
+            {
+                cust_overzicht = new cust_overzicht();
+                cust_overzicht.MdiParent = this;
+            }
+            cust_overzicht.Show();
         }
-
+        private Form uitlenen_overzicht;
         private void overzichtToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            uitlenen_overzicht NewMDIChild = new uitlenen_overzicht();
-            NewMDIChild.MdiParent = this;
-            NewMDIChild.Show();
-
+            if ((uitlenen_overzicht == null) || (uitlenen_overzicht.IsDisposed))
+            {
+                uitlenen_overzicht = new uitlenen_overzicht();
+                uitlenen_overzicht.MdiParent = this;
+            }
+            uitlenen_overzicht.Show();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void aF4fsluitenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void overzichtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        private Form cust_import;
         private void importerenCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cust_import NewMDIChild = new cust_import();
-            NewMDIChild.MdiParent = this;
-            NewMDIChild.Show();
+            if ((cust_import == null) || (cust_import.IsDisposed))
+            {
+                cust_import = new cust_import();
+                cust_import.MdiParent = this;
+                cust_import.Focus();
+            }
+            cust_import.Show();
         }
-
+        private Form call_add;
         private void toevoegenToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            call_add NewMDIChild = new call_add();
-            NewMDIChild.MdiParent = this;
-            NewMDIChild.Show();
+            if ((call_add == null) || (call_add.IsDisposed))
+            {
+                call_add = new call_add();
+                call_add.MdiParent = this;
+                call_add.Focus();
+            }
+            call_add.Show();           
         }
-
+        private Form magazijn_invoeren;
         private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            magazijn_invoeren NewMDIChild = new magazijn_invoeren();
-            NewMDIChild.MdiParent = this;
-            NewMDIChild.Show();
+            if ((magazijn_invoeren == null) || (magazijn_invoeren.IsDisposed))
+            {
+                magazijn_invoeren = new magazijn_invoeren();
+                magazijn_invoeren.MdiParent = this;
+                magazijn_invoeren.Focus();
+            }
+            magazijn_invoeren.Show();
+            
         }
     }
 }

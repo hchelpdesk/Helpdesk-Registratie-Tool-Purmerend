@@ -24,46 +24,52 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
 
         private void cust_import_csv_btn_import_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Deze actie laadt alle klanten uit bestand " + cust_import_csv_path.Text);
-            string text = File.ReadAllText(cust_import_txtbox_csv.Text, Encoding.Default);
-            File.WriteAllText(cust_import_txtbox_csv.Text, text, Encoding.Unicode);
-            if (result == DialogResult.OK)
+            if (string.IsNullOrWhiteSpace(cust_import_txtbox_csv.Text))
             {
-                SqlConnection con = new SqlConnection((@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True"));
-                string filepath = cust_import_filedialog1.FileName.ToString();
-                StreamReader sr = new StreamReader(filepath);
-                string line = sr.ReadLine();
-                string[] value = line.Split(',');
-                DataTable dt = new DataTable();
-                DataRow row;
-                foreach (string dc in value)
-                {
-                    dt.Columns.Add(new DataColumn(dc));
-                }
-
-                while (!sr.EndOfStream)
-                {
-                    value = sr.ReadLine().Split(',');
-                    if (value.Length == dt.Columns.Count)
-                    {
-                        row = dt.NewRow();
-                        row.ItemArray = value;
-                        dt.Rows.Add(row);
-                    }
-                }
-                SqlBulkCopy bc = new SqlBulkCopy(con.ConnectionString, SqlBulkCopyOptions.TableLock);
-                bc.DestinationTableName = "klanten";
-                bc.BatchSize = dt.Rows.Count;
-                con.Open();
-                bc.WriteToServer(dt);
-                bc.Close();
-                con.Close();
-                MessageBox.Show("Klanten zijn succesvol geimporteerd in de klanten database.");
+                MessageBox.Show("Geen bestand gekozen. Kies een .CSV bestand en probeer het opnieuw");
             }
-           
+            else
+            {
+                var result = MessageBox.Show("Deze actie laadt alle klanten uit bestand " + cust_import_csv_path.Text);
+                string text = File.ReadAllText(cust_import_txtbox_csv.Text, Encoding.Default);
+                File.WriteAllText(cust_import_txtbox_csv.Text, text, Encoding.Unicode);
+                if (result == DialogResult.OK)
+                {
+                    SqlConnection con = new SqlConnection((@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True"));
+                    string filepath = cust_import_filedialog1.FileName.ToString();
+                    StreamReader sr = new StreamReader(filepath);
+                    string line = sr.ReadLine();
+                    string[] value = line.Split(',');
+                    DataTable dt = new DataTable();
+                    DataRow row;
+                    foreach (string dc in value)
+                    {
+                        dt.Columns.Add(new DataColumn(dc));
+                    }
+
+                    while (!sr.EndOfStream)
+                    {
+                        value = sr.ReadLine().Split(',');
+                        if (value.Length == dt.Columns.Count)
+                        {
+                            row = dt.NewRow();
+                            row.ItemArray = value;
+                            dt.Rows.Add(row);
+                        }
+                    }
+                    SqlBulkCopy bc = new SqlBulkCopy(con.ConnectionString, SqlBulkCopyOptions.TableLock);
+                    bc.DestinationTableName = "klanten";
+                    bc.BatchSize = dt.Rows.Count;
+                    con.Open();
+                    bc.WriteToServer(dt);
+                    bc.Close();
+                    con.Close();
+                    MessageBox.Show("Klanten zijn succesvol geimporteerd in de klanten database.");
+                }
+            }
 
         }
 
-       
+
     }
 }

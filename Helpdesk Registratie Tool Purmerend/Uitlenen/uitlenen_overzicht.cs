@@ -22,7 +22,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
         {
 
             SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             string sql = "SELECT ID, naam, klas, product, ingeleverd, tijddatum, tijddatumingeleverd  FROM uitlenen";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
@@ -45,7 +45,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
         private void ShowData()
         {
             DataSet DS = new DataSet();
-            SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             conn.Open();
             string sql = "SELECT ID, naam, klas, product, ingeleverd, tijddatum, tijddatumingeleverd  FROM uitlenen";
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, conn);
@@ -62,7 +62,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
                 int columnindex = dataGridView1.CurrentCell.ColumnIndex;
                 string value = dataGridView1.Rows[rowindex].Cells[columnindex].Value.ToString();
                 var currenttime = DateTime.Now;
-                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
 
                 // Als er op de knop Teruggebracht word de drukt
                 // Wordt de database geupdatët met datum en tijd

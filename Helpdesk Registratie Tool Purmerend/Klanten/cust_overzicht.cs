@@ -21,7 +21,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
         private void cust_overzicht_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             string sql = "SELECT ID, aanhef, voornaam, achternaam, adres, email, telefoon, bedrijf, afdeling, opmerkingen  FROM klanten";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);

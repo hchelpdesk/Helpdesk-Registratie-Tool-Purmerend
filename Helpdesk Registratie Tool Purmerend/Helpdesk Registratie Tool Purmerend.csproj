@@ -116,6 +116,14 @@
     <Compile Include="Magazijn\magazijn_overzicht.Designer.cs">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
     </Compile>
+    <Compile Include="Magazijn_Subcategorie_DataSet.cs">
+      <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Magazijn_Subcategorie_DataSet.Designer.cs">
+      <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +218,17 @@
     </None>
     <None Include="MagazijnCategorie.xss">
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
+    </None>
+    <None Include="Magazijn_Subcategorie_DataSet.xsc">
+      <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Magazijn_Subcategorie_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazijn_Subcategorie_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazijn_Subcategorie_DataSet.xss">
+      <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

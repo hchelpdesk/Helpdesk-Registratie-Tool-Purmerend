@@ -135,7 +135,6 @@
             this.overzichtToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
             this.overzichtToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.overzichtToolStripMenuItem.Text = "Overzicht";
-            this.overzichtToolStripMenuItem.Click += new System.EventHandler(this.overzichtToolStripMenuItem_Click);
             // 
             // toevoegenToolStripMenuItem1
             // 
@@ -227,7 +226,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Helpdesk Registratie Tool Purmerend";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.mainform_menustrip1.ResumeLayout(false);
             this.mainform_menustrip1.PerformLayout();
             this.ResumeLayout(false);

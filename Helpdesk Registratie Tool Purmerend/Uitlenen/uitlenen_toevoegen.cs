@@ -17,7 +17,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
 
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM deelnemersICT", conn);
                 da.Fill(ds, "uitlenen_toevoegen_fullname");
@@ -50,7 +50,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
         {
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
 
                 string sql = "INSERT INTO uitlenen (naam, klas, product, ingeleverd, tijddatum) values (@uitlenen_toevoegen_fullname, @klas_lbl, @uitlenen_toevoegen_product_txtbox, @uitlenen_toevoegen_ingeleverd,@tijddatum)";
                 conn.Open();

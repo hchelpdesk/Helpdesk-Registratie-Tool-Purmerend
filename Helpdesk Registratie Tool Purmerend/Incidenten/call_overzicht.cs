@@ -21,7 +21,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
        private void call_overzicht_Load(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             string sql = "SELECT ID, naam, klas, product, ingeleverd, tijddatum, tijddatumingeleverd  FROM uitlenen";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);

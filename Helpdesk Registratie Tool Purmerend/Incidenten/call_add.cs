@@ -43,7 +43,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             call_add_grpbox_customerdetails.Show();
 
             SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=HELPDESK-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             string sql = "SELECT * FROM klanten";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
