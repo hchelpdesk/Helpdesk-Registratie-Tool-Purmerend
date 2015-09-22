@@ -47,6 +47,9 @@
             this.callsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mSSQLBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listbox1 = new System.Windows.Forms.ListBox();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +61,8 @@
             this.magazijnToolStripMenuItem,
             this.uitlenenToolStripMenuItem,
             this.notitiesToolStripMenuItem,
-            this.callsToolStripMenuItem});
+            this.callsToolStripMenuItem,
+            this.backupsToolStripMenuItem});
             this.mainform_menustrip1.Location = new System.Drawing.Point(0, 0);
             this.mainform_menustrip1.Name = "mainform_menustrip1";
             this.mainform_menustrip1.Size = new System.Drawing.Size(811, 24);
@@ -211,6 +215,32 @@
             this.toevoegenToolStripMenuItem2.Text = "Toevoegen";
             this.toevoegenToolStripMenuItem2.Click += new System.EventHandler(this.toevoegenToolStripMenuItem2_Click);
             // 
+            // backupsToolStripMenuItem
+            // 
+            this.backupsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mSSQLBackupToolStripMenuItem});
+            this.backupsToolStripMenuItem.Name = "backupsToolStripMenuItem";
+            this.backupsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.backupsToolStripMenuItem.Text = "Back-ups";
+            // 
+            // mSSQLBackupToolStripMenuItem
+            // 
+            this.mSSQLBackupToolStripMenuItem.Name = "mSSQLBackupToolStripMenuItem";
+            this.mSSQLBackupToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
+            this.mSSQLBackupToolStripMenuItem.Click += new System.EventHandler(this.mSSQLBackupToolStripMenuItem_Click);
+            // 
+            // listbox1
+            // 
+            this.listbox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listbox1.FormattingEnabled = true;
+            this.listbox1.Location = new System.Drawing.Point(531, 24);
+            this.listbox1.Name = "listbox1";
+            this.listbox1.Size = new System.Drawing.Size(280, 624);
+            this.listbox1.Sorted = true;
+            this.listbox1.TabIndex = 5;
+            this.listbox1.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +248,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(811, 648);
+            this.Controls.Add(this.listbox1);
             this.Controls.Add(this.mainform_menustrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -226,6 +257,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Helpdesk Registratie Tool Purmerend";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.mainform_menustrip1.ResumeLayout(false);
             this.mainform_menustrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -253,6 +285,9 @@
         private System.Windows.Forms.ToolStripMenuItem callsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem overzichtToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem2;
+        private System.Windows.Forms.ListBox listbox1;
+        private System.Windows.Forms.ToolStripMenuItem backupsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mSSQLBackupToolStripMenuItem;
     }
 }
 

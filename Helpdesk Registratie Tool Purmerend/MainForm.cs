@@ -9,8 +9,10 @@ using Helpdesk_Registratie_Tool_Purmerend.Incidenten;
 using Helpdesk_Registratie_Tool_Purmerend.Klanten;
 using Helpdesk_Registratie_Tool_Purmerend.Magazijn;
 using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
+using Helpdesk_Registratie_Tool_Purmerend.Backups;
 using System;
 using System.Windows.Forms;
+
 
 namespace Helpdesk_Registratie_Tool_Purmerend
 {
@@ -76,7 +78,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 call_add.MdiParent = this;
                 call_add.Focus();
             }
-            call_add.Show();           
+            call_add.Show();
         }
         private Form magazijn_invoeren;
         private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -88,8 +90,27 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 magazijn_invoeren.Focus();
             }
             magazijn_invoeren.Show();
-            
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+        }
+        private Form sqlbackup;
+        private void mSSQLBackupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((sqlbackup == null) || (sqlbackup.IsDisposed))
+            {
+                sqlbackup = new sqlbackup();
+                sqlbackup.MdiParent = this;
+                sqlbackup.Focus();
+            }
+            sqlbackup.Show();
+
         }
     }
+
 }
+
+
 
