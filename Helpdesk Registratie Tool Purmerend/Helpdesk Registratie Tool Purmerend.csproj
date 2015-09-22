@@ -83,6 +83,12 @@
     <Compile Include="Backups\sqlbackup.Designer.cs">
       <DependentUpon>sqlbackup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Beheer\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Incidenten\call_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </Compile>
     <EmbeddedResource Include="Backups\sqlbackup.resx">
       <DependentUpon>sqlbackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Incidenten\call_add.resx">
       <DependentUpon>call_add.cs</DependentUpon>

@@ -50,6 +50,8 @@
             this.backupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mSSQLBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listbox1 = new System.Windows.Forms.ListBox();
+            this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inloggenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +64,8 @@
             this.uitlenenToolStripMenuItem,
             this.notitiesToolStripMenuItem,
             this.callsToolStripMenuItem,
-            this.backupsToolStripMenuItem});
+            this.backupsToolStripMenuItem,
+            this.beheerToolStripMenuItem});
             this.mainform_menustrip1.Location = new System.Drawing.Point(0, 0);
             this.mainform_menustrip1.Name = "mainform_menustrip1";
             this.mainform_menustrip1.Size = new System.Drawing.Size(811, 24);
@@ -244,6 +247,20 @@
             this.listbox1.TabIndex = 5;
             this.listbox1.Visible = false;
             // 
+            // beheerToolStripMenuItem
+            // 
+            this.beheerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inloggenToolStripMenuItem});
+            this.beheerToolStripMenuItem.Name = "beheerToolStripMenuItem";
+            this.beheerToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.beheerToolStripMenuItem.Text = "Beheer";
+            // 
+            // inloggenToolStripMenuItem
+            // 
+            this.inloggenToolStripMenuItem.Name = "inloggenToolStripMenuItem";
+            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inloggenToolStripMenuItem.Text = "Inloggen";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,6 +308,8 @@
         private System.Windows.Forms.ToolStripMenuItem backupsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mSSQLBackupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importerenUitCSVToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem beheerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inloggenToolStripMenuItem;
     }
 }
 
