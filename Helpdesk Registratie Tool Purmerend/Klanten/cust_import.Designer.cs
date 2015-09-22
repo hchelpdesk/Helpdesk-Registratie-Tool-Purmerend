@@ -35,6 +35,7 @@
             this.cust_import_filedialog1 = new System.Windows.Forms.OpenFileDialog();
             this.cust_import_csv_path = new System.Windows.Forms.Label();
             this.cust_import_csv_btn_import = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // cust_import_lbl_pickfile
@@ -86,11 +87,22 @@
             this.cust_import_csv_btn_import.UseVisualStyleBackColor = true;
             this.cust_import_csv_btn_import.Click += new System.EventHandler(this.cust_import_csv_btn_import_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(13, 102);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(101, 13);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "View CSV Template";
+            // 
             // cust_import
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 106);
+            this.ClientSize = new System.Drawing.Size(341, 127);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cust_import_csv_btn_import);
             this.Controls.Add(this.cust_import_csv_path);
             this.Controls.Add(this.cust_import_btn_csv_browse);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.OpenFileDialog cust_import_filedialog1;
         private System.Windows.Forms.Label cust_import_csv_path;
         private System.Windows.Forms.Button cust_import_csv_btn_import;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

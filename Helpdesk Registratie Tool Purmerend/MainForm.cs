@@ -12,7 +12,7 @@ using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using Helpdesk_Registratie_Tool_Purmerend.Backups;
 using System;
 using System.Windows.Forms;
-
+using System.Drawing;
 
 namespace Helpdesk_Registratie_Tool_Purmerend
 {
@@ -61,13 +61,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
         private Form cust_import;
         private void importerenCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if ((cust_import == null) || (cust_import.IsDisposed))
-            {
-                cust_import = new cust_import();
-                cust_import.MdiParent = this;
-                cust_import.Focus();
-            }
-            cust_import.Show();
+
         }
         private Form call_add;
         private void toevoegenToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -95,6 +89,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            if ((cust_add == null) || (cust_add.IsDisposed))
+            {
+                cust_add = new cust_add();
+                cust_add.MdiParent = this;
+            }
+            cust_add.Show();
+            if ((cust_overzicht == null) || (cust_overzicht.IsDisposed))
+            {
+                cust_overzicht = new cust_overzicht();
+                cust_overzicht.MdiParent = this;
+            }
+            cust_overzicht.Location = new Point(0, 400);
+            cust_overzicht.Show();
         }
         private Form sqlbackup;
         private void mSSQLBackupToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +114,17 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             }
             sqlbackup.Show();
 
+        }
+
+        private void importerenUitCSVToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if ((cust_import == null) || (cust_import.IsDisposed))
+            {
+                cust_import = new cust_import();
+                cust_import.MdiParent = this;
+                cust_import.Focus();
+            }
+            cust_import.Show();
         }
     }
 

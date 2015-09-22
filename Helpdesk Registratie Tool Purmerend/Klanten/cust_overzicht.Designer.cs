@@ -35,22 +35,31 @@
             // 
             // cust_overzicht_dgv1
             // 
+            this.cust_overzicht_dgv1.AllowUserToAddRows = false;
             this.cust_overzicht_dgv1.AllowUserToDeleteRows = false;
+            this.cust_overzicht_dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.cust_overzicht_dgv1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.cust_overzicht_dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(13, 13);
+            this.cust_overzicht_dgv1.ColumnHeadersVisible = false;
+            this.cust_overzicht_dgv1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cust_overzicht_dgv1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
+            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(0, 29);
+            this.cust_overzicht_dgv1.MultiSelect = false;
             this.cust_overzicht_dgv1.Name = "cust_overzicht_dgv1";
             this.cust_overzicht_dgv1.ReadOnly = true;
-            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(946, 196);
+            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(888, 196);
             this.cust_overzicht_dgv1.TabIndex = 0;
             // 
             // cust_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 453);
+            this.ClientSize = new System.Drawing.Size(888, 225);
             this.Controls.Add(this.cust_overzicht_dgv1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "cust_overzicht";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Klanten Overzicht";
             this.Load += new System.EventHandler(this.cust_overzicht_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cust_overzicht_dgv1)).EndInit();

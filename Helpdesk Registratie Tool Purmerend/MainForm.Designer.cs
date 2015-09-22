@@ -33,9 +33,9 @@
             this.bestandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aF4fsluitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.klantenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.importerenCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importerenUitCSVToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.magazijnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,37 +89,37 @@
             // klantenToolStripMenuItem
             // 
             this.klantenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toevoegenToolStripMenuItem,
             this.overzichtToolStripMenuItem1,
-            this.importerenCSVToolStripMenuItem});
+            this.toevoegenToolStripMenuItem,
+            this.importerenUitCSVToolStripMenuItem1});
             this.klantenToolStripMenuItem.Name = "klantenToolStripMenuItem";
             this.klantenToolStripMenuItem.ShortcutKeyDisplayString = "F2";
             this.klantenToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
             this.klantenToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.klantenToolStripMenuItem.Text = "Klanten";
             // 
+            // overzichtToolStripMenuItem1
+            // 
+            this.overzichtToolStripMenuItem1.Name = "overzichtToolStripMenuItem1";
+            this.overzichtToolStripMenuItem1.Size = new System.Drawing.Size(174, 22);
+            this.overzichtToolStripMenuItem1.Text = "O&verzicht";
+            this.overzichtToolStripMenuItem1.Click += new System.EventHandler(this.overzichtToolStripMenuItem1_Click);
+            // 
             // toevoegenToolStripMenuItem
             // 
             this.toevoegenToolStripMenuItem.Name = "toevoegenToolStripMenuItem";
             this.toevoegenToolStripMenuItem.ShortcutKeyDisplayString = "F2";
             this.toevoegenToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.toevoegenToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.toevoegenToolStripMenuItem.Text = "&Toevoegen";
             this.toevoegenToolStripMenuItem.Click += new System.EventHandler(this.toevoegenToolStripMenuItem_Click);
             // 
-            // overzichtToolStripMenuItem1
+            // importerenUitCSVToolStripMenuItem1
             // 
-            this.overzichtToolStripMenuItem1.Name = "overzichtToolStripMenuItem1";
-            this.overzichtToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
-            this.overzichtToolStripMenuItem1.Text = "O&verzicht";
-            this.overzichtToolStripMenuItem1.Click += new System.EventHandler(this.overzichtToolStripMenuItem1_Click);
-            // 
-            // importerenCSVToolStripMenuItem
-            // 
-            this.importerenCSVToolStripMenuItem.Name = "importerenCSVToolStripMenuItem";
-            this.importerenCSVToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.importerenCSVToolStripMenuItem.Text = "Importeren CSV";
-            this.importerenCSVToolStripMenuItem.Click += new System.EventHandler(this.importerenCSVToolStripMenuItem_Click);
+            this.importerenUitCSVToolStripMenuItem1.Name = "importerenUitCSVToolStripMenuItem1";
+            this.importerenUitCSVToolStripMenuItem1.Size = new System.Drawing.Size(174, 22);
+            this.importerenUitCSVToolStripMenuItem1.Text = "Importeren uit CSV";
+            this.importerenUitCSVToolStripMenuItem1.Click += new System.EventHandler(this.importerenUitCSVToolStripMenuItem1_Click);
             // 
             // magazijnToolStripMenuItem
             // 
@@ -225,6 +225,9 @@
             // 
             // mSSQLBackupToolStripMenuItem
             // 
+            this.mSSQLBackupToolStripMenuItem.Checked = true;
+            this.mSSQLBackupToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mSSQLBackupToolStripMenuItem.Enabled = false;
             this.mSSQLBackupToolStripMenuItem.Name = "mSSQLBackupToolStripMenuItem";
             this.mSSQLBackupToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
@@ -281,13 +284,13 @@
         private System.Windows.Forms.ToolStripMenuItem notitiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem algemeenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medewerkersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importerenCSVToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem callsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem overzichtToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem2;
         private System.Windows.Forms.ListBox listbox1;
         private System.Windows.Forms.ToolStripMenuItem backupsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mSSQLBackupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importerenUitCSVToolStripMenuItem1;
     }
 }
 

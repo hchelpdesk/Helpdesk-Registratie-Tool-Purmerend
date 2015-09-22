@@ -16,10 +16,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
 
         private void cust_import_btn_csv_browse_Click(object sender, EventArgs e)
         {
-            cust_import_filedialog1.Filter = "CSV files (*.csv) | *.csv| Text Files (*.txt) | *.txt";
-            cust_import_filedialog1.ShowDialog();
-            cust_import_txtbox_csv.Text = Path.GetFullPath(cust_import_filedialog1.FileName.ToString());
-            cust_import_csv_path.Text = Path.GetFileName(cust_import_filedialog1.FileName);
+
+            cust_import_filedialog1.Filter = "Text File (*.txt) | *.txt| CSV files (*.csv) | *.csv";
+            //cust_import_filedialog1.ShowDialog();
+            if (cust_import_filedialog1.ShowDialog() == DialogResult.Cancel)
+            {
+                Close();
+            }
+            
+            else
+            {
+                cust_import_txtbox_csv.Text = Path.GetFullPath(cust_import_filedialog1.FileName.ToString());
+                cust_import_csv_path.Text = Path.GetFileName(cust_import_filedialog1.FileName);
+            }
         }
 
         private void cust_import_csv_btn_import_Click(object sender, EventArgs e)
@@ -32,7 +41,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
             {
                 var result = MessageBox.Show("Deze actie laadt alle klanten uit bestand " + cust_import_csv_path.Text);
                 string text = File.ReadAllText(cust_import_txtbox_csv.Text, Encoding.Default);
-                File.WriteAllText(cust_import_txtbox_csv.Text, text, Encoding.Unicode);
+                File.WriteAllText(cust_import_txtbox_csv.Text, text, Encoding.BigEndianUnicode);
                 if (result == DialogResult.OK)
                 {
                     SqlConnection con = new SqlConnection((@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True"));
@@ -70,6 +79,9 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
