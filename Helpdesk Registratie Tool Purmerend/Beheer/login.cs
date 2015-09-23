@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
+using System.Data.SqlClient;
 
 namespace Helpdesk_Registratie_Tool_Purmerend.Beheer
 {
@@ -31,29 +32,40 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Beheer
 
         private void beheer_login_btn_login_Click(object sender, EventArgs e)
         {
-            //Locals to hold values
-            string emailadres = beheer_login_txtbox_username.Text;
-            string password = beheer_login_txtbox_password.Text;
-
-
-            //Loop through database
-            foreach (DataRow row in LoginDataSet.werknemersDataTable)
+            if (username.Text != "" & password.Text != "")
             {
-                //And search for Username and Pass that match
-                if (row.ItemArray[0].Equals(emailadres) && row.ItemArray[1].Equals(password))
+
+                string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+                string queryText = @"SELECT Count(*) FROM werknemers WHERE emailadres = @username AND password = @password";
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(queryText, conn))
                 {
-                    beheer_login_txtbox_username.Text = String.Empty;
-                    beheer_login_txtbox_password.Text = String.Empty;
-                    MessageBox.Show("Login Success");
-                    break;
-                }
-                //If not, then show this message.
-                else
-                {
-                    MessageBox.Show("Username/Password incorrect");
-                    break;
+                    conn.Open();
+                    cmd.Parameters.AddWithValue("@username", username.Text);
+                    cmd.Parameters.AddWithValue("@password", password.Text);
+                    // ExecuteScalar, geeft alleen de row (rij) terug die overeenkomt met de query.
+                    int result = (int)cmd.ExecuteScalar();
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Logged In!");
+                        
+                        if (result > 0)
+                        {
+                            checkBox1.Visible = true;
+                            checkBox1.Show();
+                        }
+                    }
+
+                    else
+                        MessageBox.Show("User Not Found!");
                 }
             }
         }
+
+        private void beheer_login_form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

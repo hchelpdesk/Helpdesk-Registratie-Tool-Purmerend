@@ -30,13 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(beheer_login_form));
             this.beheer_login_lbl_username = new System.Windows.Forms.Label();
-            this.beheer_login_txtbox_username = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
             this.beheer_login_lbl_password = new System.Windows.Forms.Label();
-            this.beheer_login_txtbox_password = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.beheer_login_btn_login = new System.Windows.Forms.Button();
             this.beheer_login_lbl_pwvergeten = new System.Windows.Forms.LinkLabel();
             this.beheer_login_lbl_gebruikersnaam = new System.Windows.Forms.LinkLabel();
             this.beheer_login_lbl_wachtwoord = new System.Windows.Forms.LinkLabel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // beheer_login_lbl_username
@@ -49,12 +50,12 @@
             this.beheer_login_lbl_username.TabIndex = 0;
             this.beheer_login_lbl_username.Text = "Gebruikersnaam";
             // 
-            // beheer_login_txtbox_username
+            // username
             // 
-            this.beheer_login_txtbox_username.Location = new System.Drawing.Point(16, 30);
-            this.beheer_login_txtbox_username.Name = "beheer_login_txtbox_username";
-            this.beheer_login_txtbox_username.Size = new System.Drawing.Size(182, 20);
-            this.beheer_login_txtbox_username.TabIndex = 1;
+            this.username.Location = new System.Drawing.Point(16, 30);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(182, 20);
+            this.username.TabIndex = 1;
             // 
             // beheer_login_lbl_password
             // 
@@ -66,13 +67,13 @@
             this.beheer_login_lbl_password.TabIndex = 2;
             this.beheer_login_lbl_password.Text = "Wachtwoord";
             // 
-            // beheer_login_txtbox_password
+            // password
             // 
-            this.beheer_login_txtbox_password.Location = new System.Drawing.Point(16, 74);
-            this.beheer_login_txtbox_password.Name = "beheer_login_txtbox_password";
-            this.beheer_login_txtbox_password.PasswordChar = '¿';
-            this.beheer_login_txtbox_password.Size = new System.Drawing.Size(179, 20);
-            this.beheer_login_txtbox_password.TabIndex = 3;
+            this.password.Location = new System.Drawing.Point(16, 74);
+            this.password.Name = "password";
+            this.password.PasswordChar = '¿';
+            this.password.Size = new System.Drawing.Size(179, 20);
+            this.password.TabIndex = 3;
             // 
             // beheer_login_btn_login
             // 
@@ -116,22 +117,35 @@
             this.beheer_login_lbl_wachtwoord.Text = "?";
             this.beheer_login_lbl_wachtwoord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.beheer_login_lbl_wachtwoord_LinkClicked);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(204, 123);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
+            // 
             // beheer_login_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 145);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.beheer_login_lbl_wachtwoord);
             this.Controls.Add(this.beheer_login_lbl_gebruikersnaam);
             this.Controls.Add(this.beheer_login_lbl_pwvergeten);
             this.Controls.Add(this.beheer_login_btn_login);
-            this.Controls.Add(this.beheer_login_txtbox_password);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.beheer_login_lbl_password);
-            this.Controls.Add(this.beheer_login_txtbox_username);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.beheer_login_lbl_username);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "beheer_login_form";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.beheer_login_form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,12 +154,13 @@
         #endregion
 
         private System.Windows.Forms.Label beheer_login_lbl_username;
-        private System.Windows.Forms.TextBox beheer_login_txtbox_username;
+        private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.Label beheer_login_lbl_password;
-        private System.Windows.Forms.TextBox beheer_login_txtbox_password;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button beheer_login_btn_login;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_pwvergeten;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_gebruikersnaam;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_wachtwoord;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
