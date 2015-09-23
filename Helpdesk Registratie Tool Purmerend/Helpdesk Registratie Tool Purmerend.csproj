@@ -113,6 +113,11 @@
     <Compile Include="Klanten\cust_overzicht.Designer.cs">
       <DependentUpon>cust_overzicht.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MagazijnCategorie.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -247,6 +252,17 @@
     <EmbeddedResource Include="Uitlenen\uitlenen_toevoegen.resx">
       <DependentUpon>uitlenen_toevoegen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LoginDataSet.xsc">
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDataSet.xss">
+      <DependentUpon>LoginDataSet.xsd</DependentUpon>
+    </None>
     <None Include="MagazijnCategorie.xsc">
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
     </None>

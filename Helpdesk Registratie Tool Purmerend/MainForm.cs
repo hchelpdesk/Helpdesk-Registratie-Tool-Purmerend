@@ -10,6 +10,7 @@ using Helpdesk_Registratie_Tool_Purmerend.Klanten;
 using Helpdesk_Registratie_Tool_Purmerend.Magazijn;
 using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using Helpdesk_Registratie_Tool_Purmerend.Backups;
+using Helpdesk_Registratie_Tool_Purmerend.Beheer;
 using System;
 using System.Windows.Forms;
 using System.Drawing;
@@ -125,6 +126,17 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_import.Focus();
             }
             cust_import.Show();
+        }
+        private Form beheer_inlog_form;
+        private void inloggenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((beheer_inlog_form == null) || (beheer_inlog_form.IsDisposed))
+            {
+                beheer_inlog_form = new beheer_login_form();
+                beheer_inlog_form.MdiParent = this;
+                Focus();
+            }
+            beheer_inlog_form.Show();
         }
     }
 

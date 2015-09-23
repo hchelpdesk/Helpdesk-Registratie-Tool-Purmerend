@@ -35,15 +35,17 @@
             this.beheer_login_txtbox_password = new System.Windows.Forms.TextBox();
             this.beheer_login_btn_login = new System.Windows.Forms.Button();
             this.beheer_login_lbl_pwvergeten = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.beheer_login_lbl_gebruikersnaam = new System.Windows.Forms.LinkLabel();
+            this.beheer_login_lbl_wachtwoord = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // beheer_login_lbl_username
             // 
             this.beheer_login_lbl_username.AutoSize = true;
+            this.beheer_login_lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beheer_login_lbl_username.Location = new System.Drawing.Point(13, 13);
             this.beheer_login_lbl_username.Name = "beheer_login_lbl_username";
-            this.beheer_login_lbl_username.Size = new System.Drawing.Size(84, 13);
+            this.beheer_login_lbl_username.Size = new System.Drawing.Size(98, 13);
             this.beheer_login_lbl_username.TabIndex = 0;
             this.beheer_login_lbl_username.Text = "Gebruikersnaam";
             // 
@@ -57,15 +59,16 @@
             // beheer_login_lbl_password
             // 
             this.beheer_login_lbl_password.AutoSize = true;
-            this.beheer_login_lbl_password.Location = new System.Drawing.Point(16, 57);
+            this.beheer_login_lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.beheer_login_lbl_password.Location = new System.Drawing.Point(13, 58);
             this.beheer_login_lbl_password.Name = "beheer_login_lbl_password";
-            this.beheer_login_lbl_password.Size = new System.Drawing.Size(68, 13);
+            this.beheer_login_lbl_password.Size = new System.Drawing.Size(78, 13);
             this.beheer_login_lbl_password.TabIndex = 2;
             this.beheer_login_lbl_password.Text = "Wachtwoord";
             // 
             // beheer_login_txtbox_password
             // 
-            this.beheer_login_txtbox_password.Location = new System.Drawing.Point(19, 74);
+            this.beheer_login_txtbox_password.Location = new System.Drawing.Point(16, 74);
             this.beheer_login_txtbox_password.Name = "beheer_login_txtbox_password";
             this.beheer_login_txtbox_password.PasswordChar = '¿';
             this.beheer_login_txtbox_password.Size = new System.Drawing.Size(179, 20);
@@ -79,34 +82,47 @@
             this.beheer_login_btn_login.TabIndex = 4;
             this.beheer_login_btn_login.Text = "Inloggen";
             this.beheer_login_btn_login.UseVisualStyleBackColor = true;
+            this.beheer_login_btn_login.Click += new System.EventHandler(this.beheer_login_btn_login_Click);
             // 
             // beheer_login_lbl_pwvergeten
             // 
             this.beheer_login_lbl_pwvergeten.AutoSize = true;
-            this.beheer_login_lbl_pwvergeten.Location = new System.Drawing.Point(19, 109);
+            this.beheer_login_lbl_pwvergeten.Location = new System.Drawing.Point(12, 123);
             this.beheer_login_lbl_pwvergeten.Name = "beheer_login_lbl_pwvergeten";
-            this.beheer_login_lbl_pwvergeten.Size = new System.Drawing.Size(99, 13);
+            this.beheer_login_lbl_pwvergeten.Size = new System.Drawing.Size(114, 13);
             this.beheer_login_lbl_pwvergeten.TabIndex = 5;
             this.beheer_login_lbl_pwvergeten.TabStop = true;
-            this.beheer_login_lbl_pwvergeten.Text = "Password Vergeten";
+            this.beheer_login_lbl_pwvergeten.Text = "Wachtwoord Vergeten";
             // 
-            // linkLabel1
+            // beheer_login_lbl_gebruikersnaam
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(204, 33);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(13, 13);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "?";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.beheer_login_lbl_gebruikersnaam.AutoSize = true;
+            this.beheer_login_lbl_gebruikersnaam.Location = new System.Drawing.Point(201, 32);
+            this.beheer_login_lbl_gebruikersnaam.Name = "beheer_login_lbl_gebruikersnaam";
+            this.beheer_login_lbl_gebruikersnaam.Size = new System.Drawing.Size(13, 13);
+            this.beheer_login_lbl_gebruikersnaam.TabIndex = 6;
+            this.beheer_login_lbl_gebruikersnaam.TabStop = true;
+            this.beheer_login_lbl_gebruikersnaam.Text = "?";
+            this.beheer_login_lbl_gebruikersnaam.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // beheer_login_lbl_wachtwoord
+            // 
+            this.beheer_login_lbl_wachtwoord.AutoSize = true;
+            this.beheer_login_lbl_wachtwoord.Location = new System.Drawing.Point(201, 77);
+            this.beheer_login_lbl_wachtwoord.Name = "beheer_login_lbl_wachtwoord";
+            this.beheer_login_lbl_wachtwoord.Size = new System.Drawing.Size(13, 13);
+            this.beheer_login_lbl_wachtwoord.TabIndex = 7;
+            this.beheer_login_lbl_wachtwoord.TabStop = true;
+            this.beheer_login_lbl_wachtwoord.Text = "?";
+            this.beheer_login_lbl_wachtwoord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.beheer_login_lbl_wachtwoord_LinkClicked);
             // 
             // beheer_login_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 145);
-            this.Controls.Add(this.linkLabel1);
+            this.ClientSize = new System.Drawing.Size(227, 145);
+            this.Controls.Add(this.beheer_login_lbl_wachtwoord);
+            this.Controls.Add(this.beheer_login_lbl_gebruikersnaam);
             this.Controls.Add(this.beheer_login_lbl_pwvergeten);
             this.Controls.Add(this.beheer_login_btn_login);
             this.Controls.Add(this.beheer_login_txtbox_password);
@@ -129,6 +145,7 @@
         private System.Windows.Forms.TextBox beheer_login_txtbox_password;
         private System.Windows.Forms.Button beheer_login_btn_login;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_pwvergeten;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel beheer_login_lbl_gebruikersnaam;
+        private System.Windows.Forms.LinkLabel beheer_login_lbl_wachtwoord;
     }
 }

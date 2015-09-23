@@ -36,7 +36,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
 
             }
             catch (Exception ex)
-            {
+            {   // S.W.R = Something Went Wrong.
                 MessageBox.Show("Oops S.W.R.: \n" + ex);
             }
             try

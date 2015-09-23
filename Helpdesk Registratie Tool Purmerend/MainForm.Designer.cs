@@ -49,9 +49,9 @@
             this.toevoegenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.backupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mSSQLBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listbox1 = new System.Windows.Forms.ListBox();
             this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inloggenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listbox1 = new System.Windows.Forms.ListBox();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -236,17 +236,6 @@
             this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
             this.mSSQLBackupToolStripMenuItem.Click += new System.EventHandler(this.mSSQLBackupToolStripMenuItem_Click);
             // 
-            // listbox1
-            // 
-            this.listbox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listbox1.FormattingEnabled = true;
-            this.listbox1.Location = new System.Drawing.Point(531, 24);
-            this.listbox1.Name = "listbox1";
-            this.listbox1.Size = new System.Drawing.Size(280, 624);
-            this.listbox1.Sorted = true;
-            this.listbox1.TabIndex = 5;
-            this.listbox1.Visible = false;
-            // 
             // beheerToolStripMenuItem
             // 
             this.beheerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -260,6 +249,18 @@
             this.inloggenToolStripMenuItem.Name = "inloggenToolStripMenuItem";
             this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inloggenToolStripMenuItem.Text = "Inloggen";
+            this.inloggenToolStripMenuItem.Click += new System.EventHandler(this.inloggenToolStripMenuItem_Click);
+            // 
+            // listbox1
+            // 
+            this.listbox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listbox1.FormattingEnabled = true;
+            this.listbox1.Location = new System.Drawing.Point(531, 24);
+            this.listbox1.Name = "listbox1";
+            this.listbox1.Size = new System.Drawing.Size(280, 624);
+            this.listbox1.Sorted = true;
+            this.listbox1.TabIndex = 5;
+            this.listbox1.Visible = false;
             // 
             // MainForm
             // 
