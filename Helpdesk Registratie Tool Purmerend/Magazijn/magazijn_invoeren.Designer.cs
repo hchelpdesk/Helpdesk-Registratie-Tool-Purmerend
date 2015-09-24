@@ -30,7 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magazijn_invoeren));
             this.magazijn_invoer_grpbox_productinvoer = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.magazijn_invoer_txtbox_socket_opslagcapaciteit = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.magazijn_invoer_txtbox_socket = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.magazijn_invoer_txtbox_moboconnector = new System.Windows.Forms.TextBox();
@@ -54,22 +64,16 @@
             this.magazijn_invoer_combobx_subcategorie = new System.Windows.Forms.ComboBox();
             this.magazijn_invoer_combobx_categorie = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.magazijn_invoer_txtbox_socket_opslagcapaciteit = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
             this.magazijn_invoer_grpbox_productinvoer.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // magazijn_invoer_grpbox_productinvoer
             // 
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label10);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.dateTimePicker1);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.button3);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.button2);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.button1);
@@ -101,10 +105,77 @@
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label1);
             this.magazijn_invoer_grpbox_productinvoer.Location = new System.Drawing.Point(13, 13);
             this.magazijn_invoer_grpbox_productinvoer.Name = "magazijn_invoer_grpbox_productinvoer";
-            this.magazijn_invoer_grpbox_productinvoer.Size = new System.Drawing.Size(457, 374);
+            this.magazijn_invoer_grpbox_productinvoer.Size = new System.Drawing.Size(466, 374);
             this.magazijn_invoer_grpbox_productinvoer.TabIndex = 0;
             this.magazijn_invoer_grpbox_productinvoer.TabStop = false;
             this.magazijn_invoer_grpbox_productinvoer.Text = "Product Invoeren";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 344);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Annuleren";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(82, 345);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Clear All";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(376, 345);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Toevoegen";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_txtbox_socket_opslagcapaciteit
+            // 
+            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Location = new System.Drawing.Point(303, 142);
+            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Name = "magazijn_invoer_txtbox_socket_opslagcapaciteit";
+            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Size = new System.Drawing.Size(138, 20);
+            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(299, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 13);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Opslag Capaciteit";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.checkBox4);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Location = new System.Drawing.Point(7, 259);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(258, 66);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Specifieke Aansluitingen";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(96, 43);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(74, 17);
+            this.checkBox5.TabIndex = 28;
+            this.checkBox5.Text = "4PIN ATX";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -115,6 +186,36 @@
             this.checkBox1.TabIndex = 24;
             this.checkBox1.Text = "S-ata";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 42);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(83, 17);
+            this.checkBox4.TabIndex = 27;
+            this.checkBox4.Text = "6PIN PCI-E ";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(96, 19);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(54, 17);
+            this.checkBox2.TabIndex = 25;
+            this.checkBox2.Text = "Molex";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(169, 19);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(84, 17);
+            this.checkBox3.TabIndex = 26;
+            this.checkBox3.Text = "IDE (P-ATA)";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // magazijn_invoer_txtbox_socket
             // 
@@ -144,9 +245,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(296, 169);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 13);
+            this.label8.Size = new System.Drawing.Size(116, 13);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Mobo Connector";
+            this.label8.Text = "Moederbord Connector";
             // 
             // magazijn_invoer_txtbox_watt
             // 
@@ -160,12 +261,13 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(153, 169);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.Size = new System.Drawing.Size(70, 13);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Watt";
+            this.label7.Text = "PSU wattage";
             // 
             // magazijn_invoeren_combobx_geheugentype
             // 
+            this.magazijn_invoeren_combobx_geheugentype.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.magazijn_invoeren_combobx_geheugentype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoeren_combobx_geheugentype.FormattingEnabled = true;
             this.magazijn_invoeren_combobx_geheugentype.Location = new System.Drawing.Point(6, 223);
@@ -184,7 +286,7 @@
             // 
             // magazijn_invoer_txtbox_geheugen
             // 
-            this.magazijn_invoer_txtbox_geheugen.Location = new System.Drawing.Point(301, 142);
+            this.magazijn_invoer_txtbox_geheugen.Location = new System.Drawing.Point(152, 223);
             this.magazijn_invoer_txtbox_geheugen.Name = "magazijn_invoer_txtbox_geheugen";
             this.magazijn_invoer_txtbox_geheugen.Size = new System.Drawing.Size(138, 20);
             this.magazijn_invoer_txtbox_geheugen.TabIndex = 15;
@@ -192,7 +294,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(297, 126);
+            this.label5.Location = new System.Drawing.Point(148, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 14;
@@ -204,7 +306,6 @@
             this.magazijn_invoer_txtbox_rpm.Name = "magazijn_invoer_txtbox_rpm";
             this.magazijn_invoer_txtbox_rpm.Size = new System.Drawing.Size(138, 20);
             this.magazijn_invoer_txtbox_rpm.TabIndex = 13;
-            
             // 
             // label4
             // 
@@ -282,6 +383,7 @@
             // 
             // magazijn_invoer_combobx_subcategorie
             // 
+            this.magazijn_invoer_combobx_subcategorie.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.magazijn_invoer_combobx_subcategorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_subcategorie.FormattingEnabled = true;
             this.magazijn_invoer_combobx_subcategorie.Location = new System.Drawing.Point(155, 36);
@@ -292,6 +394,7 @@
             // 
             // magazijn_invoer_combobx_categorie
             // 
+            this.magazijn_invoer_combobx_categorie.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.magazijn_invoer_combobx_categorie.DisplayMember = "ID";
             this.magazijn_invoer_combobx_categorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_categorie.DropDownWidth = 140;
@@ -312,108 +415,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Categorie";
             // 
-            // checkBox2
+            // dateTimePicker1
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(96, 19);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(54, 17);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "Molex";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ScrollBar;
+            this.dateTimePicker1.CustomFormat = "dd-mm-yyyy";
+            this.dateTimePicker1.Location = new System.Drawing.Point(296, 223);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 34;
             // 
-            // checkBox3
+            // label10
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(169, 19);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(84, 17);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "IDE (P-ATA)";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 42);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(83, 17);
-            this.checkBox4.TabIndex = 27;
-            this.checkBox4.Text = "6PIN PCI-E ";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Location = new System.Drawing.Point(7, 259);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(258, 66);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Specifieke Aansluitingen";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(96, 43);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(74, 17);
-            this.checkBox5.TabIndex = 28;
-            this.checkBox5.Text = "4PIN ATX";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // magazijn_invoer_txtbox_socket_opslagcapaciteit
-            // 
-            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Location = new System.Drawing.Point(157, 223);
-            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Name = "magazijn_invoer_txtbox_socket_opslagcapaciteit";
-            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_socket_opslagcapaciteit.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Opslag Capaciteit";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(376, 345);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Toevoegen";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(82, 345);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Clear All";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(6, 344);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Annuleren";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(296, 207);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(143, 13);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Bijgewerkt / Toegevoegd op";
             // 
             // magazijn_invoeren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 397);
+            this.ClientSize = new System.Drawing.Size(491, 397);
             this.Controls.Add(this.magazijn_invoer_grpbox_productinvoer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "magazijn_invoeren";
@@ -464,5 +488,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_socket_opslagcapaciteit;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

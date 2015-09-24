@@ -37,24 +37,28 @@
             // 
             this.cust_overzicht_dgv1.AllowUserToAddRows = false;
             this.cust_overzicht_dgv1.AllowUserToDeleteRows = false;
+            this.cust_overzicht_dgv1.AllowUserToResizeColumns = false;
+            this.cust_overzicht_dgv1.AllowUserToResizeRows = false;
             this.cust_overzicht_dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.cust_overzicht_dgv1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.cust_overzicht_dgv1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.cust_overzicht_dgv1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.cust_overzicht_dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cust_overzicht_dgv1.ColumnHeadersVisible = false;
-            this.cust_overzicht_dgv1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cust_overzicht_dgv1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
-            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(0, 29);
-            this.cust_overzicht_dgv1.MultiSelect = false;
+            this.cust_overzicht_dgv1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cust_overzicht_dgv1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(0, 0);
             this.cust_overzicht_dgv1.Name = "cust_overzicht_dgv1";
             this.cust_overzicht_dgv1.ReadOnly = true;
-            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(888, 196);
+            this.cust_overzicht_dgv1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.cust_overzicht_dgv1.RowHeadersVisible = false;
+            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(1152, 237);
             this.cust_overzicht_dgv1.TabIndex = 0;
             // 
             // cust_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 225);
+            this.ClientSize = new System.Drawing.Size(1136, 237);
             this.Controls.Add(this.cust_overzicht_dgv1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

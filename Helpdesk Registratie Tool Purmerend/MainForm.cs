@@ -34,6 +34,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_add.MdiParent = this;
             }
             cust_add.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
         private Form cust_overzicht;
         private void overzichtToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -43,7 +45,11 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_overzicht = new cust_overzicht();
                 cust_overzicht.MdiParent = this;
             }
+            cust_overzicht.Location = new Point(0, 400);
             cust_overzicht.Show();
+            cust_overzicht.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
         private Form uitlenen_overzicht;
         private void overzichtToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -54,6 +60,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 uitlenen_overzicht.MdiParent = this;
             }
             uitlenen_overzicht.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
         private void aF4fsluitenToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -74,6 +82,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 call_add.Focus();
             }
             call_add.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
         private Form magazijn_invoeren;
         private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -85,6 +95,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 magazijn_invoeren.Focus();
             }
             magazijn_invoeren.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
 
         }
 
@@ -96,6 +108,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_add.MdiParent = this;
             }
             cust_add.Show();
+           
             if ((cust_overzicht == null) || (cust_overzicht.IsDisposed))
             {
                 cust_overzicht = new cust_overzicht();
@@ -114,6 +127,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 sqlbackup.Focus();
             }
             sqlbackup.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
 
         }
 
@@ -126,6 +141,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_import.Focus();
             }
             cust_import.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
         private Form beheer_inlog_form;
         private void inloggenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,6 +154,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 Focus();
             }
             beheer_inlog_form.Show();
+            cust_overzicht.Activate();
+            cust_overzicht.Focus();
         }
     }
 

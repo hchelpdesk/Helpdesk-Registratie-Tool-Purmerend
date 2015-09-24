@@ -49,9 +49,9 @@
             this.toevoegenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inloggenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listbox1 = new System.Windows.Forms.ListBox();
             this.backupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mSSQLBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listbox1 = new System.Windows.Forms.ListBox();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +141,7 @@
             this.overzichtToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
             this.overzichtToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.overzichtToolStripMenuItem.Text = "Overzicht";
+            
             // 
             // toevoegenToolStripMenuItem1
             // 
@@ -166,7 +167,7 @@
             this.overzichtToolStripMenuItem2.Name = "overzichtToolStripMenuItem2";
             this.overzichtToolStripMenuItem2.ShortcutKeyDisplayString = "F4";
             this.overzichtToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.overzichtToolStripMenuItem2.Text = "Overzicht";
             this.overzichtToolStripMenuItem2.Click += new System.EventHandler(this.overzichtToolStripMenuItem2_Click);
             // 
@@ -230,9 +231,26 @@
             this.inloggenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backupsToolStripMenuItem});
             this.inloggenToolStripMenuItem.Name = "inloggenToolStripMenuItem";
-            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.inloggenToolStripMenuItem.Text = "Inloggen";
             this.inloggenToolStripMenuItem.Click += new System.EventHandler(this.inloggenToolStripMenuItem_Click);
+            // 
+            // backupsToolStripMenuItem
+            // 
+            this.backupsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mSSQLBackupToolStripMenuItem});
+            this.backupsToolStripMenuItem.Name = "backupsToolStripMenuItem";
+            this.backupsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.backupsToolStripMenuItem.Text = "Back-ups";
+            // 
+            // mSSQLBackupToolStripMenuItem
+            // 
+            this.mSSQLBackupToolStripMenuItem.Checked = true;
+            this.mSSQLBackupToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.mSSQLBackupToolStripMenuItem.Enabled = false;
+            this.mSSQLBackupToolStripMenuItem.Name = "mSSQLBackupToolStripMenuItem";
+            this.mSSQLBackupToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
             // 
             // listbox1
             // 
@@ -244,23 +262,6 @@
             this.listbox1.Sorted = true;
             this.listbox1.TabIndex = 5;
             this.listbox1.Visible = false;
-            // 
-            // backupsToolStripMenuItem
-            // 
-            this.backupsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mSSQLBackupToolStripMenuItem});
-            this.backupsToolStripMenuItem.Name = "backupsToolStripMenuItem";
-            this.backupsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.backupsToolStripMenuItem.Text = "Back-ups";
-            // 
-            // mSSQLBackupToolStripMenuItem
-            // 
-            this.mSSQLBackupToolStripMenuItem.Checked = true;
-            this.mSSQLBackupToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.mSSQLBackupToolStripMenuItem.Enabled = false;
-            this.mSSQLBackupToolStripMenuItem.Name = "mSSQLBackupToolStripMenuItem";
-            this.mSSQLBackupToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
             // 
             // MainForm
             // 
