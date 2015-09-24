@@ -51,8 +51,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Beheer
                         
                         if (result > 0)
                         {
-                            checkBox1.Visible = true;
-                            checkBox1.Show();
+                            
                         }
                     }
 

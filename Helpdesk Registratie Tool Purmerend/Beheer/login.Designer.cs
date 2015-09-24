@@ -37,7 +37,6 @@
             this.beheer_login_lbl_pwvergeten = new System.Windows.Forms.LinkLabel();
             this.beheer_login_lbl_gebruikersnaam = new System.Windows.Forms.LinkLabel();
             this.beheer_login_lbl_wachtwoord = new System.Windows.Forms.LinkLabel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // beheer_login_lbl_username
@@ -117,23 +116,11 @@
             this.beheer_login_lbl_wachtwoord.Text = "?";
             this.beheer_login_lbl_wachtwoord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.beheer_login_lbl_wachtwoord_LinkClicked);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(204, 123);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.Visible = false;
-            // 
             // beheer_login_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(227, 145);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.beheer_login_lbl_wachtwoord);
             this.Controls.Add(this.beheer_login_lbl_gebruikersnaam);
             this.Controls.Add(this.beheer_login_lbl_pwvergeten);
@@ -161,6 +148,5 @@
         private System.Windows.Forms.LinkLabel beheer_login_lbl_pwvergeten;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_gebruikersnaam;
         private System.Windows.Forms.LinkLabel beheer_login_lbl_wachtwoord;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
