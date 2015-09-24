@@ -141,7 +141,7 @@
             this.overzichtToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
             this.overzichtToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.overzichtToolStripMenuItem.Text = "Overzicht";
-            
+            this.overzichtToolStripMenuItem.Click += new System.EventHandler(this.overzichtToolStripMenuItem_Click);
             // 
             // toevoegenToolStripMenuItem1
             // 
@@ -167,7 +167,7 @@
             this.overzichtToolStripMenuItem2.Name = "overzichtToolStripMenuItem2";
             this.overzichtToolStripMenuItem2.ShortcutKeyDisplayString = "F4";
             this.overzichtToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.overzichtToolStripMenuItem2.Text = "Overzicht";
             this.overzichtToolStripMenuItem2.Click += new System.EventHandler(this.overzichtToolStripMenuItem2_Click);
             // 

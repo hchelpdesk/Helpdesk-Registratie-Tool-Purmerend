@@ -19,6 +19,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
 
         private void magazijn_overzicht_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'magazijnProductsDataSet.magazijn_products' table. You can move, or remove it, as needed.
+            this.magazijn_productsTableAdapter.Fill(this.magazijnProductsDataSet.magazijn_products);
 
         }
     }

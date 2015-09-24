@@ -53,10 +53,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
                 dt.Columns.Add("standaardnaam", typeof(string));
                 dt.Load(reader);
 
-                magazijn_invoeren_combobx_geheugentype.ValueMember = "ID";
+                magazijn_invoer_combobx_geheugentype.ValueMember = "ID";
 
-                magazijn_invoeren_combobx_geheugentype.DisplayMember = "standaardnaam";
-                magazijn_invoeren_combobx_geheugentype.DataSource = dt;
+                magazijn_invoer_combobx_geheugentype.DisplayMember = "standaardnaam";
+                magazijn_invoer_combobx_geheugentype.DataSource = dt;
 
                 conn_memory.Close();
 
@@ -94,10 +94,79 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Magazijn
 
                 if (subcategorie != null)
                 {
-                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie"].ToString()); 
+                    magazijn_invoer_combobx_subcategorie.Items.Add(row["subcategorie"].ToString());
                 }
             }
             conn.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void magazijn_invoer_btn_toevoegen_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(magazijn_invoer_txtbox_merk.Text))
+            {
+                MessageBox.Show("Merk mag niet leeg zijn!");
+            }
+            if (string.IsNullOrWhiteSpace(magazijn_invoer_txtbox_type.Text))
+            {
+                MessageBox.Show("Type mag niet leeg zijn!");
+            }
+            if (string.IsNullOrWhiteSpace(magazijn_invoer_txtbox_product.Text))
+            {
+                MessageBox.Show("Product mag niet leeg zijn!");
+            }
+            
+            // Verbinding opzetten naar MS SQL server, en database kiezen.
+            SqlConnection conn = new SqlConnection("Server=DENNIS-PC\\SQLEXPRESS;Database=helpdesk;Trusted_Connection=True;");
+
+            // Verbinding tot stand proberen te brengen, anders Messagebox late zien met de foutmelding.
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.ToString());
+            }
+            // Query die uitgevoerd moet worden.
+            SqlCommand cmd = new SqlCommand("INSERT INTO magazijn_products" +
+                 "(categorie, subcategorie, merk, type,  serienummer, product, rpm, geheugen, socket, wattage, moboconnector, geheugentype, opslagcapaciteit, aansluitingstype, bijgewerktop, toegevoegdop, vendorlink)" +
+                "VALUES(@categorie, @subcategorie, @merk, @type, @serienummer, @product, @rpm, @geheugen, @socket, @wattage, @moboconnector, @geheugentype, @opslagcapaciteit, @aansluitingstype, @bijgewerktop, @toegevoegdop, @vendorlink)", conn);
+            cmd.Parameters.Add("@categorie", SqlDbType.VarChar).Value = magazijn_invoer_combobx_categorie.Text;
+            cmd.Parameters.Add("@subcategorie", SqlDbType.VarChar).Value = magazijn_invoer_combobx_subcategorie.Text;
+            cmd.Parameters.Add("@merk", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_merk.Text;
+            cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_type.Text;
+            cmd.Parameters.Add("@serienummer", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_serienummer.Text; ;
+            cmd.Parameters.Add("@product", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_product.Text;
+            cmd.Parameters.Add("@rpm", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_rpm.Text;
+            cmd.Parameters.Add("@geheugen", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_geheugen.Text;
+            cmd.Parameters.Add("@socket", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_socket.Text;
+            cmd.Parameters.Add("@wattage", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_watt.Text;
+            cmd.Parameters.Add("@moboconnector", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_moboconnector.Text; ;
+            cmd.Parameters.Add("@geheugentype", SqlDbType.VarChar).Value = magazijn_invoer_combobx_geheugentype.Text;
+            cmd.Parameters.Add("@opslagcapaciteit", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_opslagcapaciteit.Text;
+            cmd.Parameters.Add("@aansluitingstype", SqlDbType.VarChar).Value = "To be coded";
+            cmd.Parameters.Add("@bijgewerktop", SqlDbType.DateTime).Value = DateTime.Now;
+            cmd.Parameters.Add("@toegevoegdop", SqlDbType.DateTime).Value = magazijn_invoer_datepicker1.Text;
+            cmd.Parameters.Add("@vendorlink", SqlDbType.VarChar).Value = magazijn_invoer_txtbox_vendorlink.Text;
+            // Query uitvoeren
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Product is met succes toegevoegd aan de database",
+                "Helpdesk Registratie Tool Purmerend",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.ToString());
+            }
         }
     }
 }

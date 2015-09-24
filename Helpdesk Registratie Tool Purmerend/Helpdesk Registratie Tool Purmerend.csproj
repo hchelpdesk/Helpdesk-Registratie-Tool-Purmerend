@@ -123,6 +123,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MagazijnProductsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Magazijn\ListItem.cs" />
     <Compile Include="Magazijn\magazijn_beheer.cs">
       <SubType>Form</SubType>
@@ -273,6 +278,17 @@
     </None>
     <None Include="MagazijnCategorie.xss">
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
+    </None>
+    <None Include="MagazijnProductsDataSet.xsc">
+      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MagazijnProductsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MagazijnProductsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MagazijnProductsDataSet.xss">
+      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
     </None>
     <None Include="Magazijn_Subcategorie_DataSet.xsc">
       <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>

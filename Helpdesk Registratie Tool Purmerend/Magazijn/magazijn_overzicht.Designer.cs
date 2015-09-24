@@ -31,178 +31,269 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magazijn_overzicht));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.magazijnProductsDataSet = new Helpdesk_Registratie_Tool_Purmerend.MagazijnProductsDataSet();
+            this.magazijnproductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.magazijn_productsTableAdapter = new Helpdesk_Registratie_Tool_Purmerend.MagazijnProductsDataSetTableAdapters.magazijn_productsTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subcategorieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.merkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serienummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rpmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.geheugenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.socketDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wattageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.moboconnectorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.geheugentypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.opslagcapaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aansluitingstypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bijgewerktopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toegevoegdopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vendorlinkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijnProductsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijnproductsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 28);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.categorieDataGridViewTextBoxColumn,
+            this.subcategorieDataGridViewTextBoxColumn,
+            this.merkDataGridViewTextBoxColumn,
+            this.typeDataGridViewTextBoxColumn,
+            this.serienummerDataGridViewTextBoxColumn,
+            this.productDataGridViewTextBoxColumn,
+            this.rpmDataGridViewTextBoxColumn,
+            this.geheugenDataGridViewTextBoxColumn,
+            this.socketDataGridViewTextBoxColumn,
+            this.wattageDataGridViewTextBoxColumn,
+            this.moboconnectorDataGridViewTextBoxColumn,
+            this.geheugentypeDataGridViewTextBoxColumn,
+            this.opslagcapaciteitDataGridViewTextBoxColumn,
+            this.aansluitingstypeDataGridViewTextBoxColumn,
+            this.bijgewerktopDataGridViewTextBoxColumn,
+            this.toegevoegdopDataGridViewTextBoxColumn,
+            this.vendorlinkDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.magazijnproductsBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(658, 380);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1136, 450);
             this.dataGridView1.TabIndex = 0;
             // 
-            // bindingNavigator1
+            // magazijnProductsDataSet
             // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(683, 25);
-            this.bindingNavigator1.TabIndex = 1;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.magazijnProductsDataSet.DataSetName = "MagazijnProductsDataSet";
+            this.magazijnProductsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // bindingNavigatorMoveFirstItem
+            // magazijnproductsBindingSource
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.magazijnproductsBindingSource.DataMember = "magazijn_products";
+            this.magazijnproductsBindingSource.DataSource = this.magazijnProductsDataSet;
             // 
-            // bindingNavigatorMovePreviousItem
+            // magazijn_productsTableAdapter
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.magazijn_productsTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigatorSeparator
+            // iDDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Width = 43;
             // 
-            // bindingNavigatorPositionItem
+            // categorieDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            this.categorieDataGridViewTextBoxColumn.DataPropertyName = "categorie";
+            this.categorieDataGridViewTextBoxColumn.HeaderText = "categorie";
+            this.categorieDataGridViewTextBoxColumn.Name = "categorieDataGridViewTextBoxColumn";
+            this.categorieDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categorieDataGridViewTextBoxColumn.Width = 76;
             // 
-            // bindingNavigatorCountItem
+            // subcategorieDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            this.subcategorieDataGridViewTextBoxColumn.DataPropertyName = "subcategorie";
+            this.subcategorieDataGridViewTextBoxColumn.HeaderText = "subcategorie";
+            this.subcategorieDataGridViewTextBoxColumn.Name = "subcategorieDataGridViewTextBoxColumn";
+            this.subcategorieDataGridViewTextBoxColumn.ReadOnly = true;
+            this.subcategorieDataGridViewTextBoxColumn.Width = 93;
             // 
-            // bindingNavigatorSeparator1
+            // merkDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.merkDataGridViewTextBoxColumn.DataPropertyName = "merk";
+            this.merkDataGridViewTextBoxColumn.HeaderText = "merk";
+            this.merkDataGridViewTextBoxColumn.Name = "merkDataGridViewTextBoxColumn";
+            this.merkDataGridViewTextBoxColumn.ReadOnly = true;
+            this.merkDataGridViewTextBoxColumn.Width = 55;
             // 
-            // bindingNavigatorMoveNextItem
+            // typeDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "type";
+            this.typeDataGridViewTextBoxColumn.HeaderText = "type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            this.typeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.typeDataGridViewTextBoxColumn.Width = 52;
             // 
-            // bindingNavigatorMoveLastItem
+            // serienummerDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.serienummerDataGridViewTextBoxColumn.DataPropertyName = "serienummer";
+            this.serienummerDataGridViewTextBoxColumn.HeaderText = "serienummer";
+            this.serienummerDataGridViewTextBoxColumn.Name = "serienummerDataGridViewTextBoxColumn";
+            this.serienummerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.serienummerDataGridViewTextBoxColumn.Width = 91;
             // 
-            // bindingNavigatorSeparator2
+            // productDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.productDataGridViewTextBoxColumn.DataPropertyName = "product";
+            this.productDataGridViewTextBoxColumn.HeaderText = "product";
+            this.productDataGridViewTextBoxColumn.Name = "productDataGridViewTextBoxColumn";
+            this.productDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productDataGridViewTextBoxColumn.Width = 68;
             // 
-            // bindingNavigatorAddNewItem
+            // rpmDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.rpmDataGridViewTextBoxColumn.DataPropertyName = "rpm";
+            this.rpmDataGridViewTextBoxColumn.HeaderText = "rpm";
+            this.rpmDataGridViewTextBoxColumn.Name = "rpmDataGridViewTextBoxColumn";
+            this.rpmDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rpmDataGridViewTextBoxColumn.Width = 49;
             // 
-            // bindingNavigatorDeleteItem
+            // geheugenDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.geheugenDataGridViewTextBoxColumn.DataPropertyName = "geheugen";
+            this.geheugenDataGridViewTextBoxColumn.HeaderText = "geheugen";
+            this.geheugenDataGridViewTextBoxColumn.Name = "geheugenDataGridViewTextBoxColumn";
+            this.geheugenDataGridViewTextBoxColumn.ReadOnly = true;
+            this.geheugenDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // socketDataGridViewTextBoxColumn
+            // 
+            this.socketDataGridViewTextBoxColumn.DataPropertyName = "socket";
+            this.socketDataGridViewTextBoxColumn.HeaderText = "socket";
+            this.socketDataGridViewTextBoxColumn.Name = "socketDataGridViewTextBoxColumn";
+            this.socketDataGridViewTextBoxColumn.ReadOnly = true;
+            this.socketDataGridViewTextBoxColumn.Width = 64;
+            // 
+            // wattageDataGridViewTextBoxColumn
+            // 
+            this.wattageDataGridViewTextBoxColumn.DataPropertyName = "wattage";
+            this.wattageDataGridViewTextBoxColumn.HeaderText = "wattage";
+            this.wattageDataGridViewTextBoxColumn.Name = "wattageDataGridViewTextBoxColumn";
+            this.wattageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wattageDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // moboconnectorDataGridViewTextBoxColumn
+            // 
+            this.moboconnectorDataGridViewTextBoxColumn.DataPropertyName = "moboconnector";
+            this.moboconnectorDataGridViewTextBoxColumn.HeaderText = "moboconnector";
+            this.moboconnectorDataGridViewTextBoxColumn.Name = "moboconnectorDataGridViewTextBoxColumn";
+            this.moboconnectorDataGridViewTextBoxColumn.ReadOnly = true;
+            this.moboconnectorDataGridViewTextBoxColumn.Width = 106;
+            // 
+            // geheugentypeDataGridViewTextBoxColumn
+            // 
+            this.geheugentypeDataGridViewTextBoxColumn.DataPropertyName = "geheugentype";
+            this.geheugentypeDataGridViewTextBoxColumn.HeaderText = "geheugentype";
+            this.geheugentypeDataGridViewTextBoxColumn.Name = "geheugentypeDataGridViewTextBoxColumn";
+            this.geheugentypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // opslagcapaciteitDataGridViewTextBoxColumn
+            // 
+            this.opslagcapaciteitDataGridViewTextBoxColumn.DataPropertyName = "opslagcapaciteit";
+            this.opslagcapaciteitDataGridViewTextBoxColumn.HeaderText = "opslagcapaciteit";
+            this.opslagcapaciteitDataGridViewTextBoxColumn.Name = "opslagcapaciteitDataGridViewTextBoxColumn";
+            this.opslagcapaciteitDataGridViewTextBoxColumn.ReadOnly = true;
+            this.opslagcapaciteitDataGridViewTextBoxColumn.Width = 109;
+            // 
+            // aansluitingstypeDataGridViewTextBoxColumn
+            // 
+            this.aansluitingstypeDataGridViewTextBoxColumn.DataPropertyName = "aansluitingstype";
+            this.aansluitingstypeDataGridViewTextBoxColumn.HeaderText = "aansluitingstype";
+            this.aansluitingstypeDataGridViewTextBoxColumn.Name = "aansluitingstypeDataGridViewTextBoxColumn";
+            this.aansluitingstypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.aansluitingstypeDataGridViewTextBoxColumn.Width = 107;
+            // 
+            // bijgewerktopDataGridViewTextBoxColumn
+            // 
+            this.bijgewerktopDataGridViewTextBoxColumn.DataPropertyName = "bijgewerktop";
+            this.bijgewerktopDataGridViewTextBoxColumn.HeaderText = "bijgewerktop";
+            this.bijgewerktopDataGridViewTextBoxColumn.Name = "bijgewerktopDataGridViewTextBoxColumn";
+            this.bijgewerktopDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bijgewerktopDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // toegevoegdopDataGridViewTextBoxColumn
+            // 
+            this.toegevoegdopDataGridViewTextBoxColumn.DataPropertyName = "toegevoegdop";
+            this.toegevoegdopDataGridViewTextBoxColumn.HeaderText = "toegevoegdop";
+            this.toegevoegdopDataGridViewTextBoxColumn.Name = "toegevoegdopDataGridViewTextBoxColumn";
+            this.toegevoegdopDataGridViewTextBoxColumn.ReadOnly = true;
+            this.toegevoegdopDataGridViewTextBoxColumn.Width = 101;
+            // 
+            // vendorlinkDataGridViewTextBoxColumn
+            // 
+            this.vendorlinkDataGridViewTextBoxColumn.DataPropertyName = "vendorlink";
+            this.vendorlinkDataGridViewTextBoxColumn.HeaderText = "vendorlink";
+            this.vendorlinkDataGridViewTextBoxColumn.Name = "vendorlinkDataGridViewTextBoxColumn";
+            this.vendorlinkDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vendorlinkDataGridViewTextBoxColumn.Width = 81;
             // 
             // magazijn_overzicht
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 450);
-            this.Controls.Add(this.bindingNavigator1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScroll = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1136, 450);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "magazijn_overzicht";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Magazijn Overzicht";
             this.Load += new System.EventHandler(this.magazijn_overzicht_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijnProductsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijnproductsBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private MagazijnProductsDataSet magazijnProductsDataSet;
+        private System.Windows.Forms.BindingSource magazijnproductsBindingSource;
+        private MagazijnProductsDataSetTableAdapters.magazijn_productsTableAdapter magazijn_productsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subcategorieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn merkDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serienummerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rpmDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn geheugenDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn socketDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wattageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn moboconnectorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn geheugentypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn opslagcapaciteitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aansluitingstypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bijgewerktopDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn toegevoegdopDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vendorlinkDataGridViewTextBoxColumn;
     }
 }
