@@ -128,7 +128,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Magazijn\ListItem.cs" />
     <Compile Include="Magazijn\magazijn_beheer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,17 +146,17 @@
     <Compile Include="Magazijn\magazijn_invoeren.Designer.cs">
       <DependentUpon>magazijn_invoeren.cs</DependentUpon>
     </Compile>
-    <Compile Include="Magazijn\magazijn_multipleinsert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Magazijn\magazijn_multipleinsert.Designer.cs">
-      <DependentUpon>magazijn_multipleinsert.cs</DependentUpon>
-    </Compile>
     <Compile Include="Magazijn\magazijn_overzicht.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Magazijn\magazijn_overzicht.Designer.cs">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_toevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazijn\magazijn_toevoegen.Designer.cs">
+      <DependentUpon>magazijn_toevoegen.cs</DependentUpon>
     </Compile>
     <Compile Include="Magazijn_Subcategorie_DataSet.cs">
       <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>
@@ -226,11 +225,11 @@
     <EmbeddedResource Include="Magazijn\magazijn_invoeren.resx">
       <DependentUpon>magazijn_invoeren.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Magazijn\magazijn_multipleinsert.resx">
-      <DependentUpon>magazijn_multipleinsert.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Magazijn\magazijn_overzicht.resx">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazijn\magazijn_toevoegen.resx">
+      <DependentUpon>magazijn_toevoegen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

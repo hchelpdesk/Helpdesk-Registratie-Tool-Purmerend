@@ -81,18 +81,18 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             call_add.Activate();
             call_add.Focus();
         }
-        private Form magazijn_invoeren;
+        private Form magazijn_toevoegen;
         private void toevoegenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if ((magazijn_invoeren == null) || (magazijn_invoeren.IsDisposed))
+            if ((magazijn_toevoegen == null) || (magazijn_toevoegen.IsDisposed))
             {
-                magazijn_invoeren = new magazijn_invoeren();
-                magazijn_invoeren.MdiParent = this;
-                magazijn_invoeren.Focus();
+                magazijn_toevoegen = new magazijn_toevoegen();
+                magazijn_toevoegen.MdiParent = this;
+                magazijn_toevoegen.Focus();
             }
-            magazijn_invoeren.Show();
-            magazijn_invoeren.Activate();
-            magazijn_invoeren.Focus();
+            magazijn_toevoegen.Show();
+            magazijn_toevoegen.Activate();
+            magazijn_toevoegen.Focus();
 
         }
 

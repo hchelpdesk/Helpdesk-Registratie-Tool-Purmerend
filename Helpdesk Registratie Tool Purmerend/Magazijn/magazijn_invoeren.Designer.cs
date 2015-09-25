@@ -30,407 +30,499 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magazijn_invoeren));
             this.magazijn_invoer_grpbox_productinvoer = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_lbl_subcategorie = new System.Windows.Forms.Label();
+            this.magazijn_invoer_grpbox_hardeschijfgegevens = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte = new System.Windows.Forms.Label();
+            this.magazijn_invoer_chkbox_sata = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_txtbox_opslagcapaciteit = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_chkbox_ide = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_lbl_opslagcapaciteit = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_rpm = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_hd_rpm = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_product = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_grpbox_mobogegevens = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_chkbox_mobo_sata = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_chkbox_mobo_ide = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_combobx_geheugenslot = new System.Windows.Forms.ComboBox();
+            this.magazijn_invoer_lbl_mobo_geheugensloten = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_mobosocket = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_mobo_socket = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_moboconnector = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_moboconnector = new System.Windows.Forms.Label();
+            this.magazijn_invoer_lbl_product = new System.Windows.Forms.Label();
+            this.magazijn_invoer_grpbox_memorydetails = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_lbl_geheugen = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_geheugenamount = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_GB = new System.Windows.Forms.Label();
+            this.magazijn_invoer_memoryslide = new System.Windows.Forms.TrackBar();
+            this.magazijn_invoer_combobx_geheugentype = new System.Windows.Forms.ComboBox();
+            this.magazijn_invoer_lbl_geheugentype = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_type = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_grpbox_cpugegevens = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_txtbox_cpuspeed = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_combobx_architecture = new System.Windows.Forms.ComboBox();
+            this.magazijn_invoer_lbl_cpuspeed = new System.Windows.Forms.Label();
+            this.magazijn_invoer_lbl_architecture = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_cpusocket = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_cpusocket = new System.Windows.Forms.Label();
+            this.magazijn_invoer_txtbox_merk = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_txtbox_toegevoegdop = new System.Windows.Forms.TextBox();
+            this.magazijn_invoer_lbl_type = new System.Windows.Forms.Label();
             this.magazijn_invoer_txtbox_vendorlink = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.magazijn_invoer_lbl_merk = new System.Windows.Forms.Label();
+            this.magazijn_invoer_lbl_vendorlink = new System.Windows.Forms.Label();
+            this.magazijn_invoer_combobx_subcategorie = new System.Windows.Forms.ComboBox();
+            this.magazijn_invoer_combobx_categorie = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_datepicker1 = new System.Windows.Forms.DateTimePicker();
+            this.magazijn_invoer_lbl_categorie = new System.Windows.Forms.Label();
             this.magazijn_invoer_btn_cancel = new System.Windows.Forms.Button();
             this.magazijn_invoer_btn_clearall = new System.Windows.Forms.Button();
             this.magazijn_invoer_btn_toevoegen = new System.Windows.Forms.Button();
-            this.magazijn_invoer_txtbox_opslagcapaciteit = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.magazijn_invoer_txtbox_socket = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_txtbox_moboconnector = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.magazijn_invoer_grpbox_voedinggegevens = new System.Windows.Forms.GroupBox();
+            this.magazijn_invoer_chkbox_psu_4pinatx = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_chkbox_psu_satapower = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_chkbox_psu_6pinpcie = new System.Windows.Forms.CheckBox();
+            this.magazijn_invoer_chkbox_psu_molexpower = new System.Windows.Forms.CheckBox();
             this.magazijn_invoer_txtbox_watt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_combobx_geheugentype = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_txtbox_geheugen = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_txtbox_rpm = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_txtbox_product = new System.Windows.Forms.TextBox();
-            this.magazijn_invoer_txtbox_serienummer = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.magazijn_invoer_lbl_ = new System.Windows.Forms.Label();
-            this.magazijn_invoer_txtbox_type = new System.Windows.Forms.TextBox();
-            this.magazijn_invoer_txtbox_merk = new System.Windows.Forms.TextBox();
-            this.magazijn_invoer_lbl_fabrikant = new System.Windows.Forms.Label();
-            this.magazijn_invoer_lbl_product = new System.Windows.Forms.Label();
-            this.magazijn_invoer_combobx_subcategorie = new System.Windows.Forms.ComboBox();
-            this.magazijn_invoer_combobx_categorie = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.magazijn_invoer_lbl_psuwatt = new System.Windows.Forms.Label();
             this.magazijn_invoer_grpbox_productinvoer.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.SuspendLayout();
+            this.magazijn_invoer_grpbox_mobogegevens.SuspendLayout();
+            this.magazijn_invoer_grpbox_memorydetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijn_invoer_memoryslide)).BeginInit();
+            this.magazijn_invoer_grpbox_cpugegevens.SuspendLayout();
+            this.magazijn_invoer_grpbox_voedinggegevens.SuspendLayout();
             this.SuspendLayout();
             // 
             // magazijn_invoer_grpbox_productinvoer
             // 
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_subcategorie);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_grpbox_hardeschijfgegevens);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_product);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_grpbox_mobogegevens);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_product);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_grpbox_memorydetails);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_type);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_grpbox_cpugegevens);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_merk);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_toegevoegdop);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_type);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_vendorlink);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label11);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_merk);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_vendorlink);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_combobx_subcategorie);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_combobx_categorie);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label10);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_datepicker1);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_categorie);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_btn_cancel);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_btn_clearall);
             this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_btn_toevoegen);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_opslagcapaciteit);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label2);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.groupBox1);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_socket);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label9);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_moboconnector);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label8);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_watt);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label7);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_combobx_geheugentype);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label6);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_geheugen);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label5);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_rpm);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label4);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_product);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_serienummer);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label3);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_type);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_txtbox_merk);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_fabrikant);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_lbl_product);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_combobx_subcategorie);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_combobx_categorie);
-            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.label1);
+            this.magazijn_invoer_grpbox_productinvoer.Controls.Add(this.magazijn_invoer_grpbox_voedinggegevens);
             this.magazijn_invoer_grpbox_productinvoer.Location = new System.Drawing.Point(13, 13);
             this.magazijn_invoer_grpbox_productinvoer.Name = "magazijn_invoer_grpbox_productinvoer";
-            this.magazijn_invoer_grpbox_productinvoer.Size = new System.Drawing.Size(466, 406);
+            this.magazijn_invoer_grpbox_productinvoer.Size = new System.Drawing.Size(466, 521);
             this.magazijn_invoer_grpbox_productinvoer.TabIndex = 0;
             this.magazijn_invoer_grpbox_productinvoer.TabStop = false;
             this.magazijn_invoer_grpbox_productinvoer.Text = "Product Invoeren";
             // 
-            // magazijn_invoer_txtbox_vendorlink
+            // magazijn_invoer_lbl_subcategorie
             // 
-            this.magazijn_invoer_txtbox_vendorlink.Location = new System.Drawing.Point(7, 268);
-            this.magazijn_invoer_txtbox_vendorlink.Name = "magazijn_invoer_txtbox_vendorlink";
-            this.magazijn_invoer_txtbox_vendorlink.Size = new System.Drawing.Size(283, 20);
-            this.magazijn_invoer_txtbox_vendorlink.TabIndex = 37;
+            this.magazijn_invoer_lbl_subcategorie.AutoSize = true;
+            this.magazijn_invoer_lbl_subcategorie.Location = new System.Drawing.Point(161, 31);
+            this.magazijn_invoer_lbl_subcategorie.Name = "magazijn_invoer_lbl_subcategorie";
+            this.magazijn_invoer_lbl_subcategorie.Size = new System.Drawing.Size(70, 13);
+            this.magazijn_invoer_lbl_subcategorie.TabIndex = 58;
+            this.magazijn_invoer_lbl_subcategorie.Text = "Subcategorie";
             // 
-            // label11
+            // magazijn_invoer_grpbox_hardeschijfgegevens
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 251);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 13);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "Vendor Link";
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_lbl_hardeschijf_gigabyte);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_chkbox_sata);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_txtbox_opslagcapaciteit);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_chkbox_ide);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_lbl_opslagcapaciteit);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_txtbox_rpm);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Controls.Add(this.magazijn_invoer_lbl_hd_rpm);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Location = new System.Drawing.Point(12, 355);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Name = "magazijn_invoer_grpbox_hardeschijfgegevens";
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Size = new System.Drawing.Size(144, 96);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.TabIndex = 49;
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.TabStop = false;
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.Text = "Hardeschijf Gegevens";
             // 
-            // label10
+            // magazijn_invoer_lbl_hardeschijf_gigabyte
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(296, 207);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(143, 13);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "Bijgewerkt / Toegevoegd op";
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.AutoSize = true;
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.Location = new System.Drawing.Point(111, 36);
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.Name = "magazijn_invoer_lbl_hardeschijf_gigabyte";
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.Size = new System.Drawing.Size(22, 13);
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.TabIndex = 31;
+            this.magazijn_invoer_lbl_hardeschijf_gigabyte.Text = "GB";
             // 
-            // magazijn_invoer_datepicker1
+            // magazijn_invoer_chkbox_sata
             // 
-            this.magazijn_invoer_datepicker1.CalendarMonthBackground = System.Drawing.SystemColors.ScrollBar;
-            this.magazijn_invoer_datepicker1.CustomFormat = "dd-mm-yyyy";
-            this.magazijn_invoer_datepicker1.Location = new System.Drawing.Point(296, 223);
-            this.magazijn_invoer_datepicker1.Name = "magazijn_invoer_datepicker1";
-            this.magazijn_invoer_datepicker1.Size = new System.Drawing.Size(169, 20);
-            this.magazijn_invoer_datepicker1.TabIndex = 34;
-            // 
-            // magazijn_invoer_btn_cancel
-            // 
-            this.magazijn_invoer_btn_cancel.Location = new System.Drawing.Point(6, 377);
-            this.magazijn_invoer_btn_cancel.Name = "magazijn_invoer_btn_cancel";
-            this.magazijn_invoer_btn_cancel.Size = new System.Drawing.Size(75, 23);
-            this.magazijn_invoer_btn_cancel.TabIndex = 33;
-            this.magazijn_invoer_btn_cancel.Text = "Annuleren";
-            this.magazijn_invoer_btn_cancel.UseVisualStyleBackColor = true;
-            this.magazijn_invoer_btn_cancel.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // magazijn_invoer_btn_clearall
-            // 
-            this.magazijn_invoer_btn_clearall.Location = new System.Drawing.Point(87, 377);
-            this.magazijn_invoer_btn_clearall.Name = "magazijn_invoer_btn_clearall";
-            this.magazijn_invoer_btn_clearall.Size = new System.Drawing.Size(75, 23);
-            this.magazijn_invoer_btn_clearall.TabIndex = 32;
-            this.magazijn_invoer_btn_clearall.Text = "Clear All";
-            this.magazijn_invoer_btn_clearall.UseVisualStyleBackColor = true;
-            // 
-            // magazijn_invoer_btn_toevoegen
-            // 
-            this.magazijn_invoer_btn_toevoegen.Location = new System.Drawing.Point(385, 377);
-            this.magazijn_invoer_btn_toevoegen.Name = "magazijn_invoer_btn_toevoegen";
-            this.magazijn_invoer_btn_toevoegen.Size = new System.Drawing.Size(75, 23);
-            this.magazijn_invoer_btn_toevoegen.TabIndex = 31;
-            this.magazijn_invoer_btn_toevoegen.Text = "Toevoegen";
-            this.magazijn_invoer_btn_toevoegen.UseVisualStyleBackColor = true;
-            this.magazijn_invoer_btn_toevoegen.Click += new System.EventHandler(this.magazijn_invoer_btn_toevoegen_Click);
+            this.magazijn_invoer_chkbox_sata.AutoSize = true;
+            this.magazijn_invoer_chkbox_sata.Location = new System.Drawing.Point(53, 73);
+            this.magazijn_invoer_chkbox_sata.Name = "magazijn_invoer_chkbox_sata";
+            this.magazijn_invoer_chkbox_sata.Size = new System.Drawing.Size(57, 17);
+            this.magazijn_invoer_chkbox_sata.TabIndex = 29;
+            this.magazijn_invoer_chkbox_sata.Text = "S-ATA";
+            this.magazijn_invoer_chkbox_sata.UseVisualStyleBackColor = true;
             // 
             // magazijn_invoer_txtbox_opslagcapaciteit
             // 
-            this.magazijn_invoer_txtbox_opslagcapaciteit.Location = new System.Drawing.Point(303, 142);
+            this.magazijn_invoer_txtbox_opslagcapaciteit.Location = new System.Drawing.Point(9, 32);
             this.magazijn_invoer_txtbox_opslagcapaciteit.Name = "magazijn_invoer_txtbox_opslagcapaciteit";
-            this.magazijn_invoer_txtbox_opslagcapaciteit.Size = new System.Drawing.Size(138, 20);
+            this.magazijn_invoer_txtbox_opslagcapaciteit.Size = new System.Drawing.Size(98, 20);
             this.magazijn_invoer_txtbox_opslagcapaciteit.TabIndex = 30;
             // 
-            // label2
+            // magazijn_invoer_chkbox_ide
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(299, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Opslag Capaciteit";
+            this.magazijn_invoer_chkbox_ide.AutoSize = true;
+            this.magazijn_invoer_chkbox_ide.Location = new System.Drawing.Point(53, 57);
+            this.magazijn_invoer_chkbox_ide.Name = "magazijn_invoer_chkbox_ide";
+            this.magazijn_invoer_chkbox_ide.Size = new System.Drawing.Size(84, 17);
+            this.magazijn_invoer_chkbox_ide.TabIndex = 30;
+            this.magazijn_invoer_chkbox_ide.Text = "IDE (P-ATA)";
+            this.magazijn_invoer_chkbox_ide.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // magazijn_invoer_lbl_opslagcapaciteit
             // 
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Location = new System.Drawing.Point(6, 305);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(258, 66);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Specifieke Aansluitingen";
-            this.groupBox1.Visible = false;
+            this.magazijn_invoer_lbl_opslagcapaciteit.AutoSize = true;
+            this.magazijn_invoer_lbl_opslagcapaciteit.Location = new System.Drawing.Point(6, 17);
+            this.magazijn_invoer_lbl_opslagcapaciteit.Name = "magazijn_invoer_lbl_opslagcapaciteit";
+            this.magazijn_invoer_lbl_opslagcapaciteit.Size = new System.Drawing.Size(90, 13);
+            this.magazijn_invoer_lbl_opslagcapaciteit.TabIndex = 29;
+            this.magazijn_invoer_lbl_opslagcapaciteit.Text = "Opslag Capaciteit";
             // 
-            // checkBox5
+            // magazijn_invoer_txtbox_rpm
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(96, 43);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(74, 17);
-            this.checkBox5.TabIndex = 28;
-            this.checkBox5.Text = "4PIN ATX";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_txtbox_rpm.Location = new System.Drawing.Point(9, 69);
+            this.magazijn_invoer_txtbox_rpm.Name = "magazijn_invoer_txtbox_rpm";
+            this.magazijn_invoer_txtbox_rpm.Size = new System.Drawing.Size(38, 20);
+            this.magazijn_invoer_txtbox_rpm.TabIndex = 13;
             // 
-            // checkBox1
+            // magazijn_invoer_lbl_hd_rpm
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(51, 17);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "S-ata";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_lbl_hd_rpm.AutoSize = true;
+            this.magazijn_invoer_lbl_hd_rpm.Location = new System.Drawing.Point(6, 54);
+            this.magazijn_invoer_lbl_hd_rpm.Name = "magazijn_invoer_lbl_hd_rpm";
+            this.magazijn_invoer_lbl_hd_rpm.Size = new System.Drawing.Size(31, 13);
+            this.magazijn_invoer_lbl_hd_rpm.TabIndex = 12;
+            this.magazijn_invoer_lbl_hd_rpm.Text = "RPM";
             // 
-            // checkBox4
+            // magazijn_invoer_txtbox_product
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 42);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(83, 17);
-            this.checkBox4.TabIndex = 27;
-            this.checkBox4.Text = "6PIN PCI-E ";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_txtbox_product.Location = new System.Drawing.Point(19, 91);
+            this.magazijn_invoer_txtbox_product.Name = "magazijn_invoer_txtbox_product";
+            this.magazijn_invoer_txtbox_product.Size = new System.Drawing.Size(138, 20);
+            this.magazijn_invoer_txtbox_product.TabIndex = 57;
             // 
-            // checkBox2
+            // magazijn_invoer_grpbox_mobogegevens
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(96, 19);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(54, 17);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "Molex";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_chkbox_mobo_sata);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_chkbox_mobo_ide);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_combobx_geheugenslot);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_lbl_mobo_geheugensloten);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_txtbox_mobosocket);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_lbl_mobo_socket);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_txtbox_moboconnector);
+            this.magazijn_invoer_grpbox_mobogegevens.Controls.Add(this.magazijn_invoer_lbl_moboconnector);
+            this.magazijn_invoer_grpbox_mobogegevens.Location = new System.Drawing.Point(12, 271);
+            this.magazijn_invoer_grpbox_mobogegevens.Name = "magazijn_invoer_grpbox_mobogegevens";
+            this.magazijn_invoer_grpbox_mobogegevens.Size = new System.Drawing.Size(429, 78);
+            this.magazijn_invoer_grpbox_mobogegevens.TabIndex = 48;
+            this.magazijn_invoer_grpbox_mobogegevens.TabStop = false;
+            this.magazijn_invoer_grpbox_mobogegevens.Text = "Moederbord Gegevens";
             // 
-            // checkBox3
+            // magazijn_invoer_chkbox_mobo_sata
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(169, 19);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(84, 17);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "IDE (P-ATA)";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_chkbox_mobo_sata.AutoSize = true;
+            this.magazijn_invoer_chkbox_mobo_sata.Location = new System.Drawing.Point(9, 58);
+            this.magazijn_invoer_chkbox_mobo_sata.Name = "magazijn_invoer_chkbox_mobo_sata";
+            this.magazijn_invoer_chkbox_mobo_sata.Size = new System.Drawing.Size(51, 17);
+            this.magazijn_invoer_chkbox_mobo_sata.TabIndex = 47;
+            this.magazijn_invoer_chkbox_mobo_sata.Text = "S-ata";
+            this.magazijn_invoer_chkbox_mobo_sata.UseVisualStyleBackColor = true;
             // 
-            // magazijn_invoer_txtbox_socket
+            // magazijn_invoer_chkbox_mobo_ide
             // 
-            this.magazijn_invoer_txtbox_socket.Location = new System.Drawing.Point(7, 185);
-            this.magazijn_invoer_txtbox_socket.Name = "magazijn_invoer_txtbox_socket";
-            this.magazijn_invoer_txtbox_socket.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_socket.TabIndex = 23;
+            this.magazijn_invoer_chkbox_mobo_ide.AutoSize = true;
+            this.magazijn_invoer_chkbox_mobo_ide.Location = new System.Drawing.Point(66, 58);
+            this.magazijn_invoer_chkbox_mobo_ide.Name = "magazijn_invoer_chkbox_mobo_ide";
+            this.magazijn_invoer_chkbox_mobo_ide.Size = new System.Drawing.Size(44, 17);
+            this.magazijn_invoer_chkbox_mobo_ide.TabIndex = 48;
+            this.magazijn_invoer_chkbox_mobo_ide.Text = "IDE";
+            this.magazijn_invoer_chkbox_mobo_ide.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // magazijn_invoer_combobx_geheugenslot
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 169);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Socket";
+            this.magazijn_invoer_combobx_geheugenslot.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.magazijn_invoer_combobx_geheugenslot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.magazijn_invoer_combobx_geheugenslot.FormattingEnabled = true;
+            this.magazijn_invoer_combobx_geheugenslot.Location = new System.Drawing.Point(298, 31);
+            this.magazijn_invoer_combobx_geheugenslot.Name = "magazijn_invoer_combobx_geheugenslot";
+            this.magazijn_invoer_combobx_geheugenslot.Size = new System.Drawing.Size(125, 21);
+            this.magazijn_invoer_combobx_geheugenslot.TabIndex = 42;
+            // 
+            // magazijn_invoer_lbl_mobo_geheugensloten
+            // 
+            this.magazijn_invoer_lbl_mobo_geheugensloten.AutoSize = true;
+            this.magazijn_invoer_lbl_mobo_geheugensloten.Location = new System.Drawing.Point(297, 15);
+            this.magazijn_invoer_lbl_mobo_geheugensloten.Name = "magazijn_invoer_lbl_mobo_geheugensloten";
+            this.magazijn_invoer_lbl_mobo_geheugensloten.Size = new System.Drawing.Size(90, 13);
+            this.magazijn_invoer_lbl_mobo_geheugensloten.TabIndex = 41;
+            this.magazijn_invoer_lbl_mobo_geheugensloten.Text = "Geheugen Sloten";
+            // 
+            // magazijn_invoer_txtbox_mobosocket
+            // 
+            this.magazijn_invoer_txtbox_mobosocket.Location = new System.Drawing.Point(9, 32);
+            this.magazijn_invoer_txtbox_mobosocket.Name = "magazijn_invoer_txtbox_mobosocket";
+            this.magazijn_invoer_txtbox_mobosocket.Size = new System.Drawing.Size(138, 20);
+            this.magazijn_invoer_txtbox_mobosocket.TabIndex = 23;
+            // 
+            // magazijn_invoer_lbl_mobo_socket
+            // 
+            this.magazijn_invoer_lbl_mobo_socket.AutoSize = true;
+            this.magazijn_invoer_lbl_mobo_socket.Location = new System.Drawing.Point(6, 16);
+            this.magazijn_invoer_lbl_mobo_socket.Name = "magazijn_invoer_lbl_mobo_socket";
+            this.magazijn_invoer_lbl_mobo_socket.Size = new System.Drawing.Size(41, 13);
+            this.magazijn_invoer_lbl_mobo_socket.TabIndex = 22;
+            this.magazijn_invoer_lbl_mobo_socket.Text = "Socket";
             // 
             // magazijn_invoer_txtbox_moboconnector
             // 
-            this.magazijn_invoer_txtbox_moboconnector.Location = new System.Drawing.Point(300, 185);
+            this.magazijn_invoer_txtbox_moboconnector.Location = new System.Drawing.Point(153, 32);
             this.magazijn_invoer_txtbox_moboconnector.Name = "magazijn_invoer_txtbox_moboconnector";
             this.magazijn_invoer_txtbox_moboconnector.Size = new System.Drawing.Size(138, 20);
             this.magazijn_invoer_txtbox_moboconnector.TabIndex = 21;
             // 
-            // label8
+            // magazijn_invoer_lbl_moboconnector
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(296, 169);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Moederbord Connector";
+            this.magazijn_invoer_lbl_moboconnector.AutoSize = true;
+            this.magazijn_invoer_lbl_moboconnector.Location = new System.Drawing.Point(150, 16);
+            this.magazijn_invoer_lbl_moboconnector.Name = "magazijn_invoer_lbl_moboconnector";
+            this.magazijn_invoer_lbl_moboconnector.Size = new System.Drawing.Size(116, 13);
+            this.magazijn_invoer_lbl_moboconnector.TabIndex = 20;
+            this.magazijn_invoer_lbl_moboconnector.Text = "Moederbord Connector";
             // 
-            // magazijn_invoer_txtbox_watt
+            // magazijn_invoer_lbl_product
             // 
-            this.magazijn_invoer_txtbox_watt.Location = new System.Drawing.Point(157, 185);
-            this.magazijn_invoer_txtbox_watt.Name = "magazijn_invoer_txtbox_watt";
-            this.magazijn_invoer_txtbox_watt.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_watt.TabIndex = 19;
+            this.magazijn_invoer_lbl_product.AutoSize = true;
+            this.magazijn_invoer_lbl_product.Location = new System.Drawing.Point(18, 75);
+            this.magazijn_invoer_lbl_product.Name = "magazijn_invoer_lbl_product";
+            this.magazijn_invoer_lbl_product.Size = new System.Drawing.Size(44, 13);
+            this.magazijn_invoer_lbl_product.TabIndex = 56;
+            this.magazijn_invoer_lbl_product.Text = "Product";
             // 
-            // label7
+            // magazijn_invoer_grpbox_memorydetails
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(153, 169);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "PSU wattage";
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_lbl_geheugen);
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_txtbox_geheugenamount);
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_lbl_GB);
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_combobx_geheugentype);
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_lbl_geheugentype);
+            this.magazijn_invoer_grpbox_memorydetails.Controls.Add(this.magazijn_invoer_memoryslide);
+            this.magazijn_invoer_grpbox_memorydetails.Location = new System.Drawing.Point(12, 193);
+            this.magazijn_invoer_grpbox_memorydetails.Name = "magazijn_invoer_grpbox_memorydetails";
+            this.magazijn_invoer_grpbox_memorydetails.Size = new System.Drawing.Size(429, 72);
+            this.magazijn_invoer_grpbox_memorydetails.TabIndex = 47;
+            this.magazijn_invoer_grpbox_memorydetails.TabStop = false;
+            this.magazijn_invoer_grpbox_memorydetails.Text = "Geheugen Gegevens";
+            // 
+            // magazijn_invoer_lbl_geheugen
+            // 
+            this.magazijn_invoer_lbl_geheugen.AutoSize = true;
+            this.magazijn_invoer_lbl_geheugen.Location = new System.Drawing.Point(2, 16);
+            this.magazijn_invoer_lbl_geheugen.Name = "magazijn_invoer_lbl_geheugen";
+            this.magazijn_invoer_lbl_geheugen.Size = new System.Drawing.Size(57, 13);
+            this.magazijn_invoer_lbl_geheugen.TabIndex = 14;
+            this.magazijn_invoer_lbl_geheugen.Text = "Geheugen";
+            // 
+            // magazijn_invoer_txtbox_geheugenamount
+            // 
+            this.magazijn_invoer_txtbox_geheugenamount.Location = new System.Drawing.Point(5, 32);
+            this.magazijn_invoer_txtbox_geheugenamount.MaxLength = 6;
+            this.magazijn_invoer_txtbox_geheugenamount.Name = "magazijn_invoer_txtbox_geheugenamount";
+            this.magazijn_invoer_txtbox_geheugenamount.Size = new System.Drawing.Size(42, 20);
+            this.magazijn_invoer_txtbox_geheugenamount.TabIndex = 15;
+            // 
+            // magazijn_invoer_lbl_GB
+            // 
+            this.magazijn_invoer_lbl_GB.AutoSize = true;
+            this.magazijn_invoer_lbl_GB.Location = new System.Drawing.Point(53, 35);
+            this.magazijn_invoer_lbl_GB.Name = "magazijn_invoer_lbl_GB";
+            this.magazijn_invoer_lbl_GB.Size = new System.Drawing.Size(22, 13);
+            this.magazijn_invoer_lbl_GB.TabIndex = 39;
+            this.magazijn_invoer_lbl_GB.Text = "GB";
+            // 
+            // magazijn_invoer_memoryslide
+            // 
+            this.magazijn_invoer_memoryslide.Location = new System.Drawing.Point(72, 22);
+            this.magazijn_invoer_memoryslide.Maximum = 32;
+            this.magazijn_invoer_memoryslide.Minimum = 1;
+            this.magazijn_invoer_memoryslide.Name = "magazijn_invoer_memoryslide";
+            this.magazijn_invoer_memoryslide.Size = new System.Drawing.Size(75, 45);
+            this.magazijn_invoer_memoryslide.TabIndex = 40;
+            this.magazijn_invoer_memoryslide.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.magazijn_invoer_memoryslide.Value = 16;
+            this.magazijn_invoer_memoryslide.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // magazijn_invoer_combobx_geheugentype
             // 
             this.magazijn_invoer_combobx_geheugentype.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.magazijn_invoer_combobx_geheugentype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_geheugentype.FormattingEnabled = true;
-            this.magazijn_invoer_combobx_geheugentype.Location = new System.Drawing.Point(6, 223);
+            this.magazijn_invoer_combobx_geheugentype.Location = new System.Drawing.Point(159, 31);
             this.magazijn_invoer_combobx_geheugentype.Name = "magazijn_invoer_combobx_geheugentype";
-            this.magazijn_invoer_combobx_geheugentype.Size = new System.Drawing.Size(138, 21);
+            this.magazijn_invoer_combobx_geheugentype.Size = new System.Drawing.Size(150, 21);
             this.magazijn_invoer_combobx_geheugentype.TabIndex = 17;
             // 
-            // label6
+            // magazijn_invoer_lbl_geheugentype
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 207);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Geheugen Type";
-            // 
-            // magazijn_invoer_txtbox_geheugen
-            // 
-            this.magazijn_invoer_txtbox_geheugen.Location = new System.Drawing.Point(152, 223);
-            this.magazijn_invoer_txtbox_geheugen.Name = "magazijn_invoer_txtbox_geheugen";
-            this.magazijn_invoer_txtbox_geheugen.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_geheugen.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Geheugen";
-            // 
-            // magazijn_invoer_txtbox_rpm
-            // 
-            this.magazijn_invoer_txtbox_rpm.Location = new System.Drawing.Point(152, 142);
-            this.magazijn_invoer_txtbox_rpm.Name = "magazijn_invoer_txtbox_rpm";
-            this.magazijn_invoer_txtbox_rpm.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_rpm.TabIndex = 13;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 126);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "RPM";
-            // 
-            // magazijn_invoer_txtbox_product
-            // 
-            this.magazijn_invoer_txtbox_product.Location = new System.Drawing.Point(7, 142);
-            this.magazijn_invoer_txtbox_product.Name = "magazijn_invoer_txtbox_product";
-            this.magazijn_invoer_txtbox_product.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_product.TabIndex = 11;
-            // 
-            // magazijn_invoer_txtbox_serienummer
-            // 
-            this.magazijn_invoer_txtbox_serienummer.Location = new System.Drawing.Point(301, 97);
-            this.magazijn_invoer_txtbox_serienummer.Name = "magazijn_invoer_txtbox_serienummer";
-            this.magazijn_invoer_txtbox_serienummer.Size = new System.Drawing.Size(143, 20);
-            this.magazijn_invoer_txtbox_serienummer.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 81);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Serienummer";
-            // 
-            // magazijn_invoer_lbl_
-            // 
-            this.magazijn_invoer_lbl_.AutoSize = true;
-            this.magazijn_invoer_lbl_.Location = new System.Drawing.Point(3, 126);
-            this.magazijn_invoer_lbl_.Name = "magazijn_invoer_lbl_";
-            this.magazijn_invoer_lbl_.Size = new System.Drawing.Size(44, 13);
-            this.magazijn_invoer_lbl_.TabIndex = 8;
-            this.magazijn_invoer_lbl_.Text = "Product";
+            this.magazijn_invoer_lbl_geheugentype.AutoSize = true;
+            this.magazijn_invoer_lbl_geheugentype.Location = new System.Drawing.Point(156, 16);
+            this.magazijn_invoer_lbl_geheugentype.Name = "magazijn_invoer_lbl_geheugentype";
+            this.magazijn_invoer_lbl_geheugentype.Size = new System.Drawing.Size(84, 13);
+            this.magazijn_invoer_lbl_geheugentype.TabIndex = 16;
+            this.magazijn_invoer_lbl_geheugentype.Text = "Geheugen Type";
             // 
             // magazijn_invoer_txtbox_type
             // 
-            this.magazijn_invoer_txtbox_type.Location = new System.Drawing.Point(152, 97);
+            this.magazijn_invoer_txtbox_type.Location = new System.Drawing.Point(318, 91);
             this.magazijn_invoer_txtbox_type.Name = "magazijn_invoer_txtbox_type";
-            this.magazijn_invoer_txtbox_type.Size = new System.Drawing.Size(143, 20);
-            this.magazijn_invoer_txtbox_type.TabIndex = 7;
+            this.magazijn_invoer_txtbox_type.Size = new System.Drawing.Size(114, 20);
+            this.magazijn_invoer_txtbox_type.TabIndex = 55;
+            // 
+            // magazijn_invoer_grpbox_cpugegevens
+            // 
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_txtbox_cpuspeed);
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_combobx_architecture);
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_lbl_cpuspeed);
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_lbl_architecture);
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_txtbox_cpusocket);
+            this.magazijn_invoer_grpbox_cpugegevens.Controls.Add(this.magazijn_invoer_lbl_cpusocket);
+            this.magazijn_invoer_grpbox_cpugegevens.Location = new System.Drawing.Point(12, 126);
+            this.magazijn_invoer_grpbox_cpugegevens.Name = "magazijn_invoer_grpbox_cpugegevens";
+            this.magazijn_invoer_grpbox_cpugegevens.Size = new System.Drawing.Size(429, 61);
+            this.magazijn_invoer_grpbox_cpugegevens.TabIndex = 46;
+            this.magazijn_invoer_grpbox_cpugegevens.TabStop = false;
+            this.magazijn_invoer_grpbox_cpugegevens.Text = "Processor Gegevens";
+            // 
+            // magazijn_invoer_txtbox_cpuspeed
+            // 
+            this.magazijn_invoer_txtbox_cpuspeed.Location = new System.Drawing.Point(5, 30);
+            this.magazijn_invoer_txtbox_cpuspeed.Name = "magazijn_invoer_txtbox_cpuspeed";
+            this.magazijn_invoer_txtbox_cpuspeed.Size = new System.Drawing.Size(139, 20);
+            this.magazijn_invoer_txtbox_cpuspeed.TabIndex = 43;
+            // 
+            // magazijn_invoer_combobx_architecture
+            // 
+            this.magazijn_invoer_combobx_architecture.FormattingEnabled = true;
+            this.magazijn_invoer_combobx_architecture.Items.AddRange(new object[] {
+            "32 Bit",
+            "64 Bit",
+            "ARM 32 Bit",
+            "Itanium 64 Bit",
+            ""});
+            this.magazijn_invoer_combobx_architecture.Location = new System.Drawing.Point(150, 30);
+            this.magazijn_invoer_combobx_architecture.Name = "magazijn_invoer_combobx_architecture";
+            this.magazijn_invoer_combobx_architecture.Size = new System.Drawing.Size(121, 21);
+            this.magazijn_invoer_combobx_architecture.TabIndex = 45;
+            // 
+            // magazijn_invoer_lbl_cpuspeed
+            // 
+            this.magazijn_invoer_lbl_cpuspeed.AutoSize = true;
+            this.magazijn_invoer_lbl_cpuspeed.Location = new System.Drawing.Point(6, 16);
+            this.magazijn_invoer_lbl_cpuspeed.Name = "magazijn_invoer_lbl_cpuspeed";
+            this.magazijn_invoer_lbl_cpuspeed.Size = new System.Drawing.Size(63, 13);
+            this.magazijn_invoer_lbl_cpuspeed.TabIndex = 42;
+            this.magazijn_invoer_lbl_cpuspeed.Text = "CPU Speed";
+            // 
+            // magazijn_invoer_lbl_architecture
+            // 
+            this.magazijn_invoer_lbl_architecture.AutoSize = true;
+            this.magazijn_invoer_lbl_architecture.Location = new System.Drawing.Point(147, 14);
+            this.magazijn_invoer_lbl_architecture.Name = "magazijn_invoer_lbl_architecture";
+            this.magazijn_invoer_lbl_architecture.Size = new System.Drawing.Size(64, 13);
+            this.magazijn_invoer_lbl_architecture.TabIndex = 44;
+            this.magazijn_invoer_lbl_architecture.Text = "Architecture";
+            // 
+            // magazijn_invoer_txtbox_cpusocket
+            // 
+            this.magazijn_invoer_txtbox_cpusocket.Location = new System.Drawing.Point(277, 30);
+            this.magazijn_invoer_txtbox_cpusocket.Name = "magazijn_invoer_txtbox_cpusocket";
+            this.magazijn_invoer_txtbox_cpusocket.Size = new System.Drawing.Size(138, 20);
+            this.magazijn_invoer_txtbox_cpusocket.TabIndex = 23;
+            // 
+            // magazijn_invoer_lbl_cpusocket
+            // 
+            this.magazijn_invoer_lbl_cpusocket.AutoSize = true;
+            this.magazijn_invoer_lbl_cpusocket.Location = new System.Drawing.Point(273, 14);
+            this.magazijn_invoer_lbl_cpusocket.Name = "magazijn_invoer_lbl_cpusocket";
+            this.magazijn_invoer_lbl_cpusocket.Size = new System.Drawing.Size(41, 13);
+            this.magazijn_invoer_lbl_cpusocket.TabIndex = 22;
+            this.magazijn_invoer_lbl_cpusocket.Text = "Socket";
             // 
             // magazijn_invoer_txtbox_merk
             // 
             this.magazijn_invoer_txtbox_merk.AcceptsReturn = true;
-            this.magazijn_invoer_txtbox_merk.Location = new System.Drawing.Point(7, 98);
+            this.magazijn_invoer_txtbox_merk.Location = new System.Drawing.Point(162, 91);
             this.magazijn_invoer_txtbox_merk.Name = "magazijn_invoer_txtbox_merk";
-            this.magazijn_invoer_txtbox_merk.Size = new System.Drawing.Size(138, 20);
-            this.magazijn_invoer_txtbox_merk.TabIndex = 6;
+            this.magazijn_invoer_txtbox_merk.Size = new System.Drawing.Size(150, 20);
+            this.magazijn_invoer_txtbox_merk.TabIndex = 54;
             // 
-            // magazijn_invoer_lbl_fabrikant
+            // magazijn_invoer_txtbox_toegevoegdop
             // 
-            this.magazijn_invoer_lbl_fabrikant.AutoSize = true;
-            this.magazijn_invoer_lbl_fabrikant.Location = new System.Drawing.Point(150, 81);
-            this.magazijn_invoer_lbl_fabrikant.Name = "magazijn_invoer_lbl_fabrikant";
-            this.magazijn_invoer_lbl_fabrikant.Size = new System.Drawing.Size(31, 13);
-            this.magazijn_invoer_lbl_fabrikant.TabIndex = 5;
-            this.magazijn_invoer_lbl_fabrikant.Text = "Type";
+            this.magazijn_invoer_txtbox_toegevoegdop.Location = new System.Drawing.Point(339, 431);
+            this.magazijn_invoer_txtbox_toegevoegdop.Name = "magazijn_invoer_txtbox_toegevoegdop";
+            this.magazijn_invoer_txtbox_toegevoegdop.ReadOnly = true;
+            this.magazijn_invoer_txtbox_toegevoegdop.Size = new System.Drawing.Size(60, 20);
+            this.magazijn_invoer_txtbox_toegevoegdop.TabIndex = 41;
             // 
-            // magazijn_invoer_lbl_product
+            // magazijn_invoer_lbl_type
             // 
-            this.magazijn_invoer_lbl_product.AutoSize = true;
-            this.magazijn_invoer_lbl_product.Location = new System.Drawing.Point(4, 81);
-            this.magazijn_invoer_lbl_product.Name = "magazijn_invoer_lbl_product";
-            this.magazijn_invoer_lbl_product.Size = new System.Drawing.Size(31, 13);
-            this.magazijn_invoer_lbl_product.TabIndex = 3;
-            this.magazijn_invoer_lbl_product.Text = "Merk";
+            this.magazijn_invoer_lbl_type.AutoSize = true;
+            this.magazijn_invoer_lbl_type.Location = new System.Drawing.Point(315, 75);
+            this.magazijn_invoer_lbl_type.Name = "magazijn_invoer_lbl_type";
+            this.magazijn_invoer_lbl_type.Size = new System.Drawing.Size(31, 13);
+            this.magazijn_invoer_lbl_type.TabIndex = 53;
+            this.magazijn_invoer_lbl_type.Text = "Type";
+            // 
+            // magazijn_invoer_txtbox_vendorlink
+            // 
+            this.magazijn_invoer_txtbox_vendorlink.Location = new System.Drawing.Point(12, 470);
+            this.magazijn_invoer_txtbox_vendorlink.Name = "magazijn_invoer_txtbox_vendorlink";
+            this.magazijn_invoer_txtbox_vendorlink.Size = new System.Drawing.Size(144, 20);
+            this.magazijn_invoer_txtbox_vendorlink.TabIndex = 37;
+            // 
+            // magazijn_invoer_lbl_merk
+            // 
+            this.magazijn_invoer_lbl_merk.AutoSize = true;
+            this.magazijn_invoer_lbl_merk.Location = new System.Drawing.Point(161, 75);
+            this.magazijn_invoer_lbl_merk.Name = "magazijn_invoer_lbl_merk";
+            this.magazijn_invoer_lbl_merk.Size = new System.Drawing.Size(31, 13);
+            this.magazijn_invoer_lbl_merk.TabIndex = 52;
+            this.magazijn_invoer_lbl_merk.Text = "Merk";
+            // 
+            // magazijn_invoer_lbl_vendorlink
+            // 
+            this.magazijn_invoer_lbl_vendorlink.AutoSize = true;
+            this.magazijn_invoer_lbl_vendorlink.Location = new System.Drawing.Point(9, 454);
+            this.magazijn_invoer_lbl_vendorlink.Name = "magazijn_invoer_lbl_vendorlink";
+            this.magazijn_invoer_lbl_vendorlink.Size = new System.Drawing.Size(64, 13);
+            this.magazijn_invoer_lbl_vendorlink.TabIndex = 36;
+            this.magazijn_invoer_lbl_vendorlink.Text = "Vendor Link";
             // 
             // magazijn_invoer_combobx_subcategorie
             // 
             this.magazijn_invoer_combobx_subcategorie.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.magazijn_invoer_combobx_subcategorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_subcategorie.FormattingEnabled = true;
-            this.magazijn_invoer_combobx_subcategorie.Location = new System.Drawing.Point(155, 36);
+            this.magazijn_invoer_combobx_subcategorie.Location = new System.Drawing.Point(162, 47);
             this.magazijn_invoer_combobx_subcategorie.Name = "magazijn_invoer_combobx_subcategorie";
             this.magazijn_invoer_combobx_subcategorie.Size = new System.Drawing.Size(140, 21);
-            this.magazijn_invoer_combobx_subcategorie.TabIndex = 2;
+            this.magazijn_invoer_combobx_subcategorie.TabIndex = 51;
             this.magazijn_invoer_combobx_subcategorie.Visible = false;
             // 
             // magazijn_invoer_combobx_categorie
@@ -440,36 +532,156 @@
             this.magazijn_invoer_combobx_categorie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.magazijn_invoer_combobx_categorie.DropDownWidth = 140;
             this.magazijn_invoer_combobx_categorie.FormattingEnabled = true;
-            this.magazijn_invoer_combobx_categorie.Location = new System.Drawing.Point(6, 36);
+            this.magazijn_invoer_combobx_categorie.Location = new System.Drawing.Point(18, 47);
             this.magazijn_invoer_combobx_categorie.Name = "magazijn_invoer_combobx_categorie";
             this.magazijn_invoer_combobx_categorie.Size = new System.Drawing.Size(139, 21);
-            this.magazijn_invoer_combobx_categorie.TabIndex = 1;
+            this.magazijn_invoer_combobx_categorie.TabIndex = 50;
             this.magazijn_invoer_combobx_categorie.ValueMember = "ID";
-            this.magazijn_invoer_combobx_categorie.SelectedIndexChanged += new System.EventHandler(this.magazijn_invoer_combobx_categorie_SelectedIndexChanged);
+            this.magazijn_invoer_combobx_categorie.SelectedIndexChanged += new System.EventHandler(this.magazijn_invoer_combobx_categorie_SelectedIndexChanged_1);
             // 
-            // label1
+            // label10
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Categorie";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(336, 414);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 13);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "Toegevoegd";
+            // 
+            // magazijn_invoer_lbl_categorie
+            // 
+            this.magazijn_invoer_lbl_categorie.AutoSize = true;
+            this.magazijn_invoer_lbl_categorie.Location = new System.Drawing.Point(17, 31);
+            this.magazijn_invoer_lbl_categorie.Name = "magazijn_invoer_lbl_categorie";
+            this.magazijn_invoer_lbl_categorie.Size = new System.Drawing.Size(52, 13);
+            this.magazijn_invoer_lbl_categorie.TabIndex = 49;
+            this.magazijn_invoer_lbl_categorie.Text = "Categorie";
+            // 
+            // magazijn_invoer_btn_cancel
+            // 
+            this.magazijn_invoer_btn_cancel.Location = new System.Drawing.Point(6, 496);
+            this.magazijn_invoer_btn_cancel.Name = "magazijn_invoer_btn_cancel";
+            this.magazijn_invoer_btn_cancel.Size = new System.Drawing.Size(75, 23);
+            this.magazijn_invoer_btn_cancel.TabIndex = 33;
+            this.magazijn_invoer_btn_cancel.Text = "Annuleren";
+            this.magazijn_invoer_btn_cancel.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_btn_cancel.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // magazijn_invoer_btn_clearall
+            // 
+            this.magazijn_invoer_btn_clearall.Location = new System.Drawing.Point(87, 496);
+            this.magazijn_invoer_btn_clearall.Name = "magazijn_invoer_btn_clearall";
+            this.magazijn_invoer_btn_clearall.Size = new System.Drawing.Size(75, 23);
+            this.magazijn_invoer_btn_clearall.TabIndex = 32;
+            this.magazijn_invoer_btn_clearall.Text = "Clear All";
+            this.magazijn_invoer_btn_clearall.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_btn_toevoegen
+            // 
+            this.magazijn_invoer_btn_toevoegen.Location = new System.Drawing.Point(385, 496);
+            this.magazijn_invoer_btn_toevoegen.Name = "magazijn_invoer_btn_toevoegen";
+            this.magazijn_invoer_btn_toevoegen.Size = new System.Drawing.Size(75, 23);
+            this.magazijn_invoer_btn_toevoegen.TabIndex = 31;
+            this.magazijn_invoer_btn_toevoegen.Text = "Toevoegen";
+            this.magazijn_invoer_btn_toevoegen.UseVisualStyleBackColor = true;
+            this.magazijn_invoer_btn_toevoegen.Click += new System.EventHandler(this.magazijn_invoer_btn_toevoegen_Click);
+            // 
+            // magazijn_invoer_grpbox_voedinggegevens
+            // 
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_chkbox_psu_4pinatx);
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_chkbox_psu_satapower);
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_chkbox_psu_6pinpcie);
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_chkbox_psu_molexpower);
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_txtbox_watt);
+            this.magazijn_invoer_grpbox_voedinggegevens.Controls.Add(this.magazijn_invoer_lbl_psuwatt);
+            this.magazijn_invoer_grpbox_voedinggegevens.Location = new System.Drawing.Point(162, 355);
+            this.magazijn_invoer_grpbox_voedinggegevens.Name = "magazijn_invoer_grpbox_voedinggegevens";
+            this.magazijn_invoer_grpbox_voedinggegevens.Size = new System.Drawing.Size(172, 96);
+            this.magazijn_invoer_grpbox_voedinggegevens.TabIndex = 28;
+            this.magazijn_invoer_grpbox_voedinggegevens.TabStop = false;
+            this.magazijn_invoer_grpbox_voedinggegevens.Text = "Voeding Gegevens";
+            // 
+            // magazijn_invoer_chkbox_psu_4pinatx
+            // 
+            this.magazijn_invoer_chkbox_psu_4pinatx.AutoSize = true;
+            this.magazijn_invoer_chkbox_psu_4pinatx.Location = new System.Drawing.Point(96, 36);
+            this.magazijn_invoer_chkbox_psu_4pinatx.Name = "magazijn_invoer_chkbox_psu_4pinatx";
+            this.magazijn_invoer_chkbox_psu_4pinatx.Size = new System.Drawing.Size(74, 17);
+            this.magazijn_invoer_chkbox_psu_4pinatx.TabIndex = 28;
+            this.magazijn_invoer_chkbox_psu_4pinatx.Text = "4PIN ATX";
+            this.magazijn_invoer_chkbox_psu_4pinatx.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_chkbox_psu_satapower
+            // 
+            this.magazijn_invoer_chkbox_psu_satapower.AutoSize = true;
+            this.magazijn_invoer_chkbox_psu_satapower.Location = new System.Drawing.Point(6, 19);
+            this.magazijn_invoer_chkbox_psu_satapower.Name = "magazijn_invoer_chkbox_psu_satapower";
+            this.magazijn_invoer_chkbox_psu_satapower.Size = new System.Drawing.Size(51, 17);
+            this.magazijn_invoer_chkbox_psu_satapower.TabIndex = 24;
+            this.magazijn_invoer_chkbox_psu_satapower.Text = "S-ata";
+            this.magazijn_invoer_chkbox_psu_satapower.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_chkbox_psu_6pinpcie
+            // 
+            this.magazijn_invoer_chkbox_psu_6pinpcie.AutoSize = true;
+            this.magazijn_invoer_chkbox_psu_6pinpcie.Location = new System.Drawing.Point(6, 36);
+            this.magazijn_invoer_chkbox_psu_6pinpcie.Name = "magazijn_invoer_chkbox_psu_6pinpcie";
+            this.magazijn_invoer_chkbox_psu_6pinpcie.Size = new System.Drawing.Size(83, 17);
+            this.magazijn_invoer_chkbox_psu_6pinpcie.TabIndex = 27;
+            this.magazijn_invoer_chkbox_psu_6pinpcie.Text = "6PIN PCI-E ";
+            this.magazijn_invoer_chkbox_psu_6pinpcie.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_chkbox_psu_molexpower
+            // 
+            this.magazijn_invoer_chkbox_psu_molexpower.AutoSize = true;
+            this.magazijn_invoer_chkbox_psu_molexpower.Location = new System.Drawing.Point(96, 19);
+            this.magazijn_invoer_chkbox_psu_molexpower.Name = "magazijn_invoer_chkbox_psu_molexpower";
+            this.magazijn_invoer_chkbox_psu_molexpower.Size = new System.Drawing.Size(54, 17);
+            this.magazijn_invoer_chkbox_psu_molexpower.TabIndex = 25;
+            this.magazijn_invoer_chkbox_psu_molexpower.Text = "Molex";
+            this.magazijn_invoer_chkbox_psu_molexpower.UseVisualStyleBackColor = true;
+            // 
+            // magazijn_invoer_txtbox_watt
+            // 
+            this.magazijn_invoer_txtbox_watt.Location = new System.Drawing.Point(6, 67);
+            this.magazijn_invoer_txtbox_watt.Name = "magazijn_invoer_txtbox_watt";
+            this.magazijn_invoer_txtbox_watt.Size = new System.Drawing.Size(69, 20);
+            this.magazijn_invoer_txtbox_watt.TabIndex = 19;
+            // 
+            // magazijn_invoer_lbl_psuwatt
+            // 
+            this.magazijn_invoer_lbl_psuwatt.AutoSize = true;
+            this.magazijn_invoer_lbl_psuwatt.Location = new System.Drawing.Point(5, 52);
+            this.magazijn_invoer_lbl_psuwatt.Name = "magazijn_invoer_lbl_psuwatt";
+            this.magazijn_invoer_lbl_psuwatt.Size = new System.Drawing.Size(70, 13);
+            this.magazijn_invoer_lbl_psuwatt.TabIndex = 18;
+            this.magazijn_invoer_lbl_psuwatt.Text = "PSU wattage";
             // 
             // magazijn_invoeren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 431);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(491, 537);
             this.Controls.Add(this.magazijn_invoer_grpbox_productinvoer);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "magazijn_invoeren";
             this.Text = "Magazijn Invoer";
             this.Load += new System.EventHandler(this.magazijn_invoeren_Load);
             this.magazijn_invoer_grpbox_productinvoer.ResumeLayout(false);
             this.magazijn_invoer_grpbox_productinvoer.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.ResumeLayout(false);
+            this.magazijn_invoer_grpbox_hardeschijfgegevens.PerformLayout();
+            this.magazijn_invoer_grpbox_mobogegevens.ResumeLayout(false);
+            this.magazijn_invoer_grpbox_mobogegevens.PerformLayout();
+            this.magazijn_invoer_grpbox_memorydetails.ResumeLayout(false);
+            this.magazijn_invoer_grpbox_memorydetails.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.magazijn_invoer_memoryslide)).EndInit();
+            this.magazijn_invoer_grpbox_cpugegevens.ResumeLayout(false);
+            this.magazijn_invoer_grpbox_cpugegevens.PerformLayout();
+            this.magazijn_invoer_grpbox_voedinggegevens.ResumeLayout(false);
+            this.magazijn_invoer_grpbox_voedinggegevens.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -477,43 +689,60 @@
         #endregion
 
         private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_productinvoer;
-        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_categorie;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_subcategorie;
-        private System.Windows.Forms.Label magazijn_invoer_lbl_fabrikant;
-        private System.Windows.Forms.Label magazijn_invoer_lbl_product;
-        private System.Windows.Forms.Label magazijn_invoer_lbl_;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_type;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_merk;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_geheugen;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_geheugentype;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_geheugenamount;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_geheugen;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_rpm;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_product;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_serienummer;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_hd_rpm;
         private System.Windows.Forms.ComboBox magazijn_invoer_combobx_geheugentype;
-        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_socket;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_cpusocket;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_cpusocket;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_moboconnector;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_moboconnector;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_watt;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_psuwatt;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_psu_satapower;
+        private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_voedinggegevens;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_psu_4pinatx;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_psu_6pinpcie;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_psu_molexpower;
         private System.Windows.Forms.Button magazijn_invoer_btn_cancel;
         private System.Windows.Forms.Button magazijn_invoer_btn_clearall;
         private System.Windows.Forms.Button magazijn_invoer_btn_toevoegen;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_opslagcapaciteit;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_opslagcapaciteit;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker magazijn_invoer_datepicker1;
         private System.Windows.Forms.TextBox magazijn_invoer_txtbox_vendorlink;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_vendorlink;
+        private System.Windows.Forms.TrackBar magazijn_invoer_memoryslide;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_GB;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_toegevoegdop;
+        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_architecture;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_architecture;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_cpuspeed;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_cpuspeed;
+        private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_cpugegevens;
+        private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_hardeschijfgegevens;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_hardeschijf_gigabyte;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_sata;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_ide;
+        private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_mobogegevens;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_mobo_sata;
+        private System.Windows.Forms.CheckBox magazijn_invoer_chkbox_mobo_ide;
+        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_geheugenslot;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_mobo_geheugensloten;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_mobosocket;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_mobo_socket;
+        private System.Windows.Forms.GroupBox magazijn_invoer_grpbox_memorydetails;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_subcategorie;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_product;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_product;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_type;
+        private System.Windows.Forms.TextBox magazijn_invoer_txtbox_merk;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_type;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_merk;
+        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_subcategorie;
+        private System.Windows.Forms.ComboBox magazijn_invoer_combobx_categorie;
+        private System.Windows.Forms.Label magazijn_invoer_lbl_categorie;
     }
 }
