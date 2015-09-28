@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(call_add));
-            this.call_add_grpbox_customerdetails = new System.Windows.Forms.GroupBox();
+            this.call_add_grpbox_newcustomer = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -48,8 +48,8 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.call_add_existingcust = new System.Windows.Forms.RadioButton();
             this.call_add_newcust = new System.Windows.Forms.RadioButton();
-            this.call_add_cust_existingdetails = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.call_add_grpbox_existingcustomer = new System.Windows.Forms.GroupBox();
+            this.call_add_existingcust1_combobx_name = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -61,36 +61,36 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.call_add_existingcust_btn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.call_add_grpbox_customerdetails.SuspendLayout();
+            this.call_add_existingcust1_btn = new System.Windows.Forms.Button();
+            this.call_add_newcust_btn = new System.Windows.Forms.Button();
+            this.call_add_grpbox_newcustomer.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.call_add_cust_existingdetails.SuspendLayout();
+            this.call_add_grpbox_existingcustomer.SuspendLayout();
             this.SuspendLayout();
             // 
-            // call_add_grpbox_customerdetails
+            // call_add_grpbox_newcustomer
             // 
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox6);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label6);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox5);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label5);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox4);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label4);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox3);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label3);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox2);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label2);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.textBox1);
-            this.call_add_grpbox_customerdetails.Controls.Add(this.label1);
-            this.call_add_grpbox_customerdetails.Location = new System.Drawing.Point(12, 36);
-            this.call_add_grpbox_customerdetails.Name = "call_add_grpbox_customerdetails";
-            this.call_add_grpbox_customerdetails.Size = new System.Drawing.Size(335, 158);
-            this.call_add_grpbox_customerdetails.TabIndex = 0;
-            this.call_add_grpbox_customerdetails.TabStop = false;
-            this.call_add_grpbox_customerdetails.Text = "Klant gegevens";
-            this.call_add_grpbox_customerdetails.Visible = false;
-            this.call_add_grpbox_customerdetails.Enter += new System.EventHandler(this.call_add_grpbox_customerdetails_Enter);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox6);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label6);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox5);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label5);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox4);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label4);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox3);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label3);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox2);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label2);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.textBox1);
+            this.call_add_grpbox_newcustomer.Controls.Add(this.label1);
+            this.call_add_grpbox_newcustomer.Location = new System.Drawing.Point(12, 36);
+            this.call_add_grpbox_newcustomer.Name = "call_add_grpbox_newcustomer";
+            this.call_add_grpbox_newcustomer.Size = new System.Drawing.Size(335, 158);
+            this.call_add_grpbox_newcustomer.TabIndex = 0;
+            this.call_add_grpbox_newcustomer.TabStop = false;
+            this.call_add_grpbox_newcustomer.Text = "Klant gegevens - Nieuw toevoegen";
+            this.call_add_grpbox_newcustomer.Visible = false;
+            this.call_add_grpbox_newcustomer.Enter += new System.EventHandler(this.call_add_grpbox_customerdetails_Enter);
             // 
             // textBox6
             // 
@@ -248,35 +248,35 @@
             this.call_add_newcust.Text = "Nieuwe Klant";
             this.call_add_newcust.UseVisualStyleBackColor = true;
             // 
-            // call_add_cust_existingdetails
+            // call_add_grpbox_existingcustomer
             // 
-            this.call_add_cust_existingdetails.Controls.Add(this.comboBox1);
-            this.call_add_cust_existingdetails.Controls.Add(this.textBox7);
-            this.call_add_cust_existingdetails.Controls.Add(this.label7);
-            this.call_add_cust_existingdetails.Controls.Add(this.textBox8);
-            this.call_add_cust_existingdetails.Controls.Add(this.label8);
-            this.call_add_cust_existingdetails.Controls.Add(this.textBox9);
-            this.call_add_cust_existingdetails.Controls.Add(this.label9);
-            this.call_add_cust_existingdetails.Controls.Add(this.textBox10);
-            this.call_add_cust_existingdetails.Controls.Add(this.label10);
-            this.call_add_cust_existingdetails.Controls.Add(this.textBox11);
-            this.call_add_cust_existingdetails.Controls.Add(this.label11);
-            this.call_add_cust_existingdetails.Controls.Add(this.label12);
-            this.call_add_cust_existingdetails.Location = new System.Drawing.Point(12, 36);
-            this.call_add_cust_existingdetails.Name = "call_add_cust_existingdetails";
-            this.call_add_cust_existingdetails.Size = new System.Drawing.Size(335, 158);
-            this.call_add_cust_existingdetails.TabIndex = 12;
-            this.call_add_cust_existingdetails.TabStop = false;
-            this.call_add_cust_existingdetails.Text = "Klant gegevens";
-            this.call_add_cust_existingdetails.Visible = false;
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_name);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox7);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label7);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox8);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label8);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox9);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label9);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox10);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label10);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox11);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label11);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.label12);
+            this.call_add_grpbox_existingcustomer.Location = new System.Drawing.Point(12, 36);
+            this.call_add_grpbox_existingcustomer.Name = "call_add_grpbox_existingcustomer";
+            this.call_add_grpbox_existingcustomer.Size = new System.Drawing.Size(335, 158);
+            this.call_add_grpbox_existingcustomer.TabIndex = 12;
+            this.call_add_grpbox_existingcustomer.TabStop = false;
+            this.call_add_grpbox_existingcustomer.Text = "Klant gegevens - Bestaande Klant";
+            this.call_add_grpbox_existingcustomer.Visible = false;
             // 
-            // comboBox1
+            // call_add_existingcust1_combobx_name
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(10, 37);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 21);
-            this.comboBox1.TabIndex = 12;
+            this.call_add_existingcust1_combobx_name.FormattingEnabled = true;
+            this.call_add_existingcust1_combobx_name.Location = new System.Drawing.Point(10, 37);
+            this.call_add_existingcust1_combobx_name.Name = "call_add_existingcust1_combobx_name";
+            this.call_add_existingcust1_combobx_name.Size = new System.Drawing.Size(159, 21);
+            this.call_add_existingcust1_combobx_name.TabIndex = 12;
             // 
             // textBox7
             // 
@@ -368,51 +368,51 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Naam klant";
             // 
-            // call_add_existingcust_btn
+            // call_add_existingcust1_btn
             // 
-            this.call_add_existingcust_btn.Location = new System.Drawing.Point(14, 7);
-            this.call_add_existingcust_btn.Name = "call_add_existingcust_btn";
-            this.call_add_existingcust_btn.Size = new System.Drawing.Size(113, 23);
-            this.call_add_existingcust_btn.TabIndex = 13;
-            this.call_add_existingcust_btn.Text = "Bestaande Klant";
-            this.call_add_existingcust_btn.UseVisualStyleBackColor = true;
-            this.call_add_existingcust_btn.Click += new System.EventHandler(this.button1_Click);
+            this.call_add_existingcust1_btn.Location = new System.Drawing.Point(131, 7);
+            this.call_add_existingcust1_btn.Name = "call_add_existingcust1_btn";
+            this.call_add_existingcust1_btn.Size = new System.Drawing.Size(113, 23);
+            this.call_add_existingcust1_btn.TabIndex = 13;
+            this.call_add_existingcust1_btn.Text = "Bestaande Klant";
+            this.call_add_existingcust1_btn.UseVisualStyleBackColor = true;
+            this.call_add_existingcust1_btn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // call_add_newcust_btn
             // 
-            this.button2.Location = new System.Drawing.Point(133, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Nieuwe Klant";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.call_add_newcust_btn.Location = new System.Drawing.Point(12, 7);
+            this.call_add_newcust_btn.Name = "call_add_newcust_btn";
+            this.call_add_newcust_btn.Size = new System.Drawing.Size(113, 23);
+            this.call_add_newcust_btn.TabIndex = 14;
+            this.call_add_newcust_btn.Text = "Nieuwe Klant";
+            this.call_add_newcust_btn.UseVisualStyleBackColor = true;
+            this.call_add_newcust_btn.Click += new System.EventHandler(this.button2_Click);
             // 
             // call_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 489);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.call_add_existingcust_btn);
-            this.Controls.Add(this.call_add_cust_existingdetails);
+            this.Controls.Add(this.call_add_newcust_btn);
+            this.Controls.Add(this.call_add_existingcust1_btn);
+            this.Controls.Add(this.call_add_grpbox_existingcustomer);
             this.Controls.Add(this.call_add_newcust);
             this.Controls.Add(this.call_add_existingcust);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.call_add_grpbox_customerdetails);
+            this.Controls.Add(this.call_add_grpbox_newcustomer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "call_add";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Call - Toevoegen";
             this.Load += new System.EventHandler(this.call_add_Load);
-            this.call_add_grpbox_customerdetails.ResumeLayout(false);
-            this.call_add_grpbox_customerdetails.PerformLayout();
+            this.call_add_grpbox_newcustomer.ResumeLayout(false);
+            this.call_add_grpbox_newcustomer.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.call_add_cust_existingdetails.ResumeLayout(false);
-            this.call_add_cust_existingdetails.PerformLayout();
+            this.call_add_grpbox_existingcustomer.ResumeLayout(false);
+            this.call_add_grpbox_existingcustomer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,7 +420,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox call_add_grpbox_customerdetails;
+        private System.Windows.Forms.GroupBox call_add_grpbox_newcustomer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
@@ -439,7 +439,7 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RadioButton call_add_existingcust;
         private System.Windows.Forms.RadioButton call_add_newcust;
-        private System.Windows.Forms.GroupBox call_add_cust_existingdetails;
+        private System.Windows.Forms.GroupBox call_add_grpbox_existingcustomer;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox8;
@@ -451,8 +451,8 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button call_add_existingcust_btn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox call_add_existingcust1_combobx_name;
+        private System.Windows.Forms.Button call_add_existingcust1_btn;
+        private System.Windows.Forms.Button call_add_newcust_btn;
     }
 }

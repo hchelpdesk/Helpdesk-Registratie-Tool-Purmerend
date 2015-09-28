@@ -31,16 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(magazijn_toevoegen));
             this.magazijn_toevoevoegen_btn_productoevoegen = new System.Windows.Forms.Button();
             this.magazijn_toevoegen_enkelproductoevoegen = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.magazijn_toevoegen_multipleinserttoevoegen = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.magazijn_toevoegen_combobx_didactisch = new System.Windows.Forms.ComboBox();
-            this.magazijn_toevoegen_txtbox_geheugen = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_product = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_functie = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_aansluiting = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_type = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_merk = new System.Windows.Forms.TextBox();
-            this.magazijn_toevoegen_txtbox_aantal = new System.Windows.Forms.TextBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_singleinsert_geheugen1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_product1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_functies1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_aansluiting1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_type1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_merk1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_singleinsert_aantal1 = new System.Windows.Forms.TextBox();
             this.magazijn_toevoegen_lbl_didactisch = new System.Windows.Forms.Label();
             this.magazijn_toevoegen_lbl_geheugen = new System.Windows.Forms.Label();
             this.magazijn_toevoegen_lbl_product = new System.Windows.Forms.Label();
@@ -50,54 +51,47 @@
             this.magazijn_toevoegen_lbl_merk = new System.Windows.Forms.Label();
             this.magazijn_toevoegen_lbl_aantal = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.magazijn_toevoegen_multipleinsert_combobx5 = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_multipleinsert_geheugensize5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_product5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_functies5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aansluiting5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_type5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_merk5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aantal5 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_combobx4 = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_multipleinsert_geheugensize4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_product4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_functies4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aansluiting4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_type4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_merk4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aantal4 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_combobx3 = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_multipleinsert_geheugensize3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_product3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_functies3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aansluiting3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_type3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_merk3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aantal3 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_combobx2 = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_multipleinsert_geheugensize2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_product2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_functies2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aansluiting2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_type2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_merk2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aantal2 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_combobx1 = new System.Windows.Forms.ComboBox();
+            this.magazijn_toevoegen_multipleinsert_geheugensize1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_product1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_functies1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aansluiting1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_type1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_merk1 = new System.Windows.Forms.TextBox();
+            this.magazijn_toevoegen_multipleinsert_aantal1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -112,7 +106,7 @@
             // 
             // magazijn_toevoevoegen_btn_productoevoegen
             // 
-            this.magazijn_toevoevoegen_btn_productoevoegen.Location = new System.Drawing.Point(652, 7);
+            this.magazijn_toevoevoegen_btn_productoevoegen.Location = new System.Drawing.Point(613, 216);
             this.magazijn_toevoevoegen_btn_productoevoegen.Name = "magazijn_toevoevoegen_btn_productoevoegen";
             this.magazijn_toevoevoegen_btn_productoevoegen.Size = new System.Drawing.Size(114, 23);
             this.magazijn_toevoevoegen_btn_productoevoegen.TabIndex = 16;
@@ -132,28 +126,29 @@
             this.magazijn_toevoegen_enkelproductoevoegen.UseVisualStyleBackColor = true;
             this.magazijn_toevoegen_enkelproductoevoegen.CheckedChanged += new System.EventHandler(this.magazijn_toevoegen_enkelproductoevoegen_CheckedChanged);
             // 
-            // radioButton2
+            // magazijn_toevoegen_multipleinserttoevoegen
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(156, 13);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(180, 17);
-            this.radioButton2.TabIndex = 18;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Meerdere Producten Toevoegen";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.magazijn_toevoegen_multipleinserttoevoegen.AutoSize = true;
+            this.magazijn_toevoegen_multipleinserttoevoegen.Location = new System.Drawing.Point(156, 13);
+            this.magazijn_toevoegen_multipleinserttoevoegen.Name = "magazijn_toevoegen_multipleinserttoevoegen";
+            this.magazijn_toevoegen_multipleinserttoevoegen.Size = new System.Drawing.Size(180, 17);
+            this.magazijn_toevoegen_multipleinserttoevoegen.TabIndex = 18;
+            this.magazijn_toevoegen_multipleinserttoevoegen.TabStop = true;
+            this.magazijn_toevoegen_multipleinserttoevoegen.Text = "Meerdere Producten Toevoegen";
+            this.magazijn_toevoegen_multipleinserttoevoegen.UseVisualStyleBackColor = true;
+            this.magazijn_toevoegen_multipleinserttoevoegen.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_combobx_didactisch);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_geheugen);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_product);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_functie);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_aansluiting);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_type);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_merk);
-            this.groupBox1.Controls.Add(this.magazijn_toevoegen_txtbox_aantal);
+            this.groupBox1.Controls.Add(this.linkLabel2);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_combobx_didactisch);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_geheugen1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_product1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_functies1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_aansluiting1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_type1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_merk1);
+            this.groupBox1.Controls.Add(this.magazijn_toevoegen_singleinsert_aantal1);
             this.groupBox1.Controls.Add(this.magazijn_toevoegen_lbl_didactisch);
             this.groupBox1.Controls.Add(this.magazijn_toevoegen_lbl_geheugen);
             this.groupBox1.Controls.Add(this.magazijn_toevoegen_lbl_product);
@@ -170,65 +165,76 @@
             this.groupBox1.Text = "Enkel Product Toevoegen";
             this.groupBox1.Visible = false;
             // 
-            // magazijn_toevoegen_combobx_didactisch
+            // linkLabel2
             // 
-            this.magazijn_toevoegen_combobx_didactisch.FormattingEnabled = true;
-            this.magazijn_toevoegen_combobx_didactisch.Items.AddRange(new object[] {
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(604, 16);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(13, 13);
+            this.linkLabel2.TabIndex = 66;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "?";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // magazijn_toevoegen_singleinsert_combobx_didactisch
+            // 
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.FormattingEnabled = true;
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.magazijn_toevoegen_combobx_didactisch.Location = new System.Drawing.Point(650, 33);
-            this.magazijn_toevoegen_combobx_didactisch.Name = "magazijn_toevoegen_combobx_didactisch";
-            this.magazijn_toevoegen_combobx_didactisch.Size = new System.Drawing.Size(53, 21);
-            this.magazijn_toevoegen_combobx_didactisch.TabIndex = 31;
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.Location = new System.Drawing.Point(650, 33);
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.Name = "magazijn_toevoegen_singleinsert_combobx_didactisch";
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_singleinsert_combobx_didactisch.TabIndex = 31;
             // 
-            // magazijn_toevoegen_txtbox_geheugen
+            // magazijn_toevoegen_singleinsert_geheugen1
             // 
-            this.magazijn_toevoegen_txtbox_geheugen.Location = new System.Drawing.Point(551, 33);
-            this.magazijn_toevoegen_txtbox_geheugen.Name = "magazijn_toevoegen_txtbox_geheugen";
-            this.magazijn_toevoegen_txtbox_geheugen.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_geheugen.TabIndex = 30;
+            this.magazijn_toevoegen_singleinsert_geheugen1.Location = new System.Drawing.Point(551, 33);
+            this.magazijn_toevoegen_singleinsert_geheugen1.Name = "magazijn_toevoegen_singleinsert_geheugen1";
+            this.magazijn_toevoegen_singleinsert_geheugen1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_geheugen1.TabIndex = 30;
             // 
-            // magazijn_toevoegen_txtbox_product
+            // magazijn_toevoegen_singleinsert_product1
             // 
-            this.magazijn_toevoegen_txtbox_product.Location = new System.Drawing.Point(453, 33);
-            this.magazijn_toevoegen_txtbox_product.Name = "magazijn_toevoegen_txtbox_product";
-            this.magazijn_toevoegen_txtbox_product.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_product.TabIndex = 29;
+            this.magazijn_toevoegen_singleinsert_product1.Location = new System.Drawing.Point(453, 33);
+            this.magazijn_toevoegen_singleinsert_product1.Name = "magazijn_toevoegen_singleinsert_product1";
+            this.magazijn_toevoegen_singleinsert_product1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_product1.TabIndex = 29;
             // 
-            // magazijn_toevoegen_txtbox_functie
+            // magazijn_toevoegen_singleinsert_functies1
             // 
-            this.magazijn_toevoegen_txtbox_functie.Location = new System.Drawing.Point(355, 33);
-            this.magazijn_toevoegen_txtbox_functie.Name = "magazijn_toevoegen_txtbox_functie";
-            this.magazijn_toevoegen_txtbox_functie.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_functie.TabIndex = 28;
+            this.magazijn_toevoegen_singleinsert_functies1.Location = new System.Drawing.Point(355, 33);
+            this.magazijn_toevoegen_singleinsert_functies1.Name = "magazijn_toevoegen_singleinsert_functies1";
+            this.magazijn_toevoegen_singleinsert_functies1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_functies1.TabIndex = 28;
             // 
-            // magazijn_toevoegen_txtbox_aansluiting
+            // magazijn_toevoegen_singleinsert_aansluiting1
             // 
-            this.magazijn_toevoegen_txtbox_aansluiting.Location = new System.Drawing.Point(257, 33);
-            this.magazijn_toevoegen_txtbox_aansluiting.Name = "magazijn_toevoegen_txtbox_aansluiting";
-            this.magazijn_toevoegen_txtbox_aansluiting.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_aansluiting.TabIndex = 27;
+            this.magazijn_toevoegen_singleinsert_aansluiting1.Location = new System.Drawing.Point(257, 33);
+            this.magazijn_toevoegen_singleinsert_aansluiting1.Name = "magazijn_toevoegen_singleinsert_aansluiting1";
+            this.magazijn_toevoegen_singleinsert_aansluiting1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_aansluiting1.TabIndex = 27;
             // 
-            // magazijn_toevoegen_txtbox_type
+            // magazijn_toevoegen_singleinsert_type1
             // 
-            this.magazijn_toevoegen_txtbox_type.Location = new System.Drawing.Point(159, 33);
-            this.magazijn_toevoegen_txtbox_type.Name = "magazijn_toevoegen_txtbox_type";
-            this.magazijn_toevoegen_txtbox_type.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_type.TabIndex = 26;
+            this.magazijn_toevoegen_singleinsert_type1.Location = new System.Drawing.Point(159, 33);
+            this.magazijn_toevoegen_singleinsert_type1.Name = "magazijn_toevoegen_singleinsert_type1";
+            this.magazijn_toevoegen_singleinsert_type1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_type1.TabIndex = 26;
             // 
-            // magazijn_toevoegen_txtbox_merk
+            // magazijn_toevoegen_singleinsert_merk1
             // 
-            this.magazijn_toevoegen_txtbox_merk.Location = new System.Drawing.Point(61, 33);
-            this.magazijn_toevoegen_txtbox_merk.Name = "magazijn_toevoegen_txtbox_merk";
-            this.magazijn_toevoegen_txtbox_merk.Size = new System.Drawing.Size(92, 20);
-            this.magazijn_toevoegen_txtbox_merk.TabIndex = 25;
+            this.magazijn_toevoegen_singleinsert_merk1.Location = new System.Drawing.Point(61, 33);
+            this.magazijn_toevoegen_singleinsert_merk1.Name = "magazijn_toevoegen_singleinsert_merk1";
+            this.magazijn_toevoegen_singleinsert_merk1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_singleinsert_merk1.TabIndex = 25;
             // 
-            // magazijn_toevoegen_txtbox_aantal
+            // magazijn_toevoegen_singleinsert_aantal1
             // 
-            this.magazijn_toevoegen_txtbox_aantal.Location = new System.Drawing.Point(9, 33);
-            this.magazijn_toevoegen_txtbox_aantal.Name = "magazijn_toevoegen_txtbox_aantal";
-            this.magazijn_toevoegen_txtbox_aantal.Size = new System.Drawing.Size(46, 20);
-            this.magazijn_toevoegen_txtbox_aantal.TabIndex = 24;
+            this.magazijn_toevoegen_singleinsert_aantal1.Location = new System.Drawing.Point(9, 33);
+            this.magazijn_toevoegen_singleinsert_aantal1.Name = "magazijn_toevoegen_singleinsert_aantal1";
+            this.magazijn_toevoegen_singleinsert_aantal1.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_singleinsert_aantal1.TabIndex = 24;
             // 
             // magazijn_toevoegen_lbl_didactisch
             // 
@@ -304,54 +310,47 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.textBox36);
-            this.groupBox2.Controls.Add(this.textBox37);
-            this.groupBox2.Controls.Add(this.textBox38);
-            this.groupBox2.Controls.Add(this.textBox39);
-            this.groupBox2.Controls.Add(this.textBox40);
-            this.groupBox2.Controls.Add(this.textBox41);
-            this.groupBox2.Controls.Add(this.textBox42);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.textBox29);
-            this.groupBox2.Controls.Add(this.textBox30);
-            this.groupBox2.Controls.Add(this.textBox31);
-            this.groupBox2.Controls.Add(this.textBox32);
-            this.groupBox2.Controls.Add(this.textBox33);
-            this.groupBox2.Controls.Add(this.textBox34);
-            this.groupBox2.Controls.Add(this.textBox35);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.textBox22);
-            this.groupBox2.Controls.Add(this.textBox23);
-            this.groupBox2.Controls.Add(this.textBox24);
-            this.groupBox2.Controls.Add(this.textBox25);
-            this.groupBox2.Controls.Add(this.textBox26);
-            this.groupBox2.Controls.Add(this.textBox27);
-            this.groupBox2.Controls.Add(this.textBox28);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.textBox15);
-            this.groupBox2.Controls.Add(this.textBox16);
-            this.groupBox2.Controls.Add(this.textBox17);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.textBox19);
-            this.groupBox2.Controls.Add(this.textBox20);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.linkLabel1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_combobx5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_geheugensize5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_product5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_functies5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aansluiting5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_type5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_merk5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aantal5);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_combobx4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_geheugensize4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_product4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_functies4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aansluiting4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_type4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_merk4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aantal4);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_combobx3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_geheugensize3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_product3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_functies3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aansluiting3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_type3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_merk3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aantal3);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_combobx2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_geheugensize2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_product2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_functies2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aansluiting2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_type2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_merk2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aantal2);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_combobx1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_geheugensize1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_product1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_functies1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aansluiting1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_type1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_merk1);
+            this.groupBox2.Controls.Add(this.magazijn_toevoegen_multipleinsert_aantal1);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
@@ -360,374 +359,324 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(13, 36);
+            this.groupBox2.Location = new System.Drawing.Point(12, 36);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(713, 200);
+            this.groupBox2.Size = new System.Drawing.Size(713, 165);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Meerdere Producten Toevoegen";
             this.groupBox2.Visible = false;
             // 
-            // comboBox6
+            // linkLabel1
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(604, 16);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(13, 13);
+            this.linkLabel1.TabIndex = 65;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // magazijn_toevoegen_multipleinsert_combobx5
+            // 
+            this.magazijn_toevoegen_multipleinsert_combobx5.FormattingEnabled = true;
+            this.magazijn_toevoegen_multipleinsert_combobx5.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.comboBox6.Location = new System.Drawing.Point(650, 163);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(53, 21);
-            this.comboBox6.TabIndex = 72;
+            this.magazijn_toevoegen_multipleinsert_combobx5.Location = new System.Drawing.Point(650, 137);
+            this.magazijn_toevoegen_multipleinsert_combobx5.Name = "magazijn_toevoegen_multipleinsert_combobx5";
+            this.magazijn_toevoegen_multipleinsert_combobx5.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_multipleinsert_combobx5.TabIndex = 64;
             // 
-            // textBox36
+            // magazijn_toevoegen_multipleinsert_geheugensize5
             // 
-            this.textBox36.Location = new System.Drawing.Point(551, 163);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(92, 20);
-            this.textBox36.TabIndex = 71;
+            this.magazijn_toevoegen_multipleinsert_geheugensize5.Location = new System.Drawing.Point(551, 137);
+            this.magazijn_toevoegen_multipleinsert_geheugensize5.Name = "magazijn_toevoegen_multipleinsert_geheugensize5";
+            this.magazijn_toevoegen_multipleinsert_geheugensize5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_geheugensize5.TabIndex = 63;
             // 
-            // textBox37
+            // magazijn_toevoegen_multipleinsert_product5
             // 
-            this.textBox37.Location = new System.Drawing.Point(453, 163);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(92, 20);
-            this.textBox37.TabIndex = 70;
+            this.magazijn_toevoegen_multipleinsert_product5.Location = new System.Drawing.Point(453, 137);
+            this.magazijn_toevoegen_multipleinsert_product5.Name = "magazijn_toevoegen_multipleinsert_product5";
+            this.magazijn_toevoegen_multipleinsert_product5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_product5.TabIndex = 62;
             // 
-            // textBox38
+            // magazijn_toevoegen_multipleinsert_functies5
             // 
-            this.textBox38.Location = new System.Drawing.Point(355, 163);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(92, 20);
-            this.textBox38.TabIndex = 69;
+            this.magazijn_toevoegen_multipleinsert_functies5.Location = new System.Drawing.Point(355, 137);
+            this.magazijn_toevoegen_multipleinsert_functies5.Name = "magazijn_toevoegen_multipleinsert_functies5";
+            this.magazijn_toevoegen_multipleinsert_functies5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_functies5.TabIndex = 61;
             // 
-            // textBox39
+            // magazijn_toevoegen_multipleinsert_aansluiting5
             // 
-            this.textBox39.Location = new System.Drawing.Point(257, 163);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(92, 20);
-            this.textBox39.TabIndex = 68;
+            this.magazijn_toevoegen_multipleinsert_aansluiting5.Location = new System.Drawing.Point(257, 137);
+            this.magazijn_toevoegen_multipleinsert_aansluiting5.Name = "magazijn_toevoegen_multipleinsert_aansluiting5";
+            this.magazijn_toevoegen_multipleinsert_aansluiting5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_aansluiting5.TabIndex = 60;
             // 
-            // textBox40
+            // magazijn_toevoegen_multipleinsert_type5
             // 
-            this.textBox40.Location = new System.Drawing.Point(159, 163);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(92, 20);
-            this.textBox40.TabIndex = 67;
+            this.magazijn_toevoegen_multipleinsert_type5.Location = new System.Drawing.Point(159, 137);
+            this.magazijn_toevoegen_multipleinsert_type5.Name = "magazijn_toevoegen_multipleinsert_type5";
+            this.magazijn_toevoegen_multipleinsert_type5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_type5.TabIndex = 59;
             // 
-            // textBox41
+            // magazijn_toevoegen_multipleinsert_merk5
             // 
-            this.textBox41.Location = new System.Drawing.Point(61, 163);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(92, 20);
-            this.textBox41.TabIndex = 66;
+            this.magazijn_toevoegen_multipleinsert_merk5.Location = new System.Drawing.Point(61, 137);
+            this.magazijn_toevoegen_multipleinsert_merk5.Name = "magazijn_toevoegen_multipleinsert_merk5";
+            this.magazijn_toevoegen_multipleinsert_merk5.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_merk5.TabIndex = 58;
             // 
-            // textBox42
+            // magazijn_toevoegen_multipleinsert_aantal5
             // 
-            this.textBox42.Location = new System.Drawing.Point(9, 163);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(46, 20);
-            this.textBox42.TabIndex = 65;
-            
+            this.magazijn_toevoegen_multipleinsert_aantal5.Location = new System.Drawing.Point(9, 137);
+            this.magazijn_toevoegen_multipleinsert_aantal5.Name = "magazijn_toevoegen_multipleinsert_aantal5";
+            this.magazijn_toevoegen_multipleinsert_aantal5.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_multipleinsert_aantal5.TabIndex = 57;
             // 
-            // comboBox5
+            // magazijn_toevoegen_multipleinsert_combobx4
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.magazijn_toevoegen_multipleinsert_combobx4.FormattingEnabled = true;
+            this.magazijn_toevoegen_multipleinsert_combobx4.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.comboBox5.Location = new System.Drawing.Point(650, 137);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(53, 21);
-            this.comboBox5.TabIndex = 64;
+            this.magazijn_toevoegen_multipleinsert_combobx4.Location = new System.Drawing.Point(650, 111);
+            this.magazijn_toevoegen_multipleinsert_combobx4.Name = "magazijn_toevoegen_multipleinsert_combobx4";
+            this.magazijn_toevoegen_multipleinsert_combobx4.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_multipleinsert_combobx4.TabIndex = 56;
             // 
-            // textBox29
+            // magazijn_toevoegen_multipleinsert_geheugensize4
             // 
-            this.textBox29.Location = new System.Drawing.Point(551, 137);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(92, 20);
-            this.textBox29.TabIndex = 63;
+            this.magazijn_toevoegen_multipleinsert_geheugensize4.Location = new System.Drawing.Point(551, 111);
+            this.magazijn_toevoegen_multipleinsert_geheugensize4.Name = "magazijn_toevoegen_multipleinsert_geheugensize4";
+            this.magazijn_toevoegen_multipleinsert_geheugensize4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_geheugensize4.TabIndex = 55;
             // 
-            // textBox30
+            // magazijn_toevoegen_multipleinsert_product4
             // 
-            this.textBox30.Location = new System.Drawing.Point(453, 137);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(92, 20);
-            this.textBox30.TabIndex = 62;
+            this.magazijn_toevoegen_multipleinsert_product4.Location = new System.Drawing.Point(453, 111);
+            this.magazijn_toevoegen_multipleinsert_product4.Name = "magazijn_toevoegen_multipleinsert_product4";
+            this.magazijn_toevoegen_multipleinsert_product4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_product4.TabIndex = 54;
             // 
-            // textBox31
+            // magazijn_toevoegen_multipleinsert_functies4
             // 
-            this.textBox31.Location = new System.Drawing.Point(355, 137);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(92, 20);
-            this.textBox31.TabIndex = 61;
+            this.magazijn_toevoegen_multipleinsert_functies4.Location = new System.Drawing.Point(355, 111);
+            this.magazijn_toevoegen_multipleinsert_functies4.Name = "magazijn_toevoegen_multipleinsert_functies4";
+            this.magazijn_toevoegen_multipleinsert_functies4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_functies4.TabIndex = 53;
             // 
-            // textBox32
+            // magazijn_toevoegen_multipleinsert_aansluiting4
             // 
-            this.textBox32.Location = new System.Drawing.Point(257, 137);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(92, 20);
-            this.textBox32.TabIndex = 60;
+            this.magazijn_toevoegen_multipleinsert_aansluiting4.Location = new System.Drawing.Point(257, 111);
+            this.magazijn_toevoegen_multipleinsert_aansluiting4.Name = "magazijn_toevoegen_multipleinsert_aansluiting4";
+            this.magazijn_toevoegen_multipleinsert_aansluiting4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_aansluiting4.TabIndex = 52;
             // 
-            // textBox33
+            // magazijn_toevoegen_multipleinsert_type4
             // 
-            this.textBox33.Location = new System.Drawing.Point(159, 137);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(92, 20);
-            this.textBox33.TabIndex = 59;
+            this.magazijn_toevoegen_multipleinsert_type4.Location = new System.Drawing.Point(159, 111);
+            this.magazijn_toevoegen_multipleinsert_type4.Name = "magazijn_toevoegen_multipleinsert_type4";
+            this.magazijn_toevoegen_multipleinsert_type4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_type4.TabIndex = 51;
             // 
-            // textBox34
+            // magazijn_toevoegen_multipleinsert_merk4
             // 
-            this.textBox34.Location = new System.Drawing.Point(61, 137);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(92, 20);
-            this.textBox34.TabIndex = 58;
+            this.magazijn_toevoegen_multipleinsert_merk4.Location = new System.Drawing.Point(61, 111);
+            this.magazijn_toevoegen_multipleinsert_merk4.Name = "magazijn_toevoegen_multipleinsert_merk4";
+            this.magazijn_toevoegen_multipleinsert_merk4.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_merk4.TabIndex = 50;
             // 
-            // textBox35
+            // magazijn_toevoegen_multipleinsert_aantal4
             // 
-            this.textBox35.Location = new System.Drawing.Point(9, 137);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(46, 20);
-            this.textBox35.TabIndex = 57;
+            this.magazijn_toevoegen_multipleinsert_aantal4.Location = new System.Drawing.Point(9, 111);
+            this.magazijn_toevoegen_multipleinsert_aantal4.Name = "magazijn_toevoegen_multipleinsert_aantal4";
+            this.magazijn_toevoegen_multipleinsert_aantal4.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_multipleinsert_aantal4.TabIndex = 49;
             // 
-            // comboBox4
+            // magazijn_toevoegen_multipleinsert_combobx3
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.magazijn_toevoegen_multipleinsert_combobx3.FormattingEnabled = true;
+            this.magazijn_toevoegen_multipleinsert_combobx3.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.comboBox4.Location = new System.Drawing.Point(651, 111);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(53, 21);
-            this.comboBox4.TabIndex = 56;
+            this.magazijn_toevoegen_multipleinsert_combobx3.Location = new System.Drawing.Point(650, 85);
+            this.magazijn_toevoegen_multipleinsert_combobx3.Name = "magazijn_toevoegen_multipleinsert_combobx3";
+            this.magazijn_toevoegen_multipleinsert_combobx3.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_multipleinsert_combobx3.TabIndex = 48;
             // 
-            // textBox22
+            // magazijn_toevoegen_multipleinsert_geheugensize3
             // 
-            this.textBox22.Location = new System.Drawing.Point(552, 111);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(92, 20);
-            this.textBox22.TabIndex = 55;
+            this.magazijn_toevoegen_multipleinsert_geheugensize3.Location = new System.Drawing.Point(551, 85);
+            this.magazijn_toevoegen_multipleinsert_geheugensize3.Name = "magazijn_toevoegen_multipleinsert_geheugensize3";
+            this.magazijn_toevoegen_multipleinsert_geheugensize3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_geheugensize3.TabIndex = 47;
             // 
-            // textBox23
+            // magazijn_toevoegen_multipleinsert_product3
             // 
-            this.textBox23.Location = new System.Drawing.Point(454, 111);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(92, 20);
-            this.textBox23.TabIndex = 54;
+            this.magazijn_toevoegen_multipleinsert_product3.Location = new System.Drawing.Point(453, 85);
+            this.magazijn_toevoegen_multipleinsert_product3.Name = "magazijn_toevoegen_multipleinsert_product3";
+            this.magazijn_toevoegen_multipleinsert_product3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_product3.TabIndex = 46;
             // 
-            // textBox24
+            // magazijn_toevoegen_multipleinsert_functies3
             // 
-            this.textBox24.Location = new System.Drawing.Point(356, 111);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(92, 20);
-            this.textBox24.TabIndex = 53;
+            this.magazijn_toevoegen_multipleinsert_functies3.Location = new System.Drawing.Point(355, 85);
+            this.magazijn_toevoegen_multipleinsert_functies3.Name = "magazijn_toevoegen_multipleinsert_functies3";
+            this.magazijn_toevoegen_multipleinsert_functies3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_functies3.TabIndex = 45;
             // 
-            // textBox25
+            // magazijn_toevoegen_multipleinsert_aansluiting3
             // 
-            this.textBox25.Location = new System.Drawing.Point(258, 111);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(92, 20);
-            this.textBox25.TabIndex = 52;
+            this.magazijn_toevoegen_multipleinsert_aansluiting3.Location = new System.Drawing.Point(257, 85);
+            this.magazijn_toevoegen_multipleinsert_aansluiting3.Name = "magazijn_toevoegen_multipleinsert_aansluiting3";
+            this.magazijn_toevoegen_multipleinsert_aansluiting3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_aansluiting3.TabIndex = 44;
             // 
-            // textBox26
+            // magazijn_toevoegen_multipleinsert_type3
             // 
-            this.textBox26.Location = new System.Drawing.Point(160, 111);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(92, 20);
-            this.textBox26.TabIndex = 51;
+            this.magazijn_toevoegen_multipleinsert_type3.Location = new System.Drawing.Point(159, 85);
+            this.magazijn_toevoegen_multipleinsert_type3.Name = "magazijn_toevoegen_multipleinsert_type3";
+            this.magazijn_toevoegen_multipleinsert_type3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_type3.TabIndex = 43;
             // 
-            // textBox27
+            // magazijn_toevoegen_multipleinsert_merk3
             // 
-            this.textBox27.Location = new System.Drawing.Point(62, 111);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(92, 20);
-            this.textBox27.TabIndex = 50;
+            this.magazijn_toevoegen_multipleinsert_merk3.Location = new System.Drawing.Point(61, 85);
+            this.magazijn_toevoegen_multipleinsert_merk3.Name = "magazijn_toevoegen_multipleinsert_merk3";
+            this.magazijn_toevoegen_multipleinsert_merk3.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_merk3.TabIndex = 42;
             // 
-            // textBox28
+            // magazijn_toevoegen_multipleinsert_aantal3
             // 
-            this.textBox28.Location = new System.Drawing.Point(10, 111);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(46, 20);
-            this.textBox28.TabIndex = 49;
+            this.magazijn_toevoegen_multipleinsert_aantal3.Location = new System.Drawing.Point(9, 85);
+            this.magazijn_toevoegen_multipleinsert_aantal3.Name = "magazijn_toevoegen_multipleinsert_aantal3";
+            this.magazijn_toevoegen_multipleinsert_aantal3.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_multipleinsert_aantal3.TabIndex = 41;
             // 
-            // comboBox3
+            // magazijn_toevoegen_multipleinsert_combobx2
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.magazijn_toevoegen_multipleinsert_combobx2.FormattingEnabled = true;
+            this.magazijn_toevoegen_multipleinsert_combobx2.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.comboBox3.Location = new System.Drawing.Point(651, 85);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(53, 21);
-            this.comboBox3.TabIndex = 48;
+            this.magazijn_toevoegen_multipleinsert_combobx2.Location = new System.Drawing.Point(650, 59);
+            this.magazijn_toevoegen_multipleinsert_combobx2.Name = "magazijn_toevoegen_multipleinsert_combobx2";
+            this.magazijn_toevoegen_multipleinsert_combobx2.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_multipleinsert_combobx2.TabIndex = 40;
             // 
-            // textBox15
+            // magazijn_toevoegen_multipleinsert_geheugensize2
             // 
-            this.textBox15.Location = new System.Drawing.Point(552, 85);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(92, 20);
-            this.textBox15.TabIndex = 47;
+            this.magazijn_toevoegen_multipleinsert_geheugensize2.Location = new System.Drawing.Point(551, 59);
+            this.magazijn_toevoegen_multipleinsert_geheugensize2.Name = "magazijn_toevoegen_multipleinsert_geheugensize2";
+            this.magazijn_toevoegen_multipleinsert_geheugensize2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_geheugensize2.TabIndex = 39;
             // 
-            // textBox16
+            // magazijn_toevoegen_multipleinsert_product2
             // 
-            this.textBox16.Location = new System.Drawing.Point(454, 85);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(92, 20);
-            this.textBox16.TabIndex = 46;
+            this.magazijn_toevoegen_multipleinsert_product2.Location = new System.Drawing.Point(453, 59);
+            this.magazijn_toevoegen_multipleinsert_product2.Name = "magazijn_toevoegen_multipleinsert_product2";
+            this.magazijn_toevoegen_multipleinsert_product2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_product2.TabIndex = 38;
             // 
-            // textBox17
+            // magazijn_toevoegen_multipleinsert_functies2
             // 
-            this.textBox17.Location = new System.Drawing.Point(356, 85);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(92, 20);
-            this.textBox17.TabIndex = 45;
+            this.magazijn_toevoegen_multipleinsert_functies2.Location = new System.Drawing.Point(355, 59);
+            this.magazijn_toevoegen_multipleinsert_functies2.Name = "magazijn_toevoegen_multipleinsert_functies2";
+            this.magazijn_toevoegen_multipleinsert_functies2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_functies2.TabIndex = 37;
             // 
-            // textBox18
+            // magazijn_toevoegen_multipleinsert_aansluiting2
             // 
-            this.textBox18.Location = new System.Drawing.Point(258, 85);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(92, 20);
-            this.textBox18.TabIndex = 44;
+            this.magazijn_toevoegen_multipleinsert_aansluiting2.Location = new System.Drawing.Point(257, 59);
+            this.magazijn_toevoegen_multipleinsert_aansluiting2.Name = "magazijn_toevoegen_multipleinsert_aansluiting2";
+            this.magazijn_toevoegen_multipleinsert_aansluiting2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_aansluiting2.TabIndex = 36;
             // 
-            // textBox19
+            // magazijn_toevoegen_multipleinsert_type2
             // 
-            this.textBox19.Location = new System.Drawing.Point(160, 85);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(92, 20);
-            this.textBox19.TabIndex = 43;
+            this.magazijn_toevoegen_multipleinsert_type2.Location = new System.Drawing.Point(159, 59);
+            this.magazijn_toevoegen_multipleinsert_type2.Name = "magazijn_toevoegen_multipleinsert_type2";
+            this.magazijn_toevoegen_multipleinsert_type2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_type2.TabIndex = 35;
             // 
-            // textBox20
+            // magazijn_toevoegen_multipleinsert_merk2
             // 
-            this.textBox20.Location = new System.Drawing.Point(62, 85);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(92, 20);
-            this.textBox20.TabIndex = 42;
+            this.magazijn_toevoegen_multipleinsert_merk2.Location = new System.Drawing.Point(61, 59);
+            this.magazijn_toevoegen_multipleinsert_merk2.Name = "magazijn_toevoegen_multipleinsert_merk2";
+            this.magazijn_toevoegen_multipleinsert_merk2.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_merk2.TabIndex = 34;
             // 
-            // textBox21
+            // magazijn_toevoegen_multipleinsert_aantal2
             // 
-            this.textBox21.Location = new System.Drawing.Point(10, 85);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(46, 20);
-            this.textBox21.TabIndex = 41;
+            this.magazijn_toevoegen_multipleinsert_aantal2.Location = new System.Drawing.Point(9, 59);
+            this.magazijn_toevoegen_multipleinsert_aantal2.Name = "magazijn_toevoegen_multipleinsert_aantal2";
+            this.magazijn_toevoegen_multipleinsert_aantal2.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_multipleinsert_aantal2.TabIndex = 33;
             // 
-            // comboBox2
+            // magazijn_toevoegen_multipleinsert_combobx1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.magazijn_toevoegen_multipleinsert_combobx1.FormattingEnabled = true;
+            this.magazijn_toevoegen_multipleinsert_combobx1.Items.AddRange(new object[] {
             "Ja",
             "Nee"});
-            this.comboBox2.Location = new System.Drawing.Point(651, 59);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(53, 21);
-            this.comboBox2.TabIndex = 40;
+            this.magazijn_toevoegen_multipleinsert_combobx1.Location = new System.Drawing.Point(650, 33);
+            this.magazijn_toevoegen_multipleinsert_combobx1.Name = "magazijn_toevoegen_multipleinsert_combobx1";
+            this.magazijn_toevoegen_multipleinsert_combobx1.Size = new System.Drawing.Size(53, 21);
+            this.magazijn_toevoegen_multipleinsert_combobx1.TabIndex = 31;
             // 
-            // textBox8
+            // magazijn_toevoegen_multipleinsert_geheugensize1
             // 
-            this.textBox8.Location = new System.Drawing.Point(552, 59);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(92, 20);
-            this.textBox8.TabIndex = 39;
+            this.magazijn_toevoegen_multipleinsert_geheugensize1.Location = new System.Drawing.Point(551, 33);
+            this.magazijn_toevoegen_multipleinsert_geheugensize1.Name = "magazijn_toevoegen_multipleinsert_geheugensize1";
+            this.magazijn_toevoegen_multipleinsert_geheugensize1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_geheugensize1.TabIndex = 30;
             // 
-            // textBox9
+            // magazijn_toevoegen_multipleinsert_product1
             // 
-            this.textBox9.Location = new System.Drawing.Point(454, 59);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(92, 20);
-            this.textBox9.TabIndex = 38;
+            this.magazijn_toevoegen_multipleinsert_product1.Location = new System.Drawing.Point(453, 33);
+            this.magazijn_toevoegen_multipleinsert_product1.Name = "magazijn_toevoegen_multipleinsert_product1";
+            this.magazijn_toevoegen_multipleinsert_product1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_product1.TabIndex = 29;
             // 
-            // textBox10
+            // magazijn_toevoegen_multipleinsert_functies1
             // 
-            this.textBox10.Location = new System.Drawing.Point(356, 59);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(92, 20);
-            this.textBox10.TabIndex = 37;
+            this.magazijn_toevoegen_multipleinsert_functies1.Location = new System.Drawing.Point(355, 33);
+            this.magazijn_toevoegen_multipleinsert_functies1.Name = "magazijn_toevoegen_multipleinsert_functies1";
+            this.magazijn_toevoegen_multipleinsert_functies1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_functies1.TabIndex = 28;
             // 
-            // textBox11
+            // magazijn_toevoegen_multipleinsert_aansluiting1
             // 
-            this.textBox11.Location = new System.Drawing.Point(258, 59);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(92, 20);
-            this.textBox11.TabIndex = 36;
+            this.magazijn_toevoegen_multipleinsert_aansluiting1.Location = new System.Drawing.Point(257, 33);
+            this.magazijn_toevoegen_multipleinsert_aansluiting1.Name = "magazijn_toevoegen_multipleinsert_aansluiting1";
+            this.magazijn_toevoegen_multipleinsert_aansluiting1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_aansluiting1.TabIndex = 27;
             // 
-            // textBox12
+            // magazijn_toevoegen_multipleinsert_type1
             // 
-            this.textBox12.Location = new System.Drawing.Point(160, 59);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(92, 20);
-            this.textBox12.TabIndex = 35;
+            this.magazijn_toevoegen_multipleinsert_type1.Location = new System.Drawing.Point(159, 33);
+            this.magazijn_toevoegen_multipleinsert_type1.Name = "magazijn_toevoegen_multipleinsert_type1";
+            this.magazijn_toevoegen_multipleinsert_type1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_type1.TabIndex = 26;
             // 
-            // textBox13
+            // magazijn_toevoegen_multipleinsert_merk1
             // 
-            this.textBox13.Location = new System.Drawing.Point(62, 59);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(92, 20);
-            this.textBox13.TabIndex = 34;
+            this.magazijn_toevoegen_multipleinsert_merk1.Location = new System.Drawing.Point(61, 33);
+            this.magazijn_toevoegen_multipleinsert_merk1.Name = "magazijn_toevoegen_multipleinsert_merk1";
+            this.magazijn_toevoegen_multipleinsert_merk1.Size = new System.Drawing.Size(92, 20);
+            this.magazijn_toevoegen_multipleinsert_merk1.TabIndex = 25;
             // 
-            // textBox14
+            // magazijn_toevoegen_multipleinsert_aantal1
             // 
-            this.textBox14.Location = new System.Drawing.Point(10, 59);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(46, 20);
-            this.textBox14.TabIndex = 33;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Ja",
-            "Nee"});
-            this.comboBox1.Location = new System.Drawing.Point(650, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(53, 21);
-            this.comboBox1.TabIndex = 31;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(551, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(92, 20);
-            this.textBox1.TabIndex = 30;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(453, 33);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(92, 20);
-            this.textBox2.TabIndex = 29;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(355, 33);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(92, 20);
-            this.textBox3.TabIndex = 28;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(257, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(92, 20);
-            this.textBox4.TabIndex = 27;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(159, 33);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(92, 20);
-            this.textBox5.TabIndex = 26;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(61, 33);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 20);
-            this.textBox6.TabIndex = 25;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(9, 33);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(46, 20);
-            this.textBox7.TabIndex = 24;
+            this.magazijn_toevoegen_multipleinsert_aantal1.Location = new System.Drawing.Point(9, 33);
+            this.magazijn_toevoegen_multipleinsert_aantal1.Name = "magazijn_toevoegen_multipleinsert_aantal1";
+            this.magazijn_toevoegen_multipleinsert_aantal1.Size = new System.Drawing.Size(46, 20);
+            this.magazijn_toevoegen_multipleinsert_aantal1.TabIndex = 24;
             // 
             // label1
             // 
@@ -805,16 +754,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Coral;
-            this.ClientSize = new System.Drawing.Size(778, 358);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(743, 246);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.magazijn_toevoegen_multipleinserttoevoegen);
             this.Controls.Add(this.magazijn_toevoegen_enkelproductoevoegen);
             this.Controls.Add(this.magazijn_toevoevoegen_btn_productoevoegen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "magazijn_toevoegen";
             this.Text = "Magazijn Product Toevoegen";
+            this.Load += new System.EventHandler(this.magazijn_toevoegen_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -827,16 +780,16 @@
         #endregion
         private System.Windows.Forms.Button magazijn_toevoevoegen_btn_productoevoegen;
         private System.Windows.Forms.RadioButton magazijn_toevoegen_enkelproductoevoegen;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton magazijn_toevoegen_multipleinserttoevoegen;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox magazijn_toevoegen_combobx_didactisch;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_geheugen;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_product;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_functie;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_aansluiting;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_type;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_merk;
-        private System.Windows.Forms.TextBox magazijn_toevoegen_txtbox_aantal;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_singleinsert_combobx_didactisch;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_geheugen1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_product1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_functies1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_aansluiting1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_type1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_merk1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_singleinsert_aantal1;
         private System.Windows.Forms.Label magazijn_toevoegen_lbl_didactisch;
         private System.Windows.Forms.Label magazijn_toevoegen_lbl_geheugen;
         private System.Windows.Forms.Label magazijn_toevoegen_lbl_product;
@@ -846,14 +799,14 @@
         private System.Windows.Forms.Label magazijn_toevoegen_lbl_merk;
         private System.Windows.Forms.Label magazijn_toevoegen_lbl_aantal;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_multipleinsert_combobx1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_geheugensize1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_product1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_functies1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aansluiting1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_type1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_merk1;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aantal1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -862,45 +815,39 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_multipleinsert_combobx5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_geheugensize5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_product5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_functies5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aansluiting5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_type5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_merk5;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aantal5;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_multipleinsert_combobx4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_geheugensize4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_product4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_functies4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aansluiting4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_type4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_merk4;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aantal4;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_multipleinsert_combobx3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_geheugensize3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_product3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_functies3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aansluiting3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_type3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_merk3;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aantal3;
+        private System.Windows.Forms.ComboBox magazijn_toevoegen_multipleinsert_combobx2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_geheugensize2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_product2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_functies2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aansluiting2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_type2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_merk2;
+        private System.Windows.Forms.TextBox magazijn_toevoegen_multipleinsert_aantal2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }

@@ -22,45 +22,41 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
         {
             if (call_add_newcust.Checked)
             {
-                
-                
-            }else if (call_add_existingcust.Checked)
+
+
+            }
+            else if (call_add_existingcust.Checked)
             {
-                
+
             }
 
         }
 
         private void call_add_grpbox_customerdetails_Enter(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            call_add_cust_existingdetails.Visible = false;
-            call_add_grpbox_customerdetails.Visible = true;
-            call_add_grpbox_customerdetails.Show();
+            call_add_grpbox_existingcustomer.Show();
+            call_add_grpbox_newcustomer.Visible = false;
 
-            SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
-            string sql = "SELECT * FROM klanten";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
+            SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             DataSet ds = new DataSet();
-            connection.Open();
-            dataadapter.Fill(ds, "Authors_table");
-            connection.Close();
-            //dataGridView1.DataSource = ds;
-            //dataGridView1.DataMember = "Authors_table";
-
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM klanten", conn);
+            da.Fill(ds, "klanten");
+            call_add_existingcust1_combobx_name.DisplayMember = "" ;
+            call_add_existingcust1_combobx_name.ValueMember = "voornaam" + "achternaam";
+            call_add_existingcust1_combobx_name.DataSource = ds.Tables["klanten"];
+            //uitlenen_toevoegen_fullname_SelectedIndexChanged(sender, e);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            call_add_grpbox_customerdetails.Visible = false;
-            call_add_cust_existingdetails.Visible = true;
-            call_add_cust_existingdetails.Show();
+            call_add_grpbox_newcustomer.Show();
+            call_add_grpbox_existingcustomer.Visible = false;
+
 
         }
     }

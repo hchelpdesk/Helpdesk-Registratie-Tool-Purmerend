@@ -89,6 +89,12 @@
     <Compile Include="Beheer\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculator.Designer.cs">
+      <DependentUpon>calculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Incidenten\call_add.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Beheer\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculator.resx">
+      <DependentUpon>calculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Incidenten\call_add.resx">
       <DependentUpon>call_add.cs</DependentUpon>
