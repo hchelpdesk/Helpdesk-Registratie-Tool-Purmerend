@@ -46,23 +46,21 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.call_add_existingcust = new System.Windows.Forms.RadioButton();
-            this.call_add_newcust = new System.Windows.Forms.RadioButton();
             this.call_add_grpbox_existingcustomer = new System.Windows.Forms.GroupBox();
             this.call_add_existingcust1_combobx_name = new System.Windows.Forms.ComboBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.call_add_existingcust1_btn = new System.Windows.Forms.Button();
             this.call_add_newcust_btn = new System.Windows.Forms.Button();
+            this.call_add_existingcust1_combobx_bedrijf = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_combobx_telefoon = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_combobx_afdeling = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_combobx_email = new System.Windows.Forms.Label();
             this.call_add_grpbox_newcustomer.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -90,7 +88,6 @@
             this.call_add_grpbox_newcustomer.TabStop = false;
             this.call_add_grpbox_newcustomer.Text = "Klant gegevens - Nieuw toevoegen";
             this.call_add_grpbox_newcustomer.Visible = false;
-            this.call_add_grpbox_newcustomer.Enter += new System.EventHandler(this.call_add_grpbox_customerdetails_Enter);
             // 
             // textBox6
             // 
@@ -226,40 +223,18 @@
             this.richTextBox2.TabIndex = 0;
             this.richTextBox2.Text = "";
             // 
-            // call_add_existingcust
-            // 
-            this.call_add_existingcust.AutoSize = true;
-            this.call_add_existingcust.Location = new System.Drawing.Point(108, 401);
-            this.call_add_existingcust.Name = "call_add_existingcust";
-            this.call_add_existingcust.Size = new System.Drawing.Size(103, 17);
-            this.call_add_existingcust.TabIndex = 3;
-            this.call_add_existingcust.TabStop = true;
-            this.call_add_existingcust.Text = "Bestaande Klant";
-            this.call_add_existingcust.UseVisualStyleBackColor = true;
-            // 
-            // call_add_newcust
-            // 
-            this.call_add_newcust.AutoSize = true;
-            this.call_add_newcust.Location = new System.Drawing.Point(14, 401);
-            this.call_add_newcust.Name = "call_add_newcust";
-            this.call_add_newcust.Size = new System.Drawing.Size(88, 17);
-            this.call_add_newcust.TabIndex = 4;
-            this.call_add_newcust.TabStop = true;
-            this.call_add_newcust.Text = "Nieuwe Klant";
-            this.call_add_newcust.UseVisualStyleBackColor = true;
-            // 
             // call_add_grpbox_existingcustomer
             // 
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_email);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_afdeling);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_telefoon);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_bedrijf);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_name);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox7);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label7);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox8);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label8);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox9);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label9);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox10);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label10);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox11);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label11);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label12);
             this.call_add_grpbox_existingcustomer.Location = new System.Drawing.Point(12, 36);
@@ -272,11 +247,13 @@
             // 
             // call_add_existingcust1_combobx_name
             // 
+            this.call_add_existingcust1_combobx_name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.call_add_existingcust1_combobx_name.FormattingEnabled = true;
             this.call_add_existingcust1_combobx_name.Location = new System.Drawing.Point(10, 37);
             this.call_add_existingcust1_combobx_name.Name = "call_add_existingcust1_combobx_name";
             this.call_add_existingcust1_combobx_name.Size = new System.Drawing.Size(159, 21);
             this.call_add_existingcust1_combobx_name.TabIndex = 12;
+            this.call_add_existingcust1_combobx_name.SelectedIndexChanged += new System.EventHandler(this.call_add_existingcust1_combobx_name_SelectedIndexChanged);
             // 
             // textBox7
             // 
@@ -294,13 +271,6 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Ruimte (lokaal)";
             // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(176, 81);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(153, 20);
-            this.textBox8.TabIndex = 9;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -309,13 +279,6 @@
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 8;
             this.label8.Text = "Afdeling";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(176, 37);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(153, 20);
-            this.textBox9.TabIndex = 7;
             // 
             // label9
             // 
@@ -326,13 +289,6 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "Bedrijf";
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(10, 125);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(159, 20);
-            this.textBox10.TabIndex = 5;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -341,14 +297,6 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 4;
             this.label10.Text = "E-mailadres";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(10, 81);
-            this.textBox11.MaxLength = 10;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(159, 20);
-            this.textBox11.TabIndex = 3;
             // 
             // label11
             // 
@@ -388,6 +336,42 @@
             this.call_add_newcust_btn.UseVisualStyleBackColor = true;
             this.call_add_newcust_btn.Click += new System.EventHandler(this.button2_Click);
             // 
+            // call_add_existingcust1_combobx_bedrijf
+            // 
+            this.call_add_existingcust1_combobx_bedrijf.AutoSize = true;
+            this.call_add_existingcust1_combobx_bedrijf.Location = new System.Drawing.Point(176, 40);
+            this.call_add_existingcust1_combobx_bedrijf.Name = "call_add_existingcust1_combobx_bedrijf";
+            this.call_add_existingcust1_combobx_bedrijf.Size = new System.Drawing.Size(41, 13);
+            this.call_add_existingcust1_combobx_bedrijf.TabIndex = 17;
+            this.call_add_existingcust1_combobx_bedrijf.Text = "label13";
+            // 
+            // call_add_existingcust1_combobx_telefoon
+            // 
+            this.call_add_existingcust1_combobx_telefoon.AutoSize = true;
+            this.call_add_existingcust1_combobx_telefoon.Location = new System.Drawing.Point(11, 81);
+            this.call_add_existingcust1_combobx_telefoon.Name = "call_add_existingcust1_combobx_telefoon";
+            this.call_add_existingcust1_combobx_telefoon.Size = new System.Drawing.Size(41, 13);
+            this.call_add_existingcust1_combobx_telefoon.TabIndex = 18;
+            this.call_add_existingcust1_combobx_telefoon.Text = "label13";
+            // 
+            // call_add_existingcust1_combobx_afdeling
+            // 
+            this.call_add_existingcust1_combobx_afdeling.AutoSize = true;
+            this.call_add_existingcust1_combobx_afdeling.Location = new System.Drawing.Point(176, 81);
+            this.call_add_existingcust1_combobx_afdeling.Name = "call_add_existingcust1_combobx_afdeling";
+            this.call_add_existingcust1_combobx_afdeling.Size = new System.Drawing.Size(41, 13);
+            this.call_add_existingcust1_combobx_afdeling.TabIndex = 19;
+            this.call_add_existingcust1_combobx_afdeling.Text = "label13";
+            // 
+            // call_add_existingcust1_combobx_email
+            // 
+            this.call_add_existingcust1_combobx_email.AutoSize = true;
+            this.call_add_existingcust1_combobx_email.Location = new System.Drawing.Point(11, 128);
+            this.call_add_existingcust1_combobx_email.Name = "call_add_existingcust1_combobx_email";
+            this.call_add_existingcust1_combobx_email.Size = new System.Drawing.Size(41, 13);
+            this.call_add_existingcust1_combobx_email.TabIndex = 20;
+            this.call_add_existingcust1_combobx_email.Text = "label13";
+            // 
             // call_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,8 +380,6 @@
             this.Controls.Add(this.call_add_newcust_btn);
             this.Controls.Add(this.call_add_existingcust1_btn);
             this.Controls.Add(this.call_add_grpbox_existingcustomer);
-            this.Controls.Add(this.call_add_newcust);
-            this.Controls.Add(this.call_add_existingcust);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.call_add_grpbox_newcustomer);
@@ -414,7 +396,6 @@
             this.call_add_grpbox_existingcustomer.ResumeLayout(false);
             this.call_add_grpbox_existingcustomer.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -437,22 +418,20 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RadioButton call_add_existingcust;
-        private System.Windows.Forms.RadioButton call_add_newcust;
         private System.Windows.Forms.GroupBox call_add_grpbox_existingcustomer;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox call_add_existingcust1_combobx_name;
         private System.Windows.Forms.Button call_add_existingcust1_btn;
         private System.Windows.Forms.Button call_add_newcust_btn;
+        private System.Windows.Forms.Label call_add_existingcust1_combobx_email;
+        private System.Windows.Forms.Label call_add_existingcust1_combobx_afdeling;
+        private System.Windows.Forms.Label call_add_existingcust1_combobx_telefoon;
+        private System.Windows.Forms.Label call_add_existingcust1_combobx_bedrijf;
     }
 }

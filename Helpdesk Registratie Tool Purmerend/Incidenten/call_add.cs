@@ -20,20 +20,6 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
 
         private void call_add_Load(object sender, EventArgs e)
         {
-            if (call_add_newcust.Checked)
-            {
-
-
-            }
-            else if (call_add_existingcust.Checked)
-            {
-
-            }
-
-        }
-
-        private void call_add_grpbox_customerdetails_Enter(object sender, EventArgs e)
-        {
 
         }
 
@@ -46,18 +32,29 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM klanten", conn);
             da.Fill(ds, "klanten");
-            call_add_existingcust1_combobx_name.DisplayMember = "" ;
-            call_add_existingcust1_combobx_name.ValueMember = "voornaam" + "achternaam";
-            call_add_existingcust1_combobx_name.DataSource = ds.Tables["klanten"];
-            //uitlenen_toevoegen_fullname_SelectedIndexChanged(sender, e);
-        }
 
+            call_add_existingcust1_combobx_name.DisplayMember = "voornaam";
+            call_add_existingcust1_combobx_name.ValueMember = "ID";
+            call_add_existingcust1_combobx_name.DataSource = ds.Tables["klanten"];
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             call_add_grpbox_newcustomer.Show();
             call_add_grpbox_existingcustomer.Visible = false;
+        }
 
-
+        private void call_add_existingcust1_combobx_name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM klanten WHERE ID =" + call_add_existingcust1_combobx_name.ValueMember.ToString(), conn);
+            da.Fill(ds, "klanten");
+            call_add_existingcust1_combobx_name.DataSource = ds.Tables["klanten"];
+            call_add_existingcust1_combobx_bedrijf.Text = ds.Tables["klanten"].Rows[0]["voornaam"].ToString();
+            call_add_existingcust1_combobx_bedrijf.Text = ds.Tables["klanten"].Rows[0]["bedrijf"].ToString();
+            call_add_existingcust1_combobx_afdeling.Text = ds.Tables["klanten"].Rows[0]["afdeling"].ToString();
+            call_add_existingcust1_combobx_email.Text = ds.Tables["klanten"].Rows[0]["email"].ToString();
+            call_add_existingcust1_combobx_telefoon.Text = ds.Tables["klanten"].Rows[0]["telefoon"].ToString();
         }
     }
 }
