@@ -42,28 +42,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.call_add_problemdetails_grpbox = new System.Windows.Forms.GroupBox();
+            this.call_add_problemdetails_txtbox = new System.Windows.Forms.RichTextBox();
+            this.call_add_customerquestion_grpbox = new System.Windows.Forms.GroupBox();
+            this.call_add_customerquestion_txtbox = new System.Windows.Forms.RichTextBox();
             this.call_add_grpbox_existingcustomer = new System.Windows.Forms.GroupBox();
+            this.call_add_existingcust1_lbl_email = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_lbl_afdeling = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_lbl_telefoon = new System.Windows.Forms.Label();
+            this.call_add_existingcust1_lbl_bedrijf = new System.Windows.Forms.Label();
             this.call_add_existingcust1_combobx_name = new System.Windows.Forms.ComboBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.call_add_existingcustomer_lbl_namecustomer = new System.Windows.Forms.Label();
             this.call_add_existingcust1_btn = new System.Windows.Forms.Button();
             this.call_add_newcust_btn = new System.Windows.Forms.Button();
-            this.call_add_existingcust1_combobx_bedrijf = new System.Windows.Forms.Label();
-            this.call_add_existingcust1_combobx_telefoon = new System.Windows.Forms.Label();
-            this.call_add_existingcust1_combobx_afdeling = new System.Windows.Forms.Label();
-            this.call_add_existingcust1_combobx_email = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.call_add_grpbox_newcustomer.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.call_add_problemdetails_grpbox.SuspendLayout();
+            this.call_add_customerquestion_grpbox.SuspendLayout();
             this.call_add_grpbox_existingcustomer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,57 +185,55 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Naam klant";
             // 
-            // groupBox1
+            // call_add_problemdetails_grpbox
             // 
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 200);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 152);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Probleem details";
-            this.groupBox1.UseCompatibleTextRendering = true;
+            this.call_add_problemdetails_grpbox.Controls.Add(this.call_add_problemdetails_txtbox);
+            this.call_add_problemdetails_grpbox.Location = new System.Drawing.Point(12, 200);
+            this.call_add_problemdetails_grpbox.Name = "call_add_problemdetails_grpbox";
+            this.call_add_problemdetails_grpbox.Size = new System.Drawing.Size(335, 152);
+            this.call_add_problemdetails_grpbox.TabIndex = 1;
+            this.call_add_problemdetails_grpbox.TabStop = false;
+            this.call_add_problemdetails_grpbox.Text = "Probleem details";
+            this.call_add_problemdetails_grpbox.UseCompatibleTextRendering = true;
             // 
-            // richTextBox1
+            // call_add_problemdetails_txtbox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(7, 19);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(321, 127);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.call_add_problemdetails_txtbox.Location = new System.Drawing.Point(7, 19);
+            this.call_add_problemdetails_txtbox.Name = "call_add_problemdetails_txtbox";
+            this.call_add_problemdetails_txtbox.Size = new System.Drawing.Size(321, 127);
+            this.call_add_problemdetails_txtbox.TabIndex = 1;
+            this.call_add_problemdetails_txtbox.Text = "";
             // 
-            // groupBox2
+            // call_add_customerquestion_grpbox
             // 
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Location = new System.Drawing.Point(353, 200);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(335, 152);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Vraag van de Klant";
+            this.call_add_customerquestion_grpbox.Controls.Add(this.call_add_customerquestion_txtbox);
+            this.call_add_customerquestion_grpbox.Location = new System.Drawing.Point(353, 200);
+            this.call_add_customerquestion_grpbox.Name = "call_add_customerquestion_grpbox";
+            this.call_add_customerquestion_grpbox.Size = new System.Drawing.Size(335, 152);
+            this.call_add_customerquestion_grpbox.TabIndex = 2;
+            this.call_add_customerquestion_grpbox.TabStop = false;
+            this.call_add_customerquestion_grpbox.Text = "Vraag van de Klant";
             // 
-            // richTextBox2
+            // call_add_customerquestion_txtbox
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(7, 19);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(321, 127);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.call_add_customerquestion_txtbox.Location = new System.Drawing.Point(7, 19);
+            this.call_add_customerquestion_txtbox.Name = "call_add_customerquestion_txtbox";
+            this.call_add_customerquestion_txtbox.Size = new System.Drawing.Size(321, 127);
+            this.call_add_customerquestion_txtbox.TabIndex = 0;
+            this.call_add_customerquestion_txtbox.Text = "";
             // 
             // call_add_grpbox_existingcustomer
             // 
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_email);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_afdeling);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_telefoon);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_bedrijf);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_lbl_email);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_lbl_afdeling);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_lbl_telefoon);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_lbl_bedrijf);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_combobx_name);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.textBox7);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.label7);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label8);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label9);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label10);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.label11);
-            this.call_add_grpbox_existingcustomer.Controls.Add(this.label12);
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcustomer_lbl_namecustomer);
             this.call_add_grpbox_existingcustomer.Location = new System.Drawing.Point(12, 36);
             this.call_add_grpbox_existingcustomer.Name = "call_add_grpbox_existingcustomer";
             this.call_add_grpbox_existingcustomer.Size = new System.Drawing.Size(335, 158);
@@ -245,36 +242,61 @@
             this.call_add_grpbox_existingcustomer.Text = "Klant gegevens - Bestaande Klant";
             this.call_add_grpbox_existingcustomer.Visible = false;
             // 
+            // call_add_existingcust1_lbl_email
+            // 
+            this.call_add_existingcust1_lbl_email.AutoSize = true;
+            this.call_add_existingcust1_lbl_email.Location = new System.Drawing.Point(6, 131);
+            this.call_add_existingcust1_lbl_email.Name = "call_add_existingcust1_lbl_email";
+            this.call_add_existingcust1_lbl_email.Size = new System.Drawing.Size(57, 13);
+            this.call_add_existingcust1_lbl_email.TabIndex = 20;
+            this.call_add_existingcust1_lbl_email.Text = "emailadres";
+            this.call_add_existingcust1_lbl_email.Click += new System.EventHandler(this.call_add_existingcust1_lbl_email_Click);
+            // 
+            // call_add_existingcust1_lbl_afdeling
+            // 
+            this.call_add_existingcust1_lbl_afdeling.AutoSize = true;
+            this.call_add_existingcust1_lbl_afdeling.Location = new System.Drawing.Point(158, 114);
+            this.call_add_existingcust1_lbl_afdeling.Name = "call_add_existingcust1_lbl_afdeling";
+            this.call_add_existingcust1_lbl_afdeling.Size = new System.Drawing.Size(44, 13);
+            this.call_add_existingcust1_lbl_afdeling.TabIndex = 19;
+            this.call_add_existingcust1_lbl_afdeling.Text = "afdeling";
+            // 
+            // call_add_existingcust1_lbl_telefoon
+            // 
+            this.call_add_existingcust1_lbl_telefoon.AutoSize = true;
+            this.call_add_existingcust1_lbl_telefoon.Location = new System.Drawing.Point(9, 84);
+            this.call_add_existingcust1_lbl_telefoon.Name = "call_add_existingcust1_lbl_telefoon";
+            this.call_add_existingcust1_lbl_telefoon.Size = new System.Drawing.Size(82, 13);
+            this.call_add_existingcust1_lbl_telefoon.TabIndex = 18;
+            this.call_add_existingcust1_lbl_telefoon.Text = "telefoonnummer";
+            // 
+            // call_add_existingcust1_lbl_bedrijf
+            // 
+            this.call_add_existingcust1_lbl_bedrijf.AutoSize = true;
+            this.call_add_existingcust1_lbl_bedrijf.Location = new System.Drawing.Point(159, 80);
+            this.call_add_existingcust1_lbl_bedrijf.Name = "call_add_existingcust1_lbl_bedrijf";
+            this.call_add_existingcust1_lbl_bedrijf.Size = new System.Drawing.Size(35, 13);
+            this.call_add_existingcust1_lbl_bedrijf.TabIndex = 17;
+            this.call_add_existingcust1_lbl_bedrijf.Text = "bedrijf";
+            // 
             // call_add_existingcust1_combobx_name
             // 
-            this.call_add_existingcust1_combobx_name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.call_add_existingcust1_combobx_name.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.call_add_existingcust1_combobx_name.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.call_add_existingcust1_combobx_name.DropDownHeight = 200;
+            this.call_add_existingcust1_combobx_name.DropDownWidth = 160;
             this.call_add_existingcust1_combobx_name.FormattingEnabled = true;
-            this.call_add_existingcust1_combobx_name.Location = new System.Drawing.Point(10, 37);
+            this.call_add_existingcust1_combobx_name.IntegralHeight = false;
+            this.call_add_existingcust1_combobx_name.Location = new System.Drawing.Point(6, 40);
             this.call_add_existingcust1_combobx_name.Name = "call_add_existingcust1_combobx_name";
-            this.call_add_existingcust1_combobx_name.Size = new System.Drawing.Size(159, 21);
+            this.call_add_existingcust1_combobx_name.Size = new System.Drawing.Size(121, 21);
             this.call_add_existingcust1_combobx_name.TabIndex = 12;
             this.call_add_existingcust1_combobx_name.SelectedIndexChanged += new System.EventHandler(this.call_add_existingcust1_combobx_name_SelectedIndexChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(175, 125);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(153, 20);
-            this.textBox7.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(175, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "Ruimte (lokaal)";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(176, 64);
+            this.label8.Location = new System.Drawing.Point(158, 98);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 8;
@@ -283,7 +305,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(176, 20);
+            this.label9.Location = new System.Drawing.Point(158, 67);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 13);
             this.label9.TabIndex = 6;
@@ -292,7 +314,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 109);
+            this.label10.Location = new System.Drawing.Point(6, 112);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 4;
@@ -301,20 +323,20 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 64);
+            this.label11.Location = new System.Drawing.Point(6, 67);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(89, 13);
             this.label11.TabIndex = 2;
             this.label11.Text = "Telefoon nummer";
             // 
-            // label12
+            // call_add_existingcustomer_lbl_namecustomer
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 20);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Naam klant";
+            this.call_add_existingcustomer_lbl_namecustomer.AutoSize = true;
+            this.call_add_existingcustomer_lbl_namecustomer.Location = new System.Drawing.Point(6, 16);
+            this.call_add_existingcustomer_lbl_namecustomer.Name = "call_add_existingcustomer_lbl_namecustomer";
+            this.call_add_existingcustomer_lbl_namecustomer.Size = new System.Drawing.Size(61, 13);
+            this.call_add_existingcustomer_lbl_namecustomer.TabIndex = 0;
+            this.call_add_existingcustomer_lbl_namecustomer.Text = "Naam klant";
             // 
             // call_add_existingcust1_btn
             // 
@@ -336,52 +358,28 @@
             this.call_add_newcust_btn.UseVisualStyleBackColor = true;
             this.call_add_newcust_btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // call_add_existingcust1_combobx_bedrijf
+            // button1
             // 
-            this.call_add_existingcust1_combobx_bedrijf.AutoSize = true;
-            this.call_add_existingcust1_combobx_bedrijf.Location = new System.Drawing.Point(176, 40);
-            this.call_add_existingcust1_combobx_bedrijf.Name = "call_add_existingcust1_combobx_bedrijf";
-            this.call_add_existingcust1_combobx_bedrijf.Size = new System.Drawing.Size(41, 13);
-            this.call_add_existingcust1_combobx_bedrijf.TabIndex = 17;
-            this.call_add_existingcust1_combobx_bedrijf.Text = "label13";
-            // 
-            // call_add_existingcust1_combobx_telefoon
-            // 
-            this.call_add_existingcust1_combobx_telefoon.AutoSize = true;
-            this.call_add_existingcust1_combobx_telefoon.Location = new System.Drawing.Point(11, 81);
-            this.call_add_existingcust1_combobx_telefoon.Name = "call_add_existingcust1_combobx_telefoon";
-            this.call_add_existingcust1_combobx_telefoon.Size = new System.Drawing.Size(41, 13);
-            this.call_add_existingcust1_combobx_telefoon.TabIndex = 18;
-            this.call_add_existingcust1_combobx_telefoon.Text = "label13";
-            // 
-            // call_add_existingcust1_combobx_afdeling
-            // 
-            this.call_add_existingcust1_combobx_afdeling.AutoSize = true;
-            this.call_add_existingcust1_combobx_afdeling.Location = new System.Drawing.Point(176, 81);
-            this.call_add_existingcust1_combobx_afdeling.Name = "call_add_existingcust1_combobx_afdeling";
-            this.call_add_existingcust1_combobx_afdeling.Size = new System.Drawing.Size(41, 13);
-            this.call_add_existingcust1_combobx_afdeling.TabIndex = 19;
-            this.call_add_existingcust1_combobx_afdeling.Text = "label13";
-            // 
-            // call_add_existingcust1_combobx_email
-            // 
-            this.call_add_existingcust1_combobx_email.AutoSize = true;
-            this.call_add_existingcust1_combobx_email.Location = new System.Drawing.Point(11, 128);
-            this.call_add_existingcust1_combobx_email.Name = "call_add_existingcust1_combobx_email";
-            this.call_add_existingcust1_combobx_email.Size = new System.Drawing.Size(41, 13);
-            this.call_add_existingcust1_combobx_email.TabIndex = 20;
-            this.call_add_existingcust1_combobx_email.Text = "label13";
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(602, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Don\'t Click Me";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // call_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 489);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.call_add_newcust_btn);
             this.Controls.Add(this.call_add_existingcust1_btn);
             this.Controls.Add(this.call_add_grpbox_existingcustomer);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.call_add_customerquestion_grpbox);
+            this.Controls.Add(this.call_add_problemdetails_grpbox);
             this.Controls.Add(this.call_add_grpbox_newcustomer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -391,8 +389,8 @@
             this.Load += new System.EventHandler(this.call_add_Load);
             this.call_add_grpbox_newcustomer.ResumeLayout(false);
             this.call_add_grpbox_newcustomer.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.call_add_problemdetails_grpbox.ResumeLayout(false);
+            this.call_add_customerquestion_grpbox.ResumeLayout(false);
             this.call_add_grpbox_existingcustomer.ResumeLayout(false);
             this.call_add_grpbox_existingcustomer.PerformLayout();
             this.ResumeLayout(false);
@@ -414,24 +412,23 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.GroupBox call_add_problemdetails_grpbox;
+        private System.Windows.Forms.RichTextBox call_add_problemdetails_txtbox;
+        private System.Windows.Forms.GroupBox call_add_customerquestion_grpbox;
+        private System.Windows.Forms.RichTextBox call_add_customerquestion_txtbox;
         private System.Windows.Forms.GroupBox call_add_grpbox_existingcustomer;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label call_add_existingcustomer_lbl_namecustomer;
         private System.Windows.Forms.ComboBox call_add_existingcust1_combobx_name;
         private System.Windows.Forms.Button call_add_existingcust1_btn;
         private System.Windows.Forms.Button call_add_newcust_btn;
-        private System.Windows.Forms.Label call_add_existingcust1_combobx_email;
-        private System.Windows.Forms.Label call_add_existingcust1_combobx_afdeling;
-        private System.Windows.Forms.Label call_add_existingcust1_combobx_telefoon;
-        private System.Windows.Forms.Label call_add_existingcust1_combobx_bedrijf;
+        private System.Windows.Forms.Label call_add_existingcust1_lbl_email;
+        private System.Windows.Forms.Label call_add_existingcust1_lbl_afdeling;
+        private System.Windows.Forms.Label call_add_existingcust1_lbl_telefoon;
+        private System.Windows.Forms.Label call_add_existingcust1_lbl_bedrijf;
+        private System.Windows.Forms.Button button1;
     }
 }
