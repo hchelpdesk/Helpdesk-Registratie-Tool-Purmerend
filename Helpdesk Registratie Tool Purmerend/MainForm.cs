@@ -45,7 +45,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_overzicht = new cust_overzicht();
                 cust_overzicht.MdiParent = this;
             }
-            cust_overzicht.Location = new Point(0, 350);
+            //cust_overzicht.Location = new Point(0, 350);
             cust_overzicht.Show();
             cust_overzicht.Activate();
             cust_overzicht.Focus();

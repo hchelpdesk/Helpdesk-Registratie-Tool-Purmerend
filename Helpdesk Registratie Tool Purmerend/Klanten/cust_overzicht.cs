@@ -32,7 +32,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Klanten
             cust_overzicht_dgv1.DataSource = ds;
             cust_overzicht_dgv1.DataMember = "Authors_table";
             
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cust_overzicht));
             this.cust_overzicht_dgv1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cust_overzicht_dgv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,39 +45,22 @@
             this.cust_overzicht_dgv1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.cust_overzicht_dgv1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.cust_overzicht_dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cust_overzicht_dgv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cust_overzicht_dgv1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(12, 67);
+            this.cust_overzicht_dgv1.Location = new System.Drawing.Point(0, 0);
             this.cust_overzicht_dgv1.Name = "cust_overzicht_dgv1";
             this.cust_overzicht_dgv1.ReadOnly = true;
             this.cust_overzicht_dgv1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.cust_overzicht_dgv1.RowHeadersVisible = false;
             this.cust_overzicht_dgv1.ShowEditingIcon = false;
-            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(1235, 188);
+            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(1284, 267);
             this.cust_overzicht_dgv1.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Zoeken";
             // 
             // cust_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 267);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1284, 267);
             this.Controls.Add(this.cust_overzicht_dgv1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -89,14 +70,11 @@
             this.Load += new System.EventHandler(this.cust_overzicht_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cust_overzicht_dgv1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView cust_overzicht_dgv1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
     }
 }
