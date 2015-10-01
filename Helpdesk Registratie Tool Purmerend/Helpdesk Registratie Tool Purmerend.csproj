@@ -129,11 +129,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MagazijnProductsDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Magazijn\magazijn_beheer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,17 +141,17 @@
     <Compile Include="Magazijn\magazijn_inoutlist.Designer.cs">
       <DependentUpon>magazijn_inoutlist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Magazijn\magazijn_invoeren.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Magazijn\magazijn_invoeren.Designer.cs">
-      <DependentUpon>magazijn_invoeren.cs</DependentUpon>
-    </Compile>
     <Compile Include="Magazijn\magazijn_overzicht.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Magazijn\magazijn_overzicht.Designer.cs">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazijn\[OLD]magazijn_invoeren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazijn\[OLD]magazijn_invoeren.Designer.cs">
+      <DependentUpon>[OLD]magazijn_invoeren.cs</DependentUpon>
     </Compile>
     <Compile Include="Magazijn\magazijn_toevoegen.cs">
       <SubType>Form</SubType>
@@ -231,11 +226,11 @@
     <EmbeddedResource Include="Magazijn\magazijn_inoutlist.resx">
       <DependentUpon>magazijn_inoutlist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Magazijn\magazijn_invoeren.resx">
-      <DependentUpon>magazijn_invoeren.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Magazijn\magazijn_overzicht.resx">
       <DependentUpon>magazijn_overzicht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazijn\[OLD]magazijn_invoeren.resx">
+      <DependentUpon>[OLD]magazijn_invoeren.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Magazijn\magazijn_toevoegen.resx">
       <DependentUpon>magazijn_toevoegen.cs</DependentUpon>
@@ -286,17 +281,6 @@
     </None>
     <None Include="MagazijnCategorie.xss">
       <DependentUpon>MagazijnCategorie.xsd</DependentUpon>
-    </None>
-    <None Include="MagazijnProductsDataSet.xsc">
-      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MagazijnProductsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MagazijnProductsDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MagazijnProductsDataSet.xss">
-      <DependentUpon>MagazijnProductsDataSet.xsd</DependentUpon>
     </None>
     <None Include="Magazijn_Subcategorie_DataSet.xsc">
       <DependentUpon>Magazijn_Subcategorie_DataSet.xsd</DependentUpon>

@@ -34,8 +34,13 @@
             this.uitlenen_btn_addnew = new System.Windows.Forms.Button();
             this.uitlenen_btn_returned = new System.Windows.Forms.Button();
             this.uitlenenBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uitlenenBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -48,18 +53,20 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnF2;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(757, 275);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(777, 362);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // uitlenen_btn_addnew
             // 
-            this.uitlenen_btn_addnew.Location = new System.Drawing.Point(13, 12);
+            this.uitlenen_btn_addnew.Location = new System.Drawing.Point(4, 1);
             this.uitlenen_btn_addnew.Name = "uitlenen_btn_addnew";
             this.uitlenen_btn_addnew.Size = new System.Drawing.Size(75, 23);
             this.uitlenen_btn_addnew.TabIndex = 1;
@@ -69,7 +76,7 @@
             // 
             // uitlenen_btn_returned
             // 
-            this.uitlenen_btn_returned.Location = new System.Drawing.Point(680, 12);
+            this.uitlenen_btn_returned.Location = new System.Drawing.Point(84, 0);
             this.uitlenen_btn_returned.Name = "uitlenen_btn_returned";
             this.uitlenen_btn_returned.Size = new System.Drawing.Size(89, 23);
             this.uitlenen_btn_returned.TabIndex = 2;
@@ -81,14 +88,30 @@
             // 
             this.uitlenenBindingSource.DataMember = "uitlenen";
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(2, 4);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.uitlenen_btn_addnew);
+            this.splitContainer1.Panel1.Controls.Add(this.uitlenen_btn_returned);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Size = new System.Drawing.Size(777, 391);
+            this.splitContainer1.SplitterDistance = 25;
+            this.splitContainer1.TabIndex = 4;
+            // 
             // uitlenen_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 329);
-            this.Controls.Add(this.uitlenen_btn_returned);
-            this.Controls.Add(this.uitlenen_btn_addnew);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(781, 396);
+            this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -98,6 +121,10 @@
             this.Load += new System.EventHandler(this.uitlenen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uitlenenBindingSource)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,5 +135,6 @@
         private System.Windows.Forms.BindingSource uitlenenBindingSource;
         private System.Windows.Forms.Button uitlenen_btn_addnew;
         private System.Windows.Forms.Button uitlenen_btn_returned;
+        private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

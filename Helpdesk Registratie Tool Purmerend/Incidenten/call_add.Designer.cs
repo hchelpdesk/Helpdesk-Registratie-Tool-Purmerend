@@ -57,9 +57,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.call_add_existingcustomer_lbl_namecustomer = new System.Windows.Forms.Label();
-            this.call_add_existingcust1_btn = new System.Windows.Forms.Button();
-            this.call_add_newcust_btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.call_add_existingcust1_btn = new System.Windows.Forms.RadioButton();
+            this.call_add_newcust_btn = new System.Windows.Forms.RadioButton();
             this.call_add_grpbox_newcustomer.SuspendLayout();
             this.call_add_problemdetails_grpbox.SuspendLayout();
             this.call_add_customerquestion_grpbox.SuspendLayout();
@@ -250,7 +250,6 @@
             this.call_add_existingcust1_lbl_email.Size = new System.Drawing.Size(57, 13);
             this.call_add_existingcust1_lbl_email.TabIndex = 20;
             this.call_add_existingcust1_lbl_email.Text = "emailadres";
-            this.call_add_existingcust1_lbl_email.Click += new System.EventHandler(this.call_add_existingcust1_lbl_email_Click);
             // 
             // call_add_existingcust1_lbl_afdeling
             // 
@@ -281,8 +280,6 @@
             // 
             // call_add_existingcust1_combobx_name
             // 
-            this.call_add_existingcust1_combobx_name.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.call_add_existingcust1_combobx_name.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.call_add_existingcust1_combobx_name.DropDownHeight = 200;
             this.call_add_existingcust1_combobx_name.DropDownWidth = 160;
             this.call_add_existingcust1_combobx_name.FormattingEnabled = true;
@@ -338,45 +335,48 @@
             this.call_add_existingcustomer_lbl_namecustomer.TabIndex = 0;
             this.call_add_existingcustomer_lbl_namecustomer.Text = "Naam klant";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(565, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Incident Toevoegen";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // call_add_existingcust1_btn
             // 
-            this.call_add_existingcust1_btn.Location = new System.Drawing.Point(131, 7);
+            this.call_add_existingcust1_btn.AutoSize = true;
+            this.call_add_existingcust1_btn.Location = new System.Drawing.Point(106, 13);
             this.call_add_existingcust1_btn.Name = "call_add_existingcust1_btn";
-            this.call_add_existingcust1_btn.Size = new System.Drawing.Size(113, 23);
-            this.call_add_existingcust1_btn.TabIndex = 13;
+            this.call_add_existingcust1_btn.Size = new System.Drawing.Size(103, 17);
+            this.call_add_existingcust1_btn.TabIndex = 18;
+            this.call_add_existingcust1_btn.TabStop = true;
             this.call_add_existingcust1_btn.Text = "Bestaande Klant";
             this.call_add_existingcust1_btn.UseVisualStyleBackColor = true;
-            this.call_add_existingcust1_btn.Click += new System.EventHandler(this.button1_Click);
+            this.call_add_existingcust1_btn.CheckedChanged += new System.EventHandler(this.call_add_existingcust1_btn_CheckedChanged);
             // 
             // call_add_newcust_btn
             // 
-            this.call_add_newcust_btn.Location = new System.Drawing.Point(12, 7);
+            this.call_add_newcust_btn.AutoSize = true;
+            this.call_add_newcust_btn.Location = new System.Drawing.Point(12, 12);
             this.call_add_newcust_btn.Name = "call_add_newcust_btn";
-            this.call_add_newcust_btn.Size = new System.Drawing.Size(113, 23);
-            this.call_add_newcust_btn.TabIndex = 14;
+            this.call_add_newcust_btn.Size = new System.Drawing.Size(88, 17);
+            this.call_add_newcust_btn.TabIndex = 19;
+            this.call_add_newcust_btn.TabStop = true;
             this.call_add_newcust_btn.Text = "Nieuwe Klant";
             this.call_add_newcust_btn.UseVisualStyleBackColor = true;
-            this.call_add_newcust_btn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(602, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Don\'t Click Me";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.call_add_newcust_btn.CheckedChanged += new System.EventHandler(this.call_add_newcust_btn_CheckedChanged);
             // 
             // call_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 489);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(705, 389);
             this.Controls.Add(this.call_add_newcust_btn);
             this.Controls.Add(this.call_add_existingcust1_btn);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.call_add_grpbox_existingcustomer);
             this.Controls.Add(this.call_add_customerquestion_grpbox);
             this.Controls.Add(this.call_add_problemdetails_grpbox);
@@ -386,7 +386,6 @@
             this.Name = "call_add";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Call - Toevoegen";
-            this.Load += new System.EventHandler(this.call_add_Load);
             this.call_add_grpbox_newcustomer.ResumeLayout(false);
             this.call_add_grpbox_newcustomer.PerformLayout();
             this.call_add_problemdetails_grpbox.ResumeLayout(false);
@@ -394,6 +393,7 @@
             this.call_add_grpbox_existingcustomer.ResumeLayout(false);
             this.call_add_grpbox_existingcustomer.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -423,12 +423,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label call_add_existingcustomer_lbl_namecustomer;
         private System.Windows.Forms.ComboBox call_add_existingcust1_combobx_name;
-        private System.Windows.Forms.Button call_add_existingcust1_btn;
-        private System.Windows.Forms.Button call_add_newcust_btn;
         private System.Windows.Forms.Label call_add_existingcust1_lbl_email;
         private System.Windows.Forms.Label call_add_existingcust1_lbl_afdeling;
         private System.Windows.Forms.Label call_add_existingcust1_lbl_telefoon;
         private System.Windows.Forms.Label call_add_existingcust1_lbl_bedrijf;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton call_add_existingcust1_btn;
+        private System.Windows.Forms.RadioButton call_add_newcust_btn;
     }
 }
