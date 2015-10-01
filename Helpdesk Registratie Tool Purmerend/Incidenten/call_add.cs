@@ -82,19 +82,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             query1.Parameters.Add("@callnummer", SqlDbType.VarChar).Value = "ICT-Helpdesk-PUR000" + callnumber.ToString();
 
             // Query uitvoeren
-            // email sturen naar klant met standaard text
+            // email sturen naar klant met callnummer
             try
             {
                 var fromAddress = new MailAddress("helpdeskpur@gmail.com", "ICT Helpdesk Purmerend");
                 var toAddress = new MailAddress(call_add_existingcust1_lbl_email.Text, call_add_existingcust1_combobx_name.Text);
                 const string fromPassword = "Ict00012";
                 const string subject = "Incident Melding ICT Helpdesk Purmerend";
-                string body = string.Format("Beste Klant, \n\n U ontvangt deze e-mail omdat u met een van onze medewerkers gesproken heeft. \n\n Uw verzoek is geregisteerd onder het nummer ICT-Helpdesk-PUR000" + callnumber.ToString() +"\n\n Mocht u nieuwsgierig zijn naar de status van het incident neemt u dan contact met ons op\n\n Met vriendelijke groet,\n\n ICT Helpdesk Purmerend");
+                string body = string.Format("Beste Klant, \n\n U ontvangt deze e-mail omdat u met een verzoek bij 1 van onze medewerkers bent geweest. \n\n Uw verzoek is geregisteerd onder het nummer ICT-Helpdesk-PUR000" + callnumber.ToString() + "\n\n Houdt dit nummer bij de hand wanneer u contact met ons op neemt\n\n Met vriendelijke groet,\n\n De ICT Helpdesk Purmerend\n\n E-mail: helpdeskpur@gmail.com ");
                 
-                ServicePointManager.ServerCertificateValidationCallback =
-   delegate (object sender1, X509Certificate certificate, X509Chain chain,
-       SslPolicyErrors sslPolicyErrors)
-   { return true; };
+                /*ServicePointManager.ServerCertificateValidationCallback =
+                delegate (object sender1, X509Certificate certificate, X509Chain chain,
+                       SslPolicyErrors sslPolicyErrors)
+                   { return true; }; */
                 var smtp = new SmtpClient
                 {
                     Host = "smtp.gmail.com",
@@ -102,7 +102,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
                     EnableSsl = true,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     Credentials = new NetworkCredential(fromAddress.Address, fromPassword),
-                    Timeout = 5000
+                    Timeout = 10000
                 };
                 using (var message = new MailMessage(fromAddress, toAddress)
                 {
