@@ -30,36 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(call_overzicht));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.call_meldingen_btn_toevoegen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 175);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(799, 204);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // call_meldingen_btn_toevoegen
-            // 
-            this.call_meldingen_btn_toevoegen.Location = new System.Drawing.Point(12, 12);
-            this.call_meldingen_btn_toevoegen.Name = "call_meldingen_btn_toevoegen";
-            this.call_meldingen_btn_toevoegen.Size = new System.Drawing.Size(93, 23);
-            this.call_meldingen_btn_toevoegen.TabIndex = 1;
-            this.call_meldingen_btn_toevoegen.Text = "Call Toevoegen";
-            this.call_meldingen_btn_toevoegen.UseVisualStyleBackColor = true;
             // 
             // call_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 503);
-            this.Controls.Add(this.call_meldingen_btn_toevoegen);
+            this.ClientSize = new System.Drawing.Size(799, 204);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "call_overzicht";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Call Meldingen - Overzicht";
             this.Load += new System.EventHandler(this.call_overzicht_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -70,6 +67,5 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button call_meldingen_btn_toevoegen;
     }
 }

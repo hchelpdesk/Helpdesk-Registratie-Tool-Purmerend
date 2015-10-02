@@ -61,26 +61,21 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             {
                 MessageBox.Show(error.ToString());
             }
-
-            // call nummer genereren
-            Random rnd = new Random();
-            int callnumber = rnd.Next(1, 1000);
-
+           Random rnd = new Random();
+           int callnumber = rnd.Next(1, 1000);
             // Query opstellen
             SqlCommand query1 = new SqlCommand("INSERT INTO call_details" +
-                 "(naamklant, telefoonnummer, emailadres, bedrijf, afdeling, probleemdetails, vraagvanklant, opgelostdoor, handtekeningklant, callnummer)" +
-                "VALUES(@naamklant, @telefoonnummer, @emailadres, @bedrijf, @afdeling, @probleemdetails, @vraagvanklant, @opgelostdoor, @handtekeningklant, @callnummer)", conn);
+                 "(callnummer, datum, naamklant, telefoonnummer, emailadres, probleemdetails, vraagvandeklant )" +
+                "VALUES( @callnummer,@datum, @naamklant, @telefoonnummer, @emailadres, @probleemdetails, @vraagvandeklant)", conn);
+            query1.Parameters.Add("@callnummer", SqlDbType.VarChar).Value = "ICT-Helpdesk-PUR000" + callnumber.ToString();
+            query1.Parameters.Add("@datum", SqlDbType.VarChar).Value = DateTime.Now.ToString();
             query1.Parameters.Add("@naamklant", SqlDbType.VarChar).Value = call_add_existingcust1_combobx_name.Text;
             query1.Parameters.Add("@telefoonnummer", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_telefoon.Text;
             query1.Parameters.Add("@emailadres", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_email.Text;
-            query1.Parameters.Add("@bedrijf", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_bedrijf.Text;
-            query1.Parameters.Add("@afdeling", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_afdeling.Text;
             query1.Parameters.Add("@probleemdetails", SqlDbType.VarChar).Value = call_add_problemdetails_txtbox.Text;
-            query1.Parameters.Add("@vraagvanklant", SqlDbType.VarChar).Value = call_add_customerquestion_txtbox.Text;
-            query1.Parameters.Add("@opgelostdoor", SqlDbType.VarChar).Value = "";
-            query1.Parameters.Add("@handtekeningklant", SqlDbType.VarChar).Value = "";
-            query1.Parameters.Add("@callnummer", SqlDbType.VarChar).Value = "ICT-Helpdesk-PUR000" + callnumber.ToString();
-
+            query1.Parameters.Add("@vraagvandeklant", SqlDbType.VarChar).Value = call_add_customerquestion_txtbox.Text;
+            
+            
             // Query uitvoeren
             // email sturen naar klant met callnummer
             try
@@ -89,7 +84,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
                 var toAddress = new MailAddress(call_add_existingcust1_lbl_email.Text, call_add_existingcust1_combobx_name.Text);
                 const string fromPassword = "Ict00012";
                 const string subject = "Incident Melding ICT Helpdesk Purmerend";
-                string body = string.Format("Beste Klant, \n\n U ontvangt deze e-mail omdat u met een verzoek bij 1 van onze medewerkers bent geweest. \n\n Uw verzoek is geregisteerd onder het nummer ICT-Helpdesk-PUR000" + callnumber.ToString() + "\n\n Houdt dit nummer bij de hand wanneer u contact met ons op neemt\n\n Met vriendelijke groet,\n\n De ICT Helpdesk Purmerend\n\n E-mail: helpdeskpur@gmail.com ");
+                string body = string.Format("Beste " + call_add_existingcust1_combobx_name.Text + ", \n\n U ontvangt deze e-mail omdat u met een verzoek bij onze helpdesk bent geweest. \n\n Uw verzoek is geregisteerd onder het nummer ICT-Helpdesk-PUR000" + callnumber.ToString() + "\n\n Houdt dit nummer bij de hand wanneer u contact met ons op neemt\n\n Met vriendelijke groet,\n\n De ICT Helpdesk Purmerend\n\n E-mail: helpdeskpur@gmail.com \n Telefoonnummer: 5304 ");
                 
                 /*ServicePointManager.ServerCertificateValidationCallback =
                 delegate (object sender1, X509Certificate certificate, X509Chain chain,
@@ -130,12 +125,13 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
                 MessageBox.Show("Het incident is aangemaakt. Er is een e-mail naar de klant gestuurd met het call nummer ICT-Helpdesk-PUR000" + callnumber.ToString(), "",
                     MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+                
             }
             catch (Exception error)
             {
                 MessageBox.Show(error.ToString());
             }
-
+            this.Close();
         }
 
         private void call_add_newcust_btn_CheckedChanged(object sender, EventArgs e)
@@ -177,6 +173,30 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             {
                 MessageBox.Show("Oops: \n\n" + ex);
             }
+        }
+
+        private void call_add_Load(object sender, EventArgs e)
+        {
+            label14.Text = call_add_problemdetails_txtbox.MaxLength.ToString();
+            label15.Text = call_add_problemdetails_txtbox.MaxLength.ToString();
+        }
+
+        private void call_add_problemdetails_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            var max = call_add_problemdetails_txtbox.MaxLength;
+            var length = call_add_problemdetails_txtbox.Text.Length;
+            var total = max - length;
+
+            label12.Text = total.ToString();
+        }
+
+        private void call_add_customerquestion_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            var max = call_add_customerquestion_txtbox.MaxLength;
+            var length = call_add_customerquestion_txtbox.Text.Length;
+            var total = max - length;
+
+            label17.Text = total.ToString();
         }
     }
 }

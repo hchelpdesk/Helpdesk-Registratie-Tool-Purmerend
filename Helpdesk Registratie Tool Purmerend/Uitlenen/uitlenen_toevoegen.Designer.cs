@@ -34,10 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.uitlenen_toevoegen_fullname = new System.Windows.Forms.ComboBox();
             this.klas_lbl = new System.Windows.Forms.Label();
-            this.uitlenen_toevoegen_product = new System.Windows.Forms.TextBox();
             this.uitlenen_toevoegen_btn_add = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.uitlenen_toevoegen_ingeleverd = new System.Windows.Forms.TextBox();
+            this.uitlenen_toevoegen_product = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -94,13 +94,6 @@
             this.klas_lbl.TabIndex = 6;
             this.klas_lbl.Text = " ";
             // 
-            // uitlenen_toevoegen_product
-            // 
-            this.uitlenen_toevoegen_product.Location = new System.Drawing.Point(80, 90);
-            this.uitlenen_toevoegen_product.Name = "uitlenen_toevoegen_product";
-            this.uitlenen_toevoegen_product.Size = new System.Drawing.Size(169, 20);
-            this.uitlenen_toevoegen_product.TabIndex = 7;
-            // 
             // uitlenen_toevoegen_btn_add
             // 
             this.uitlenen_toevoegen_btn_add.Location = new System.Drawing.Point(182, 154);
@@ -128,22 +121,28 @@
             this.uitlenen_toevoegen_ingeleverd.Size = new System.Drawing.Size(169, 20);
             this.uitlenen_toevoegen_ingeleverd.TabIndex = 10;
             // 
+            // uitlenen_toevoegen_product
+            // 
+            this.uitlenen_toevoegen_product.Location = new System.Drawing.Point(80, 93);
+            this.uitlenen_toevoegen_product.Name = "uitlenen_toevoegen_product";
+            this.uitlenen_toevoegen_product.Size = new System.Drawing.Size(169, 20);
+            this.uitlenen_toevoegen_product.TabIndex = 11;
+            // 
             // uitlenen_toevoegen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(269, 189);
+            this.Controls.Add(this.uitlenen_toevoegen_product);
             this.Controls.Add(this.uitlenen_toevoegen_ingeleverd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.uitlenen_toevoegen_btn_add);
-            this.Controls.Add(this.uitlenen_toevoegen_product);
             this.Controls.Add(this.klas_lbl);
             this.Controls.Add(this.uitlenen_toevoegen_fullname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "uitlenen_toevoegen";
             this.Text = "Uitlenen Toevoegen";
             this.Load += new System.EventHandler(this.uitlenen_toevoegen_Load);
@@ -159,9 +158,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox uitlenen_toevoegen_fullname;
         private System.Windows.Forms.Label klas_lbl;
-        private System.Windows.Forms.TextBox uitlenen_toevoegen_product;
         private System.Windows.Forms.Button uitlenen_toevoegen_btn_add;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox uitlenen_toevoegen_ingeleverd;
+        private System.Windows.Forms.TextBox uitlenen_toevoegen_product;
     }
 }

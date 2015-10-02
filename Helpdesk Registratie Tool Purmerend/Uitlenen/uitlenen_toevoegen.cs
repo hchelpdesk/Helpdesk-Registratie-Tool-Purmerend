@@ -25,7 +25,6 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
                 uitlenen_toevoegen_fullname.ValueMember = "Klas";
                 uitlenen_toevoegen_fullname.DataSource = ds.Tables["uitlenen_toevoegen_fullname"];
                 klas_lbl.Text = uitlenen_toevoegen_fullname.ValueMember.ToString();
-
                 uitlenen_toevoegen_fullname_SelectedIndexChanged(sender, e);
             }
             catch (Exception)
@@ -40,12 +39,6 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
         {
             klas_lbl.Text = uitlenen_toevoegen_fullname.SelectedValue.ToString();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void uitlenen_toevoegen_btn_add_Click(object sender, EventArgs e)
         {
             try
@@ -60,14 +53,11 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Uitlenen
                 cmd.Parameters.Add("@uitlenen_toevoegen_product_txtbox", SqlDbType.VarChar);
                 cmd.Parameters.Add("@uitlenen_toevoegen_ingeleverd", SqlDbType.VarChar);
                 cmd.Parameters.Add("@tijddatum", SqlDbType.DateTime);
-
                 cmd.Parameters["@uitlenen_toevoegen_fullname"].Value = uitlenen_toevoegen_fullname.Text;
                 cmd.Parameters["@klas_lbl"].Value = klas_lbl.Text;
                 cmd.Parameters["@uitlenen_toevoegen_product_txtbox"].Value = uitlenen_toevoegen_product.Text;
                 cmd.Parameters["@uitlenen_toevoegen_ingeleverd"].Value = uitlenen_toevoegen_ingeleverd.Text;
                 cmd.Parameters["@tijddatum"].Value = DateTime.Now;
-
-
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Het product is geregistreerd nu op naam van " + uitlenen_toevoegen_fullname.Text + " geregistreerd.");
                 Close();

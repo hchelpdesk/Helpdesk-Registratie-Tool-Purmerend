@@ -59,11 +59,11 @@
             // 
             this.mainform_menustrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestandToolStripMenuItem,
+            this.callsToolStripMenuItem,
             this.klantenToolStripMenuItem,
             this.magazijnToolStripMenuItem,
             this.uitlenenToolStripMenuItem,
             this.notitiesToolStripMenuItem,
-            this.callsToolStripMenuItem,
             this.beheerToolStripMenuItem});
             this.mainform_menustrip1.Location = new System.Drawing.Point(0, 0);
             this.mainform_menustrip1.Name = "mainform_menustrip1";
@@ -167,7 +167,7 @@
             this.overzichtToolStripMenuItem2.Name = "overzichtToolStripMenuItem2";
             this.overzichtToolStripMenuItem2.ShortcutKeyDisplayString = "F4";
             this.overzichtToolStripMenuItem2.ShortcutKeys = System.Windows.Forms.Keys.F4;
-            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.overzichtToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.overzichtToolStripMenuItem2.Text = "Overzicht";
             this.overzichtToolStripMenuItem2.Click += new System.EventHandler(this.overzichtToolStripMenuItem2_Click);
             // 
@@ -179,6 +179,7 @@
             this.notitiesToolStripMenuItem.Name = "notitiesToolStripMenuItem";
             this.notitiesToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.notitiesToolStripMenuItem.Text = "Notities";
+            this.notitiesToolStripMenuItem.Visible = false;
             // 
             // algemeenToolStripMenuItem
             // 
@@ -208,13 +209,14 @@
             // overzichtToolStripMenuItem3
             // 
             this.overzichtToolStripMenuItem3.Name = "overzichtToolStripMenuItem3";
-            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
+            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.overzichtToolStripMenuItem3.Text = "Overzicht";
+            this.overzichtToolStripMenuItem3.Click += new System.EventHandler(this.overzichtToolStripMenuItem3_Click);
             // 
             // toevoegenToolStripMenuItem2
             // 
             this.toevoegenToolStripMenuItem2.Name = "toevoegenToolStripMenuItem2";
-            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(133, 22);
+            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.toevoegenToolStripMenuItem2.Text = "Toevoegen";
             this.toevoegenToolStripMenuItem2.Click += new System.EventHandler(this.toevoegenToolStripMenuItem2_Click);
             // 
@@ -231,7 +233,7 @@
             this.inloggenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backupsToolStripMenuItem});
             this.inloggenToolStripMenuItem.Name = "inloggenToolStripMenuItem";
-            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inloggenToolStripMenuItem.Text = "Inloggen";
             this.inloggenToolStripMenuItem.Click += new System.EventHandler(this.inloggenToolStripMenuItem_Click);
             // 

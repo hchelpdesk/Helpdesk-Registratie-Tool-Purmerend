@@ -39,9 +39,8 @@
             this.cust_overzicht_dgv1.AllowUserToDeleteRows = false;
             this.cust_overzicht_dgv1.AllowUserToResizeColumns = false;
             this.cust_overzicht_dgv1.AllowUserToResizeRows = false;
-            this.cust_overzicht_dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            this.cust_overzicht_dgv1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.cust_overzicht_dgv1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cust_overzicht_dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.cust_overzicht_dgv1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.cust_overzicht_dgv1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.cust_overzicht_dgv1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.cust_overzicht_dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -52,15 +51,16 @@
             this.cust_overzicht_dgv1.ReadOnly = true;
             this.cust_overzicht_dgv1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.cust_overzicht_dgv1.RowHeadersVisible = false;
+            this.cust_overzicht_dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.cust_overzicht_dgv1.ShowEditingIcon = false;
-            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(1284, 267);
+            this.cust_overzicht_dgv1.Size = new System.Drawing.Size(909, 267);
             this.cust_overzicht_dgv1.TabIndex = 0;
             // 
             // cust_overzicht
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 267);
+            this.ClientSize = new System.Drawing.Size(909, 267);
             this.Controls.Add(this.cust_overzicht_dgv1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

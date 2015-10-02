@@ -124,8 +124,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 cust_import.Focus();
             }
             cust_import.Show();
-            cust_overzicht.Activate();
-            cust_overzicht.Focus();
+            cust_import.Activate();
+            cust_import.Focus();
         }
         private Form beheer_inlog_form;
         private void inloggenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -152,6 +152,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             magazijn_overzicht.Show();
             magazijn_overzicht.Activate();
             magazijn_overzicht.Focus();
+        }
+        private Form call_overzicht;
+        private void overzichtToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            if ((call_overzicht == null) || (call_overzicht.IsDisposed))
+            {
+                call_overzicht = new call_overzicht();
+                call_overzicht.MdiParent = this;
+                Focus();
+            }
+            call_overzicht.Show();
+            call_overzicht.Activate();
+            call_overzicht.Focus();
         }
     }
 
