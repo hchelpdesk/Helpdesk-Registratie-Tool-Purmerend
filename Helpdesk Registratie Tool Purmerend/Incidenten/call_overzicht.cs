@@ -18,21 +18,8 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             InitializeComponent();
         }
 
-       private void call_overzicht_Load(object sender, EventArgs e)
+        private void call_overzicht_Load(object sender, EventArgs e)
         {
-            /*
-            SqlConnection conn = new SqlConnection();
-            string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
-            string sql = "SELECT * FROM call_details";
-            SqlConnection connection = new SqlConnection(connectionString);
-            SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
-            DataSet ds = new DataSet();
-            connection.Open();
-            dataadapter.Fill(ds, "Authors_table");
-            connection.Close();
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = "Authors_table";
-            */
             SqlConnection conn = new SqlConnection();
             string connectionString = (@"Data Source=DENNIS-PC\SQLEXPRESS;Initial Catalog=helpdesk;Integrated Security=True");
             string sql = "SELECT * FROM call_details";
@@ -46,12 +33,13 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             dataGridView1.AutoGenerateColumns = false;
 
             //Set Columns Count
-            dataGridView1.ColumnCount = 5;
+            dataGridView1.ColumnCount = 6;
 
             //Add Columns
             dataGridView1.Columns[0].Name = "callnummer"; // name
             dataGridView1.Columns[0].HeaderText = "Call Nummer"; // header text
             dataGridView1.Columns[0].DataPropertyName = "callnummer"; // field name
+
 
             dataGridView1.Columns[1].HeaderText = "Datum";
             dataGridView1.Columns[1].Name = "datum";
@@ -69,14 +57,26 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             dataGridView1.Columns[4].HeaderText = "Probleem Details";
             dataGridView1.Columns[4].DataPropertyName = "probleemdetails";
 
-            dataGridView1.Columns[4].Name = "vraagvandeklant";
-            dataGridView1.Columns[4].HeaderText = "Vraag van de Klant";
-            dataGridView1.Columns[4].DataPropertyName = "vraagvandeklant";
+            dataGridView1.Columns[5].Name = "vraagvandeklant";
+            dataGridView1.Columns[5].HeaderText = "Vraag van de Klant";
+            dataGridView1.Columns[5].DataPropertyName = "vraagvandeklant";
 
 
 
             dataGridView1.DataSource = dbDataSet1;
             dataGridView1.DataMember = "calldetails";
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+
+                MessageBox.Show(row.Cells["callnummer"].Value.ToString());
+
+            }
+
         }
     }
 }

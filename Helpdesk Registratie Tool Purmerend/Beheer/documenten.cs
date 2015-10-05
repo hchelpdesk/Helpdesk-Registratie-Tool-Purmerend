@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Word;
 
-namespace Helpdesk_Registratie_Tool_Purmerend
+namespace Helpdesk_Registratie_Tool_Purmerend.Beheer
 {
-    public partial class calculator : Form
+    public partial class documenten : Form
     {
-        public calculator()
+        public documenten()
         {
             InitializeComponent();
+        }
+
+        private void documenten_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

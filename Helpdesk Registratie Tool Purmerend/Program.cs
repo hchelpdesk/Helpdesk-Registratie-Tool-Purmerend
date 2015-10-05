@@ -17,6 +17,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+
         }
     }
 }

@@ -32,6 +32,9 @@
             this.mainform_menustrip1 = new System.Windows.Forms.MenuStrip();
             this.bestandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aF4fsluitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.callsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.overzichtToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toevoegenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.klantenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overzichtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toevoegenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,14 +47,10 @@
             this.notitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.algemeenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medewerkersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.callsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.overzichtToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toevoegenToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.beheerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inloggenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mSSQLBackupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listbox1 = new System.Windows.Forms.ListBox();
             this.mainform_menustrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,8 +62,8 @@
             this.klantenToolStripMenuItem,
             this.magazijnToolStripMenuItem,
             this.uitlenenToolStripMenuItem,
-            this.notitiesToolStripMenuItem,
-            this.beheerToolStripMenuItem});
+            this.beheerToolStripMenuItem,
+            this.notitiesToolStripMenuItem});
             this.mainform_menustrip1.Location = new System.Drawing.Point(0, 0);
             this.mainform_menustrip1.Name = "mainform_menustrip1";
             this.mainform_menustrip1.Size = new System.Drawing.Size(811, 24);
@@ -88,11 +87,34 @@
             this.aF4fsluitenToolStripMenuItem.Text = "Afsluiten";
             this.aF4fsluitenToolStripMenuItem.Click += new System.EventHandler(this.aF4fsluitenToolStripMenuItem_Click);
             // 
+            // callsToolStripMenuItem
+            // 
+            this.callsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.overzichtToolStripMenuItem3,
+            this.toevoegenToolStripMenuItem2});
+            this.callsToolStripMenuItem.Name = "callsToolStripMenuItem";
+            this.callsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.callsToolStripMenuItem.Text = "Calls";
+            // 
+            // overzichtToolStripMenuItem3
+            // 
+            this.overzichtToolStripMenuItem3.Name = "overzichtToolStripMenuItem3";
+            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
+            this.overzichtToolStripMenuItem3.Text = "Overzicht";
+            this.overzichtToolStripMenuItem3.Click += new System.EventHandler(this.overzichtToolStripMenuItem3_Click);
+            // 
+            // toevoegenToolStripMenuItem2
+            // 
+            this.toevoegenToolStripMenuItem2.Name = "toevoegenToolStripMenuItem2";
+            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(133, 22);
+            this.toevoegenToolStripMenuItem2.Text = "Toevoegen";
+            this.toevoegenToolStripMenuItem2.Click += new System.EventHandler(this.toevoegenToolStripMenuItem2_Click);
+            // 
             // klantenToolStripMenuItem
             // 
             this.klantenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.overzichtToolStripMenuItem1,
             this.toevoegenToolStripMenuItem,
+            this.overzichtToolStripMenuItem1,
             this.importerenUitCSVToolStripMenuItem1});
             this.klantenToolStripMenuItem.Name = "klantenToolStripMenuItem";
             this.klantenToolStripMenuItem.ShortcutKeyDisplayString = "F2";
@@ -197,29 +219,6 @@
             this.medewerkersToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.medewerkersToolStripMenuItem.Text = "Medewerkers";
             // 
-            // callsToolStripMenuItem
-            // 
-            this.callsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.overzichtToolStripMenuItem3,
-            this.toevoegenToolStripMenuItem2});
-            this.callsToolStripMenuItem.Name = "callsToolStripMenuItem";
-            this.callsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.callsToolStripMenuItem.Text = "Calls";
-            // 
-            // overzichtToolStripMenuItem3
-            // 
-            this.overzichtToolStripMenuItem3.Name = "overzichtToolStripMenuItem3";
-            this.overzichtToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.overzichtToolStripMenuItem3.Text = "Overzicht";
-            this.overzichtToolStripMenuItem3.Click += new System.EventHandler(this.overzichtToolStripMenuItem3_Click);
-            // 
-            // toevoegenToolStripMenuItem2
-            // 
-            this.toevoegenToolStripMenuItem2.Name = "toevoegenToolStripMenuItem2";
-            this.toevoegenToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.toevoegenToolStripMenuItem2.Text = "Toevoegen";
-            this.toevoegenToolStripMenuItem2.Click += new System.EventHandler(this.toevoegenToolStripMenuItem2_Click);
-            // 
             // beheerToolStripMenuItem
             // 
             this.beheerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -227,6 +226,7 @@
             this.beheerToolStripMenuItem.Name = "beheerToolStripMenuItem";
             this.beheerToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.beheerToolStripMenuItem.Text = "Beheer";
+            this.beheerToolStripMenuItem.Visible = false;
             // 
             // inloggenToolStripMenuItem
             // 
@@ -254,17 +254,6 @@
             this.mSSQLBackupToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.mSSQLBackupToolStripMenuItem.Text = "MS SQL Back-up";
             // 
-            // listbox1
-            // 
-            this.listbox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listbox1.FormattingEnabled = true;
-            this.listbox1.Location = new System.Drawing.Point(531, 24);
-            this.listbox1.Name = "listbox1";
-            this.listbox1.Size = new System.Drawing.Size(280, 624);
-            this.listbox1.Sorted = true;
-            this.listbox1.TabIndex = 5;
-            this.listbox1.Visible = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,7 +261,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(811, 648);
-            this.Controls.Add(this.listbox1);
             this.Controls.Add(this.mainform_menustrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -308,7 +296,6 @@
         private System.Windows.Forms.ToolStripMenuItem callsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem overzichtToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toevoegenToolStripMenuItem2;
-        private System.Windows.Forms.ListBox listbox1;
         private System.Windows.Forms.ToolStripMenuItem importerenUitCSVToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem beheerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inloggenToolStripMenuItem;
