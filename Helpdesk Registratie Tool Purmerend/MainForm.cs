@@ -11,6 +11,7 @@ using Helpdesk_Registratie_Tool_Purmerend.Magazijn;
 using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using Helpdesk_Registratie_Tool_Purmerend.Backups;
 using Helpdesk_Registratie_Tool_Purmerend.Beheer;
+using Helpdesk_Registratie_Tool_Purmerend.Tools.Burning;
 using System;
 using System.Windows.Forms;
 using System.Drawing;
@@ -165,6 +166,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             call_overzicht.Show();
             call_overzicht.Activate();
             call_overzicht.Focus();
+        }
+        private Form createiso;
+        private void createISOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((createiso == null) || (createiso.IsDisposed))
+            {
+                createiso = new createiso();
+                createiso.MdiParent = this;
+                Focus();
+            }
+            createiso.Show();
+            createiso.Activate();
+            createiso.Focus();
         }
     }
 
