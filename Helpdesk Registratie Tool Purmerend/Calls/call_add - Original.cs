@@ -66,15 +66,15 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             int callnumber = rnd.Next(1, 1000000);
             // Query opstellen
             SqlCommand query1 = new SqlCommand("INSERT INTO call_details" +
-                 "(callnummer, datum, naamklant, telefoonnummer, emailadres, probleemdetails, vraagvandeklant )" +
-                "VALUES( @callnummer,@datum, @naamklant, @telefoonnummer, @emailadres, @probleemdetails, @vraagvandeklant)", conn);
+                 "(callnummer, datum, naamklant, telefoonnummer, emailadres, probleemdetails, vraagvandeklant)" +
+                "VALUES(@callnummer,@datum, @naamklant, @telefoonnummer, @emailadres, @probleemdetails, @vraagvandeklant)", conn);
             query1.Parameters.Add("@callnummer", SqlDbType.VarChar).Value = "ICT-Helpdesk-PUR" + callnumber.ToString();
             query1.Parameters.Add("@datum", SqlDbType.VarChar).Value = DateTime.Now.ToString();
             query1.Parameters.Add("@naamklant", SqlDbType.VarChar).Value = call_add_existingcust1_combobx_name.Text;
             query1.Parameters.Add("@telefoonnummer", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_telefoon.Text;
             query1.Parameters.Add("@emailadres", SqlDbType.VarChar).Value = call_add_existingcust1_lbl_email.Text;
-            query1.Parameters.Add("@probleemdetails", SqlDbType.VarChar).Value = call_add_problemdetails_txtbox.Text;
-            query1.Parameters.Add("@vraagvandeklant", SqlDbType.VarChar).Value = call_add_customerquestion_txtbox.Text;
+            query1.Parameters.Add("@probleemdetails", SqlDbType.VarChar, -1).Value = call_add_problemdetails_txtbox.Text;
+            query1.Parameters.Add("@vraagvandeklant", SqlDbType.VarChar, -1).Value = call_add_customerquestion_txtbox.Text;
 
 
             // Query uitvoeren

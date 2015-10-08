@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Iso9660;
 
+
 namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
 {
     public partial class createiso : Form
@@ -27,19 +28,19 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
             switch (ret)
             {
                 case -1:
-                    label2.Text = @"Status: " + @"ERREUR! Handle du lecteur invalide";
+                    createiso_lbl_savepath.Text = @"Status: " + @"Error! Selected an invalid station ";
                     break;
                 case -2:
-                    label2.Text = @"Status: " + @"ERROR! Source is not an CD / DVD.";
+                    createiso_lbl_savepath.Text = @"Status: " + @"ERROR! Source is not an CD / DVD.";
                     break;
                 case -3:
-                    label2.Text = @"Status: " + @"ERROR! Not enough space to create the iso file.";
+                    createiso_lbl_savepath.Text = @"Status: " + @"ERROR! Not enough space to create the iso file.";
                     break;
                 case -4:
-                    label2.Text = @"Status: " + @"ERROR! a FAT32 file system cannot store a file > then 4096 MB";
+                    createiso_lbl_savepath.Text = @"Status: " + @"ERROR! a FAT32 file system cannot store a file > then 4096 MB";
                     break;
                 case 1:
-                    label2.Text = @"Status: " + @"Creating the iso File";
+                    createiso_status_lbl.Text = @"Status: " + @"Creating the iso File";
                     break;
             }
         }
@@ -65,10 +66,10 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
                 }
             }
         }
-            delegate void DelegMessage(string value);
-            delegate void DelegFinish(string s, TimeSpan t);
-            delegate void DelegProgress(long value);
-        
+        delegate void DelegMessage(string value);
+        delegate void DelegFinish(string s, TimeSpan t);
+        delegate void DelegProgress(long value);
+
         private void cISO_OnProgress(Iso9660.EventIso9660 e)
         {
             if (this.InvokeRequired)
@@ -83,7 +84,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
             if (this.InvokeRequired)
             {
                 DelegFinish del = new DelegFinish(SetFinish);
-                this.Invoke(del, new object[] { @"Creating iso succeeded succefully.", e.TotalElapsedTime });
+                this.Invoke(del, new object[] { @"Creating iso finished.", e.TotalElapsedTime });
             }
         }
 
@@ -98,7 +99,25 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
 
         private void SetProgress(long value)
         {
-            Progression_lbl.Text = @"Progression: " + value.ToString() + @"/" + cISO.SizeOfCD.ToString();
+            UInt64 totalsize = Convert.ToUInt64(cISO.SizeOfCD.ToString());
+            UInt64 test = totalsize;
+            UInt64 newsizeinKB = totalsize / 1024;
+            UInt64 newsizeinMB = newsizeinKB / 1024;
+            UInt64 newsizeinGB = newsizeinMB / 1024;
+
+            UInt64 currentsize = Convert.ToUInt64(value.ToString());
+            UInt64 currentsizeinKB = currentsize / 1024;
+            UInt64 currentsizeinMB = currentsizeinKB / 1024;
+            UInt64 currentsizeinGB = currentsizeinMB / 1024;
+
+            createiso_rogression_lbl.Text = @"Progression: " + currentsizeinMB + @"/" + newsizeinMB + "MB";
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 100;
+            progressBar1.Value = (100 * (int)currentsizeinMB) / (int)newsizeinMB;
+            
+            progressBar1.Step = 1;
+            progressBar1.PerformStep();
+           
         }
 
         private void SetMessage(string value)
@@ -108,24 +127,34 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
 
         private void SetFinish(string s, TimeSpan t)
         {
-            label2.Text = @"Status: " + s + "  Total Time Elapsed: " + t.ToString();
+            createiso_status_lbl.Text = @"Status: " + s + "Total Time Elapsed: " + t.ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Disc Image |*.iso ";
-            saveFileDialog1.Title = "Save an Disc Image File";
-            saveFileDialog1.ShowDialog();
-            textBox1.Text = saveFileDialog1.FileName;
+            // Volume label ophalen van het gekozen station.
+            foreach (DriveInfo CurrentDrive in DriveInfo.GetDrives())
+            {
+                // Vérification qu'on a bien affaire à un lecteur cd/dvd
+                if (CurrentDrive.DriveType == DriveType.CDRom)
+                {
+                    string volumelabel = CurrentDrive.VolumeLabel;
+                    //SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                    saveFileDialog1.Filter = "Disk Image | *.iso";
+                    saveFileDialog1.Title = "Waar wil je de ISO opslaan?";
+                    saveFileDialog1.FileName = volumelabel;
+                    saveFileDialog1.ShowDialog();
+                    textBox1.Text = saveFileDialog1.FileName;
 
+                }
+            }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             //if (textBox1.Text != "" && comboBox1.Text != "")
             if (String.IsNullOrEmpty(textBox1.Text) == false && String.IsNullOrEmpty(createiso_combobx_sourcedrive.Text) == false)
             {
                 iso_maker(textBox1.Text, createiso_combobx_sourcedrive.Text);
+
             }
         }
 
@@ -133,6 +162,25 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Tools.Burning
         {
             //Arret de la création
             cISO.Stop();
+            createiso_status_lbl.Text = @"Status User pressed the stop button.";
+        }
+
+        private void createiso_combobx_sourcedrive_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Enabled = true;
+            button1.Enabled = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            button2.Enabled = true;
+            button3.Enabled = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string pathfile = saveFileDialog1.InitialDirectory.ToString();
+            MessageBox.Show(pathfile);
         }
     }
 }

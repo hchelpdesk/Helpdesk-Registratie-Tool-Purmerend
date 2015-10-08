@@ -12,6 +12,7 @@ using Helpdesk_Registratie_Tool_Purmerend.Uitlenen;
 using Helpdesk_Registratie_Tool_Purmerend.Backups;
 using Helpdesk_Registratie_Tool_Purmerend.Beheer;
 using Helpdesk_Registratie_Tool_Purmerend.Tools.Burning;
+using Helpdesk_Registratie_Tool_Purmerend.Tools.Telnet;
 using System;
 using System.Windows.Forms;
 using System.Drawing;
@@ -137,7 +138,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend
                 beheer_inlog_form.MdiParent = this;
                 Focus();
             }
-            beheer_inlog_form.Show();
+            //beheer_inlogform.Show();
             cust_overzicht.Activate();
             cust_overzicht.Focus();
         }
@@ -179,6 +180,32 @@ namespace Helpdesk_Registratie_Tool_Purmerend
             createiso.Show();
             createiso.Activate();
             createiso.Focus();
+        }
+        private Form burniso;
+        private void burnISOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((burniso == null) || (burniso.IsDisposed))
+            {
+                burniso = new burniso();
+                burniso.MdiParent = this;
+                Focus();
+            }
+            burniso.Show();
+            burniso.Activate();
+            burniso.Focus();
+        }
+        private Form telnet;
+        private void telnetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if ((telnet == null) || (telnet.IsDisposed))
+            {
+                telnet = new telnet();
+                telnet.MdiParent = this;
+                Focus();
+            }
+            telnet.Show();
+            telnet.Activate();
+            telnet.Focus();
         }
     }
 

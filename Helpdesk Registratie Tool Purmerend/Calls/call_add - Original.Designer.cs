@@ -30,6 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(call_add));
             this.call_add_grpbox_newcustomer = new System.Windows.Forms.GroupBox();
+            this.call_add_customerquestion_grpbox = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.call_add_customerquestion_txtbox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.call_add_problemdetails_grpbox = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.call_add_problemdetails_txtbox = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -43,6 +55,18 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.call_add_grpbox_existingcustomer = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.call_add_existingcust1_lbl_email = new System.Windows.Forms.Label();
             this.call_add_existingcust1_lbl_afdeling = new System.Windows.Forms.Label();
             this.call_add_existingcust1_lbl_telefoon = new System.Windows.Forms.Label();
@@ -56,34 +80,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.call_add_existingcust1_btn = new System.Windows.Forms.RadioButton();
             this.call_add_newcust_btn = new System.Windows.Forms.RadioButton();
-            this.call_add_customerquestion_grpbox = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.call_add_customerquestion_txtbox = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.call_add_problemdetails_grpbox = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.call_add_problemdetails_txtbox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.call_add_grpbox_newcustomer.SuspendLayout();
-            this.call_add_grpbox_existingcustomer.SuspendLayout();
             this.call_add_customerquestion_grpbox.SuspendLayout();
             this.call_add_problemdetails_grpbox.SuspendLayout();
+            this.call_add_grpbox_existingcustomer.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -104,13 +104,132 @@
             this.call_add_grpbox_newcustomer.Controls.Add(this.label2);
             this.call_add_grpbox_newcustomer.Controls.Add(this.textBox1);
             this.call_add_grpbox_newcustomer.Controls.Add(this.label1);
-            this.call_add_grpbox_newcustomer.Location = new System.Drawing.Point(6, 35);
+            this.call_add_grpbox_newcustomer.Location = new System.Drawing.Point(0, 6);
             this.call_add_grpbox_newcustomer.Name = "call_add_grpbox_newcustomer";
             this.call_add_grpbox_newcustomer.Size = new System.Drawing.Size(361, 457);
             this.call_add_grpbox_newcustomer.TabIndex = 0;
             this.call_add_grpbox_newcustomer.TabStop = false;
             this.call_add_grpbox_newcustomer.Text = "Klant gegevens - Nieuw toevoegen";
             this.call_add_grpbox_newcustomer.Visible = false;
+            // 
+            // call_add_customerquestion_grpbox
+            // 
+            this.call_add_customerquestion_grpbox.Controls.Add(this.label15);
+            this.call_add_customerquestion_grpbox.Controls.Add(this.call_add_customerquestion_txtbox);
+            this.call_add_customerquestion_grpbox.Controls.Add(this.label16);
+            this.call_add_customerquestion_grpbox.Controls.Add(this.label18);
+            this.call_add_customerquestion_grpbox.Controls.Add(this.label17);
+            this.call_add_customerquestion_grpbox.Location = new System.Drawing.Point(6, 299);
+            this.call_add_customerquestion_grpbox.Name = "call_add_customerquestion_grpbox";
+            this.call_add_customerquestion_grpbox.Size = new System.Drawing.Size(347, 152);
+            this.call_add_customerquestion_grpbox.TabIndex = 13;
+            this.call_add_customerquestion_grpbox.TabStop = false;
+            this.call_add_customerquestion_grpbox.Text = "Vraag van de Klant";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(113, 129);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 13);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "label15";
+            // 
+            // call_add_customerquestion_txtbox
+            // 
+            this.call_add_customerquestion_txtbox.Location = new System.Drawing.Point(21, 20);
+            this.call_add_customerquestion_txtbox.MaxLength = 500;
+            this.call_add_customerquestion_txtbox.Multiline = true;
+            this.call_add_customerquestion_txtbox.Name = "call_add_customerquestion_txtbox";
+            this.call_add_customerquestion_txtbox.Size = new System.Drawing.Size(277, 106);
+            this.call_add_customerquestion_txtbox.TabIndex = 0;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(105, 128);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(12, 13);
+            this.label16.TabIndex = 26;
+            this.label16.Text = "/";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 129);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(78, 13);
+            this.label18.TabIndex = 24;
+            this.label18.Text = "Characters left:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(82, 129);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(25, 13);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "500";
+            // 
+            // call_add_problemdetails_grpbox
+            // 
+            this.call_add_problemdetails_grpbox.Controls.Add(this.label14);
+            this.call_add_problemdetails_grpbox.Controls.Add(this.label13);
+            this.call_add_problemdetails_grpbox.Controls.Add(this.label12);
+            this.call_add_problemdetails_grpbox.Controls.Add(this.label7);
+            this.call_add_problemdetails_grpbox.Controls.Add(this.call_add_problemdetails_txtbox);
+            this.call_add_problemdetails_grpbox.Location = new System.Drawing.Point(6, 141);
+            this.call_add_problemdetails_grpbox.Name = "call_add_problemdetails_grpbox";
+            this.call_add_problemdetails_grpbox.Size = new System.Drawing.Size(347, 152);
+            this.call_add_problemdetails_grpbox.TabIndex = 12;
+            this.call_add_problemdetails_grpbox.TabStop = false;
+            this.call_add_problemdetails_grpbox.Text = "Probleem details";
+            this.call_add_problemdetails_grpbox.UseCompatibleTextRendering = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(120, 129);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "label14";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(108, 130);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(12, 13);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "/";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(86, 129);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(25, 13);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "500";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Characters left:";
+            // 
+            // call_add_problemdetails_txtbox
+            // 
+            this.call_add_problemdetails_txtbox.Location = new System.Drawing.Point(7, 20);
+            this.call_add_problemdetails_txtbox.MaxLength = 500;
+            this.call_add_problemdetails_txtbox.Multiline = true;
+            this.call_add_problemdetails_txtbox.Name = "call_add_problemdetails_txtbox";
+            this.call_add_problemdetails_txtbox.Size = new System.Drawing.Size(333, 106);
+            this.call_add_problemdetails_txtbox.TabIndex = 0;
             // 
             // textBox6
             // 
@@ -211,6 +330,7 @@
             // 
             // call_add_grpbox_existingcustomer
             // 
+            this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_grpbox_newcustomer);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.groupBox1);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.groupBox2);
             this.call_add_grpbox_existingcustomer.Controls.Add(this.call_add_existingcust1_lbl_email);
@@ -230,6 +350,125 @@
             this.call_add_grpbox_existingcustomer.TabStop = false;
             this.call_add_grpbox_existingcustomer.Text = "Klant gegevens - Bestaande Klant";
             this.call_add_grpbox_existingcustomer.Visible = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label19);
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Location = new System.Drawing.Point(6, 299);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(352, 152);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Vraag van de Klant";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(113, 129);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "label19";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(7, 20);
+            this.textBox7.MaxLength = 500;
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(339, 106);
+            this.textBox7.TabIndex = 0;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(105, 128);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(12, 13);
+            this.label20.TabIndex = 26;
+            this.label20.Text = "/";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 129);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(78, 13);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "Characters left:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(82, 129);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(25, 13);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "500";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Location = new System.Drawing.Point(6, 141);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(352, 152);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Probleem details";
+            this.groupBox2.UseCompatibleTextRendering = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(120, 129);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 23;
+            this.label23.Text = "label23";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(108, 130);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(12, 13);
+            this.label24.TabIndex = 22;
+            this.label24.Text = "/";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(86, 129);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(25, 13);
+            this.label25.TabIndex = 21;
+            this.label25.Text = "500";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(9, 129);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(78, 13);
+            this.label26.TabIndex = 20;
+            this.label26.Text = "Characters left:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(7, 20);
+            this.textBox8.MaxLength = 500;
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(339, 106);
+            this.textBox8.TabIndex = 0;
             // 
             // call_add_existingcust1_lbl_email
             // 
@@ -358,251 +597,12 @@
             this.call_add_newcust_btn.UseVisualStyleBackColor = true;
             this.call_add_newcust_btn.CheckedChanged += new System.EventHandler(this.call_add_newcust_btn_CheckedChanged);
             // 
-            // call_add_customerquestion_grpbox
-            // 
-            this.call_add_customerquestion_grpbox.Controls.Add(this.label15);
-            this.call_add_customerquestion_grpbox.Controls.Add(this.call_add_customerquestion_txtbox);
-            this.call_add_customerquestion_grpbox.Controls.Add(this.label16);
-            this.call_add_customerquestion_grpbox.Controls.Add(this.label18);
-            this.call_add_customerquestion_grpbox.Controls.Add(this.label17);
-            this.call_add_customerquestion_grpbox.Location = new System.Drawing.Point(6, 299);
-            this.call_add_customerquestion_grpbox.Name = "call_add_customerquestion_grpbox";
-            this.call_add_customerquestion_grpbox.Size = new System.Drawing.Size(347, 152);
-            this.call_add_customerquestion_grpbox.TabIndex = 13;
-            this.call_add_customerquestion_grpbox.TabStop = false;
-            this.call_add_customerquestion_grpbox.Text = "Vraag van de Klant";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(113, 129);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 13);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "label15";
-            // 
-            // call_add_customerquestion_txtbox
-            // 
-            this.call_add_customerquestion_txtbox.Location = new System.Drawing.Point(21, 20);
-            this.call_add_customerquestion_txtbox.MaxLength = 500;
-            this.call_add_customerquestion_txtbox.Multiline = true;
-            this.call_add_customerquestion_txtbox.Name = "call_add_customerquestion_txtbox";
-            this.call_add_customerquestion_txtbox.Size = new System.Drawing.Size(277, 106);
-            this.call_add_customerquestion_txtbox.TabIndex = 0;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(105, 128);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(12, 13);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "/";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 129);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(78, 13);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "Characters left:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(82, 129);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(25, 13);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "500";
-            // 
-            // call_add_problemdetails_grpbox
-            // 
-            this.call_add_problemdetails_grpbox.Controls.Add(this.label14);
-            this.call_add_problemdetails_grpbox.Controls.Add(this.label13);
-            this.call_add_problemdetails_grpbox.Controls.Add(this.label12);
-            this.call_add_problemdetails_grpbox.Controls.Add(this.label7);
-            this.call_add_problemdetails_grpbox.Controls.Add(this.call_add_problemdetails_txtbox);
-            this.call_add_problemdetails_grpbox.Location = new System.Drawing.Point(6, 141);
-            this.call_add_problemdetails_grpbox.Name = "call_add_problemdetails_grpbox";
-            this.call_add_problemdetails_grpbox.Size = new System.Drawing.Size(347, 152);
-            this.call_add_problemdetails_grpbox.TabIndex = 12;
-            this.call_add_problemdetails_grpbox.TabStop = false;
-            this.call_add_problemdetails_grpbox.Text = "Probleem details";
-            this.call_add_problemdetails_grpbox.UseCompatibleTextRendering = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(120, 129);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 13);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "label14";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(108, 130);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(12, 13);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "/";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(86, 129);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 13);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "500";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 129);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Characters left:";
-            // 
-            // call_add_problemdetails_txtbox
-            // 
-            this.call_add_problemdetails_txtbox.Location = new System.Drawing.Point(7, 20);
-            this.call_add_problemdetails_txtbox.MaxLength = 500;
-            this.call_add_problemdetails_txtbox.Multiline = true;
-            this.call_add_problemdetails_txtbox.Name = "call_add_problemdetails_txtbox";
-            this.call_add_problemdetails_txtbox.Size = new System.Drawing.Size(333, 106);
-            this.call_add_problemdetails_txtbox.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Location = new System.Drawing.Point(6, 299);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(352, 152);
-            this.groupBox1.TabIndex = 31;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Vraag van de Klant";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(113, 129);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "label19";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(7, 20);
-            this.textBox7.MaxLength = 500;
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(339, 106);
-            this.textBox7.TabIndex = 0;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(105, 128);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(12, 13);
-            this.label20.TabIndex = 26;
-            this.label20.Text = "/";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 129);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 13);
-            this.label21.TabIndex = 24;
-            this.label21.Text = "Characters left:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(82, 129);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(25, 13);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "500";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Location = new System.Drawing.Point(6, 141);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(352, 152);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Probleem details";
-            this.groupBox2.UseCompatibleTextRendering = true;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(120, 129);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 13);
-            this.label23.TabIndex = 23;
-            this.label23.Text = "label23";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(108, 130);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(12, 13);
-            this.label24.TabIndex = 22;
-            this.label24.Text = "/";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(86, 129);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(25, 13);
-            this.label25.TabIndex = 21;
-            this.label25.Text = "500";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(9, 129);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(78, 13);
-            this.label26.TabIndex = 20;
-            this.label26.Text = "Characters left:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(7, 20);
-            this.textBox8.MaxLength = 500;
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(339, 106);
-            this.textBox8.TabIndex = 0;
-            // 
             // call_add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(379, 525);
-            this.Controls.Add(this.call_add_grpbox_newcustomer);
             this.Controls.Add(this.call_add_grpbox_existingcustomer);
             this.Controls.Add(this.call_add_newcust_btn);
             this.Controls.Add(this.call_add_existingcust1_btn);
@@ -615,12 +615,12 @@
             this.Load += new System.EventHandler(this.call_add_Load);
             this.call_add_grpbox_newcustomer.ResumeLayout(false);
             this.call_add_grpbox_newcustomer.PerformLayout();
-            this.call_add_grpbox_existingcustomer.ResumeLayout(false);
-            this.call_add_grpbox_existingcustomer.PerformLayout();
             this.call_add_customerquestion_grpbox.ResumeLayout(false);
             this.call_add_customerquestion_grpbox.PerformLayout();
             this.call_add_problemdetails_grpbox.ResumeLayout(false);
             this.call_add_problemdetails_grpbox.PerformLayout();
+            this.call_add_grpbox_existingcustomer.ResumeLayout(false);
+            this.call_add_grpbox_existingcustomer.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

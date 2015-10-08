@@ -39,8 +39,7 @@ namespace Helpdesk_Registratie_Tool_Purmerend.Incidenten
             dataGridView1.Columns[0].Name = "callnummer"; // name
             dataGridView1.Columns[0].HeaderText = "Call Nummer"; // header text
             dataGridView1.Columns[0].DataPropertyName = "callnummer"; // field name
-
-
+            
             dataGridView1.Columns[1].HeaderText = "Datum";
             dataGridView1.Columns[1].Name = "datum";
             dataGridView1.Columns[1].DataPropertyName = "datum";

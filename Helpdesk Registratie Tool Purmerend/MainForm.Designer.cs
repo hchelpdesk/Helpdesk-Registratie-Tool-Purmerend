@@ -66,9 +66,9 @@
             this.klantenToolStripMenuItem,
             this.magazijnToolStripMenuItem,
             this.uitlenenToolStripMenuItem,
-            this.beheerToolStripMenuItem,
+            this.toolsToolStripMenuItem,
             this.notitiesToolStripMenuItem,
-            this.toolsToolStripMenuItem});
+            this.beheerToolStripMenuItem});
             this.mainform_menustrip1.Location = new System.Drawing.Point(0, 0);
             this.mainform_menustrip1.Name = "mainform_menustrip1";
             this.mainform_menustrip1.Size = new System.Drawing.Size(811, 24);
@@ -212,7 +212,7 @@
             this.inloggenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backupsToolStripMenuItem});
             this.inloggenToolStripMenuItem.Name = "inloggenToolStripMenuItem";
-            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.inloggenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inloggenToolStripMenuItem.Text = "Inloggen";
             this.inloggenToolStripMenuItem.Click += new System.EventHandler(this.inloggenToolStripMenuItem_Click);
             // 
@@ -288,6 +288,7 @@
             this.burnISOToolStripMenuItem.Name = "burnISOToolStripMenuItem";
             this.burnISOToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.burnISOToolStripMenuItem.Text = "Burn ISO";
+            this.burnISOToolStripMenuItem.Click += new System.EventHandler(this.burnISOToolStripMenuItem_Click);
             // 
             // MainForm
             // 
